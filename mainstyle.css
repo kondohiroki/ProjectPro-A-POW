@@ -107,3 +107,14 @@
 .forgot-password:focus{
     color: rgb(12, 97, 33);
 }
+#buttProLeft{
+    width: 210px;
+    margin-left: 30px;
+}
+#buttProRight{
+    width: 210px;
+    margin-left: 0px;
+}
+#pageItem{
+  margin-left: 200px;
+}
