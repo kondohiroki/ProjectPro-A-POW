@@ -1,0 +1,21 @@
+#headerJumbo{
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+}
+#headPan{
+  height: 100px;
+}
+
+#sidePan{
+  /*height: 600px;*/
+  color: white;
+  margin-bottom: 1px;
+  background-color: lightgray;
+}
+#centerPan{
+  height: 800px;
+  color: white;
+  margin-bottom: 1px;
+  background-color: white;
+}
