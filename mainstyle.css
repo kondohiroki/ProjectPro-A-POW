@@ -19,12 +19,13 @@
   color: black;
   margin-bottom: 1px;
   background-color: white;
+  font-size: 1em;
 }
 #centerPan{
-  height: 800px;
+  height: 100%;/*800px*/
   color: black;
-  margin-bottom: 1px;
-  /*background-color: Darkgray;*/
+  margin-bottom: 1px;/*1px*/
+  /*background-color: lightyellow;*/
 }
 
 #custom-search-input {
@@ -32,7 +33,7 @@
       width: 100%;
       direction: ltr;
       height: 38px;
-      font-size: 16px;
+      font-size: 1em;
 }
 
 #custom-search-input .search-query {
@@ -163,13 +164,16 @@
     color: #0c6121;
 }
 #buttProLeft{
-    width: 210px;
-    margin-left: 30px;
+    width: 250%;/*210px*/
+    margin-left: 35%;/*30px*/
 }
 #buttProRight{
-    width: 210px;
-    margin-left: 0px;
+    width: 250%;/*210px*/
+    margin-left: 170%;/*30px*/
 }
-#pageItem{
-  margin-left: 200px;
+/*#pageItem{
+  margin-left: 200px;/*200px*/
+/*}*/
+#allpageItem{
+  margin-left: 30%;
 }
