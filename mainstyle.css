@@ -13,6 +13,13 @@
   margin-bottom: 1px;
   background-color: white;
 }
+#sidePanL{
+  /*height: 600px;*/
+  margin-top: 50px;
+  color: black;
+  margin-bottom: 1px;
+  background-color: white;
+}
 #centerPan{
   height: 800px;
   color: black;
@@ -20,11 +27,45 @@
   /*background-color: Darkgray;*/
 }
 
+#custom-search-input {
+      margin-left: 0%;
+      width: 100%;
+      direction: ltr;
+      height: 38px;
+      font-size: 16px;
+}
+
+#custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+.form-check-label{
+  margin-top: 8%;
+  margin-left: 0%;
+}
+#catPan{
+  margin-left: -2%;
+  margin-top: 0%;
+  text-align: center;
+}
+
 .card-container.card {
     float: left;
     max-width: 100%;
     padding: 40px 40px;
     background-color: white;
+}
+#leftSearchPan{
+    margin-top: 0px;
+    margin-left: 8%;
 }
 .btn {
     font-weight: 700;
@@ -69,6 +110,18 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 220px;
+}
+.form-search-submit button{
+  margin-top: 8px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0px;
+  z-index: 1;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 220px;
 }
 .form-signin .form-control:focus {
     border-color: rgb(104, 145, 162);
