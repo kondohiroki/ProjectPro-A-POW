@@ -8,11 +8,12 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="mainstyle.css">
+  <link rel="stylesheet" href="MainStyle2.css">
+  <link rel="stylesheet" href="SearchAndLogin.css">
   <script>
-      function search(){
-        alert("search");
-      }
+    function search(){
+      alert("search");
+    }
   </script>
 </head>
 <body>
@@ -42,16 +43,15 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3" id="sidePanL">
+      <div class="col-lg-3" id="sidePanLeft">
         <div class="card card-container" id="leftSearchPan">
           <form class="form-search-submit" onsubmit="return search()">
-          <div class="row">
+            <div class="row">
               <div id="custom-search-input">
-                  <!--<div class="input-group col-md-12" id="font-text-search">
-                      <input type="text" class=" search-query form-control" placeholder="Search"/>
-                  </div>-->
-                  <input type="search" id="font-text-search" class="form-control" placeholder="Search" required >
-
+                <!--<div class="input-group col-md-12" id="font-text-search">
+                  <input type="text" class=" search-query form-control" placeholder="Search"/>
+                </div>-->
+                <input type="search" id="font-text-search" class="form-control" placeholder="Search" required >
               </div>
               <div class="input group col-md-12">
                 <div class="form-check">
@@ -96,12 +96,10 @@
                       </div>
                   </div>
                   <div class="col-sm-12">
-                      <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Search</button>
+                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button>
                   </div>
-
-
-              </div>
-	         </div>
+                </div>
+	          </div>
          </form>
          </div>
       </div>
@@ -113,8 +111,8 @@
                   <div class="card-body">
                       <h4 class="card-title">Shoe sale 50%</h4>
                         <p class="card-text">Some example text.</p>
-                        <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
-                        <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
+                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
                 </div>
               </div>
               </div>
@@ -127,8 +125,8 @@
                       <div class="card-body">
                           <h4 class="card-title">John Doe</h4>
                             <p class="card-text">Some example text.</p>
-                            <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
-                            <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
+                            <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                            <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
                     </div>
                   </div>
                   </div>
@@ -140,8 +138,8 @@
                           <div class="card-body">
                               <h4 class="card-title">John Doe</h4>
                                 <p class="card-text">Some example text.</p>
-                                <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
+                                <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
                         </div>
                       </div>
                       </div>
@@ -153,8 +151,8 @@
                               <div class="card-body">
                                   <h4 class="card-title">John Doe</h4>
                                     <p class="card-text">Some example text.</p>
-                                    <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
-                                    <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
+                                    <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                    <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
                             </div>
                           </div>
                           </div>
@@ -167,8 +165,8 @@
                                       <h4 class="card-title">HEEROKI NAHEE</h4>
                                         <p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ</p>
                                         <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
-                                        <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
-                                        <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
+                                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
                                 </div>
                               </div>
                               </div>
@@ -185,7 +183,7 @@
                             </div>
          </div>
 
-      <div class="col-lg-3" id="sidePan" >
+      <div class="col-lg-3" id="sidePanRight" >
         <div class="container">
           <div class="card card-container">
             <p id="profile-name" class="profile-name-card"></p>
@@ -198,7 +196,7 @@
                       <input type="checkbox" value="remember-me"> Remember me
                   </label>
               </div>
-              <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button>
             </form><!-- /form -->
             <a href="#" class="forgot-password">
               <u>Forgot the password?</u>
