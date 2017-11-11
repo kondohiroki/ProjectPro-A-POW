@@ -19,7 +19,7 @@
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
     <div class="container">
       <h1>PRO-A-POW</h1>
-      <p>PROMOTION FOR YOU</p>
+      <p><font size = "2">PROMOTION FOR YOU</p>
     </div>
   </div>
   <div class="container-fluid">
@@ -29,9 +29,11 @@
           <form class="form-search-submit" onsubmit="return search()">
           <div class="row">
               <div id="custom-search-input">
-                  <div class="input-group col-md-12">
-                      <input type="text" class="  search-query form-control" placeholder="Search" />
-                  </div>
+                  <!--<div class="input-group col-md-12" id="font-text-search">
+                      <input type="text" class=" search-query form-control" placeholder="Search"/>
+                  </div>-->
+                  <input type="search" id="font-text-search" class="form-control" placeholder="Search" required >
+
               </div>
               <div class="input group col-md-12">
                 <div class="form-check">
@@ -78,6 +80,8 @@
                   <div class="col-sm-12">
                       <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Search</button>
                   </div>
+
+
               </div>
 	         </div>
          </form>
@@ -91,18 +95,8 @@
                   <div class="card-body">
                       <h4 class="card-title">Shoe sale 50%</h4>
                         <p class="card-text">Some example text.</p>
-                          <div class="btn-group" >
-                            <div class="row">
-                              <!--<div class="container" >-->
-                              <div class="col-sm-6">
-                                    <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                    </div>
-                              <div class="col-sm-6">
-                                    <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
-                                    </div>
-                              <!--</div>-->
-                              </div>
-                          </div>
+                        <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
+                        <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
                 </div>
               </div>
               </div>
@@ -115,18 +109,8 @@
                       <div class="card-body">
                           <h4 class="card-title">John Doe</h4>
                             <p class="card-text">Some example text.</p>
-                              <div class="btn-group" id ="buttonPromotion">
-                                <div class="row">
-                                  <!--<div class="container" >-->
-                                  <div class="col-sm-6">
-                                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                        </div>
-                                  <div class="col-sm-6">
-                                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
-                                        </div>
-                                  <!--</div>-->
-                                  </div>
-                              </div>
+                            <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
+                            <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
                     </div>
                   </div>
                   </div>
@@ -138,18 +122,8 @@
                           <div class="card-body">
                               <h4 class="card-title">John Doe</h4>
                                 <p class="card-text">Some example text.</p>
-                                  <div class="btn-group" id ="buttonPromotion">
-                                    <div class="row">
-                                      <!--<div class="container" >-->
-                                      <div class="col-sm-6">
-                                            <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                            </div>
-                                      <div class="col-sm-6">
-                                            <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
-                                            </div>
-                                      <!--</div>-->
-                                      </div>
-                                  </div>
+                                <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
+                                <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
                         </div>
                       </div>
                       </div>
@@ -161,18 +135,8 @@
                               <div class="card-body">
                                   <h4 class="card-title">John Doe</h4>
                                     <p class="card-text">Some example text.</p>
-                                      <div class="btn-group" id ="buttonPromotion">
-                                        <div class="row">
-                                          <!--<div class="container" >-->
-                                          <div class="col-sm-6">
-                                                <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                                </div>
-                                          <div class="col-sm-6">
-                                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
-                                                </div>
-                                          <!--</div>-->
-                                          </div>
-                                      </div>
+                                    <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
+                                    <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
                             </div>
                           </div>
                           </div>
@@ -185,18 +149,8 @@
                                       <h4 class="card-title">HEEROKI NAHEE</h4>
                                         <p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ</p>
                                         <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
-                                        <div class="btn-group" id ="buttonPromotion">
-                                        <div class="row">
-                                          <!--<div class="container" >-->
-                                          <div class="col-sm-6">
-                                                <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                                </div>
-                                          <div class="col-sm-6">
-                                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
-                                                </div>
-                                          <!--</div>-->
-                                          </div>
-                                          </div>
+                                        <button type="button" class="btn btn-primary" id="buttProLeft">Details</button>
+                                        <button type="button" class="btn btn-success" id="buttProRight">Subscribe</button>
                                 </div>
                               </div>
                               </div>
@@ -219,7 +173,7 @@
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
               <span id="reauth-email" class="reauth-email"></span>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
               <div id="remember" class="checkbox">
                   <label>
@@ -229,7 +183,10 @@
               <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
             </form><!-- /form -->
             <a href="#" class="forgot-password">
-              Forgot the password?
+              <u>Forgot the password?</u>
+            </a>
+            <a href="#" class="forgot-password">
+              <u>Register</u>
             </a>
           </div><!-- /card-container -->
         </div><!-- /container-->

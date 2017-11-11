@@ -19,7 +19,7 @@
   color: black;
   margin-bottom: 1px;
   background-color: white;
-  font-size: 1em;
+  font-size: 1em;/*1em*/
 }
 #centerPan{
   height: 100%;/*800px*/
@@ -29,10 +29,13 @@
 }
 
 #custom-search-input {
-      margin-left: 0%;
+      margin-left: 0% ;
       width: 100%;
       direction: ltr;
-      height: 38px;
+      height: 25px;/*38*/
+      /*font-size: 10px;*/
+}
+#font-text-search{
       font-size: 1em;
 }
 
@@ -71,7 +74,7 @@
     margin-left: 8%;
 }
 .btn {
-    font-weight: 700;
+    font-weight: 500;/*700*/
     height: 36px;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -98,7 +101,7 @@
     width: inherit;
     direction: ltr;
     height: 44px;
-    font-size: 16px;
+    font-size: 1em;
 }
 .form-signin input[type=email],
 .form-signin input[type=password],
@@ -124,7 +127,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 220px;
+
 }
 .form-signin .form-control:focus {
     border-color: #6891a2;
@@ -138,7 +141,7 @@
     /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
     padding: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1em;
     height: 36px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -148,6 +151,7 @@
     -moz-transition: all 0.218s;
     -webkit-transition: all 0.218s;
     transition: all 0.218s;
+    width: 100%;
 }
 .btn.btn-signin:hover,
 .btn.btn-signin:active,
@@ -164,12 +168,16 @@
     color: #0c6121;
 }
 #buttProLeft{
-    width: 250%;/*210px*/
-    margin-left: 35%;/*30px*/
+    width:45%;/*210px*/
+    margin-left: 5%;/*30px,-130%*/
+
 }
 #buttProRight{
-    width: 250%;/*210px*/
-    margin-left: 170%;/*30px*/
+    width: 45%;/*210px*/
+    margin-left:1%;/*30px,170%*/
+}
+#firstButton{
+    margin-left: 0%;
 }
 /*#pageItem{
   margin-left: 200px;/*200px*/
