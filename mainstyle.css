@@ -9,7 +9,7 @@
 
 #sidePan{
   /*height: 600px;*/
-  color: black;
+  color: 	#000000;
   margin-bottom: 1px;
   background-color: white;
 }
@@ -27,11 +27,14 @@
   margin-bottom: 1px;/*1px*/
   /*background-color: lightyellow;*/
 }
+#navbar{
+  margin-top: -2.5%;
 
+}
 #custom-search-input {
       margin-left: 0%;
       width: 100%;
-      direction: ltr;
+
       height: 38px;
       font-size: 1em;
 }
