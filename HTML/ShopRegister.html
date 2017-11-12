@@ -51,60 +51,66 @@
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h2>Shop Register</h2>
+                  <center><h2>Shop Register</h2></center>
                   <br>
-                  <form>
+                  <form onsubmit="return search()">
                     <div class="form-group">
                       <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop Name"  >
+                      <input type="text" class="form-control" id="Shop Name" placeholder="Name" required>
                     </div>
 
 
                     <!--AddPhoneNumber-->
                     <div class="container">
 	                     <div class="row">
-		                       <input type="hidden" name="count" value="1" />
-                           <div class="control-group" id="fields">
-                             <label class="control-label" for="field1">Shop Tel. Number</label>
-                             <div class="controls" id="profs">
-                               <form class="input-append">
-                                 <div class="row-fluid">
-                          <div id="container">
-                          </div>
+		                      <input type="hidden" name="count" value="1" />
+                            <div class="control-group" id="fields">
+                              <label class="control-label" for="field1">Shop Tel. Number :</label>
+                              <div class="controls" id="profs">
+                                <div class="input-append">
+                                  <div class="row-fluid">
+                                    <div id="container">
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-sm-10">
+                                      <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Tel." data-items="8"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                      <button id="b1" class="btn add" type="button">+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <small>Press + to add another Tel. number :)</small>
+                                <br>
+                                <br>
+                              </div>
+                            </div>
+	                        </div>
                         </div>
-                        <div class="row-fluid">
-                          <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Tel." data-items="8"/>
-                          <button id="b1" class="btn add" type="button">+</button>
-                        </div>
-                      </form>
-                      <small>Press + to add another Tel. number :)</small>
-                      <br>
-                      <br>
-
-                    </div>
-                  </div>
-	               </div>
-               </div>
 
                  <!--calendar -->
                  <label>Calendar:</label>
                  <div class="container">
                  <div class="row">
-                   <div col-sm-3 id="columnCalendar1">
+                   <div class="col-sm-3" id="columnCalendar1">
                      <label>Open date:</label><br>
-                     <input type="date" name="OpenDate" >
+                     <input class="form-control" type="date" name="OpenDate" >
                    </div>
 
-                   <div col-sm-3 id="columnCalendar2">
+                   <div class="col-sm-3" id="columnCalendar2">
                      <label>Close date:</label><br>
-                      <input type="date" name="CloseDate" >
+                      <input class="form-control" type="date" name="CloseDate" >
                    </div>
 
-                   <div col-sm-3 id="columnCalendar3">
+                   <div class="col-sm-3" id="columnCalendar3">
                      <label>Open Time:</label><br>
-                     <input type="time" name="OpenTime" value="01:00">
-                     <input type="time" name="OpenTime" value="08:00">
+                     <input class="form-control" type="time" name="OpenTime" value="01:00" id="opent">
                    </div>
+                   <div class="col-sm-3" id="columnCalendar3">
+                      <label>Close Time:</label><br>
+                      <input class="form-control" type="time" name="CloseTime" value="01:00" id="closet">
+                    </div>
                  </div>
                </div>
                  <br>
@@ -117,7 +123,7 @@
                             <div class="input-group">
                               <!--<span class="input-group-btn">
                               </span>-->
-                              <button type="button" class="btn btn-light">Browse… <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp" </button>
+                              <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/>
                               <button id="clear" class="btn btn-default">Clear</button>
                             </div>
                             <br>
