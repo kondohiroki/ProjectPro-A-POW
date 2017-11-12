@@ -1,0 +1,43 @@
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#columnCalendar1{
+  margin-left: 10%;
+}
+#columnCalendar2{
+  margin-left: 5%;
+}
+#columnCalendar3{
+  margin-left: 5%;
+}
+#img-upload{
+    width: 100%;
+}
+#sizeButtonOfSaveRegister{
+  width: 80%;
+}
+
+* {
+  .border-radius(0) !important;
+}
+
+#field {
+    margin-bottom:20px;
+}
