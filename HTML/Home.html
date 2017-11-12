@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/MainStyle2.css">
+  <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
+  <script>
+    function search(){
+      alert("search");
+    }
+  </script>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid" id="headerJumbo">
+    <div class="container">
+      <h1>PRO-A-POW</h1>
+      <p><font size = "2">PROMOTION FOR YOU</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3" id="sidePanLeft">
+        <div class="card card-container" id="leftSearchPan">
+          <form class="form-search-submit" onsubmit="return search()">
+            <div class="row">
+              <div id="custom-search-input">
+                <!--<div class="input-group col-md-12" id="font-text-search">
+                  <input type="text" class=" search-query form-control" placeholder="Search"/>
+                </div>-->
+                <input type="search" id="font-text-search" class="form-control" placeholder="Search" required >
+              </div>
+              <div class="input group col-md-12">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">Search By Your Profile
+                  </label>
+                </div>
+                <hr/>
+              </div>
+              <div class="input group col-md-12">
+                  <div class="col-sm-12" id="catPan"><h6>CATEGORY</h6></div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">Food
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">Dessert
+                          </label>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">Travel
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">Discount
+                          </label>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button>
+                  </div>
+                </div>
+	          </div>
+         </form>
+         </div>
+      </div>
+      <div class="col-lg-6" id="centerPan">
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="card" style="width:600px">
+                <img class="card-img-top" src="../IMG/20171106-152402.jpg"height="500px" alt="Card image">
+                  <div class="card-body">
+                      <h4 class="card-title">Shoe sale 50%</h4>
+                        <p class="card-text">Some example text.</p>
+                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="card" style="width:600px">
+                    <img class="card-img-top" src="../IMG/kfc.jpg"height="500px" alt="Card image">
+                      <div class="card-body">
+                          <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                            <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card" style="width:600px">
+                        <img class="card-img-top" src="../IMG/CUP.jpg"height="500px" alt="Card image">
+                          <div class="card-body">
+                              <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <div class="card" style="width:600px">
+                            <img class="card-img-top" src="../IMG/chesters.jpg"height="500px" alt="Card image">
+                              <div class="card-body">
+                                  <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text.</p>
+                                    <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                    <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card" style="width:600px">
+                                <img class="card-img-top" src="../IMG/29403.jpg"height="500px" alt="Card image">
+                                  <div class="card-body">
+                                      <h4 class="card-title">HEEROKI NAHEE</h4>
+                                        <p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ</p>
+                                        <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
+                                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
+                                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="row" id="allpageItem">
+                                      <ul class="pagination">
+                                              <li class="page-item "><a class="page-link"id="pageItem" href="#">Previous</a></li>
+                                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                            </div>
+         </div>
+
+      <div class="col-lg-3" id="sidePanRight" >
+        <div class="container">
+          <div class="card card-container">
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+              <span id="reauth-email" class="reauth-email"></span>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <div id="remember" class="checkbox">
+                  <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+              </div>
+              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button>
+            </form><!-- /form -->
+            <a href="#" class="forgot-password">
+              <u>Forgot the password?</u>
+            </a>
+            <a href="#" class="forgot-password">
+              <u>Register</u>
+            </a>
+          </div><!-- /card-container -->
+        </div><!-- /container-->
+      </div>
+      <div class="container">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

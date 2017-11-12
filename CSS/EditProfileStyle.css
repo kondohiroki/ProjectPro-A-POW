@@ -1,0 +1,86 @@
+#sidePanLeft{
+    margin-top: 0%;
+    background-color: white; 
+    text-align: center;
+}
+#sidePanRight{
+    background-color: white;
+}
+#centerPan{
+    align-content: center;
+}
+/*#cardEdit{
+    position: relative;
+    padding: 40px 40px;
+    background-color: white;
+}*/
+#cardEdit h4{
+    text-align: center;
+    font-family: inherit;
+}
+.Edit-Profile-Form{
+    margin-top: 3%;
+}
+.Edit-Profile-Form #inputtext,
+.Edit-Profile-Form #inputdate{
+    width: inherit;
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+.Edit-Profile-Form #inputdate{
+    color: #868E96;
+}
+.Edit-Profile-Form input[type=email],
+.Edit-Profile-Form input[type=text],
+.Edit-Profile-Form input[type=date],
+.Edit-Profile-Form input[type=submit],
+.Edit-Profile-Form button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 220px;
+}
+#applybutton{
+    margin-top: 5%;
+    margin-left: 36%;
+    position: relative;
+    align-self: center;
+    /*border-width: 1.2px;
+    border-color: #007BFF;*/
+}
+.Edit-Profile-Form button:hover{
+    color: #ffffff;
+    background-color: #007BFF;
+}
+.form-control:focus,
+.btn:focus {
+    border-color: #6891a2;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px 	#6891a2;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #6891a2;
+}
+
+#editButt{
+    margin-top: 50%;
+    position: relative;
+    align-self: center;
+    border-width: 1px;
+    border-color: #007BFF;
+    width: 85%; 
+}
+#editButtFollow{
+    margin-top: 7%;
+    border-width: 1px;
+    border-color: #007BFF; 
+    width: 85%; 
+}
+#sidePanLeft button:hover{
+    color: #ffffff;
+    background-color: #007BFF;
+}
