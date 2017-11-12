@@ -52,6 +52,12 @@
     color: black;
     background-color: white; 
 }
+.btn.btn-outline-primary{
+    border-color: #007BFF;
+}
+.btn.btn-outline-danger{
+    border-color: #DC3545;
+}
 /*.btn:hover{
     background-color: #3396FF;
     color: white;
