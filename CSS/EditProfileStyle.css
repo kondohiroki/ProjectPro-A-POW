@@ -82,8 +82,15 @@
 }
 #sidePanLeft button:hover{
     color: #ffffff;
-    background-color: #007BFF;
+    background-color: #00254d;
 }
 h8{
     font-family: inherit;
+}
+.Edit-Profile-Form button{
+    background-color: #007BFF; 
+    color: white;
+}
+.Edit-Profile-Form button:hover{
+    background-color: #00254d;
 }
