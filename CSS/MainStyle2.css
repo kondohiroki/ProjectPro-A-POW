@@ -50,14 +50,8 @@
     cursor: default;
     border-width: 1px;
     border-color: #A58E96;
-    color: black;
-    background-color: white; 
-}
-.btn.btn-outline-primary{
-    border-color: #007BFF;
-}
-.btn.btn-outline-danger{
-    border-color: #DC3545;
+    color: white;
+    background-color: #007BFF; 
 }
 /*.btn:hover{
     background-color: #3396FF;
@@ -73,4 +67,11 @@
     max-width: 100%;
     padding: 40px 40px;
     background-color: white;
+}
+.form-control:focus,
+.btn:focus {
+    border-color: #6891a2;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px 	#6891a2;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #6891a2;
 }
