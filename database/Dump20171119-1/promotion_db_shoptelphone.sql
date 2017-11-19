@@ -16,30 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `user`
+-- Table structure for table `shoptelphone`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `shoptelphone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
-  `USER_ID` int(5) NOT NULL,
-  `USER_FNAME` varchar(45) NOT NULL,
-  `USER_LNAME` varchar(45) NOT NULL,
-  `USER_EMAIL` varchar(45) NOT NULL,
-  `USER_PASSWORD` varchar(20) NOT NULL,
-  PRIMARY KEY (`USER_ID`)
+CREATE TABLE `shoptelphone` (
+  `SHOP_ID` int(5) NOT NULL,
+  `SHOP_TEL` varchar(12) NOT NULL,
+  PRIMARY KEY (`SHOP_ID`,`SHOP_TEL`),
+  CONSTRAINT `SHOPTEL_ID` FOREIGN KEY (`SHOP_ID`) REFERENCES `shop` (`SHOP_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `shoptelphone`
 --
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (10000,'Wilman','Kala','Wil_01@gmail.com','wilwil'),(10001,'John','Doe','John_02@gmail.com','john555'),(10002,'Joe','Bloggs','joe_03@gmail.com','123456789'),(10003,'John','Smith','jsmith_04@email.com','smiteiei'),(10004,'Jane','Roe','jane_05@email.com','212224236'),(10005,'Alfreds','Futterkiste','alfred_06@gmail.com','john555');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+LOCK TABLES `shoptelphone` WRITE;
+/*!40000 ALTER TABLE `shoptelphone` DISABLE KEYS */;
+INSERT INTO `shoptelphone` VALUES (10000,'086-424-3845'),(10000,'086-654-3876'),(10001,'083-654-5876'),(10002,'084-654-3376'),(10003,'088-754-1176');
+/*!40000 ALTER TABLE `shoptelphone` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-19 17:12:05
+-- Dump completed on 2017-11-19 18:01:27

@@ -16,27 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `type of card`
+-- Table structure for table `supporting`
 --
 
-DROP TABLE IF EXISTS `type of card`;
+DROP TABLE IF EXISTS `supporting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `type of card` (
+CREATE TABLE `supporting` (
+  `PRO_ID` int(5) NOT NULL,
   `TYPE_ID` int(2) NOT NULL,
-  `TYPE_NAME` varchar(45) NOT NULL,
-  PRIMARY KEY (`TYPE_ID`)
+  `BANK_ID` int(5) NOT NULL,
+  PRIMARY KEY (`PRO_ID`,`TYPE_ID`,`BANK_ID`),
+  KEY `BANK_ID_idx` (`BANK_ID`),
+  KEY `TYPE_ID_idx` (`TYPE_ID`),
+  CONSTRAINT `SUP_BANK_ID` FOREIGN KEY (`BANK_ID`) REFERENCES `bank` (`BANK_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `SUP_PRO_ID` FOREIGN KEY (`PRO_ID`) REFERENCES `promotion` (`PRO_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `SUP_TYPE_ID` FOREIGN KEY (`TYPE_ID`) REFERENCES `type of card` (`TYPE_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `type of card`
+-- Dumping data for table `supporting`
 --
 
-LOCK TABLES `type of card` WRITE;
-/*!40000 ALTER TABLE `type of card` DISABLE KEYS */;
-INSERT INTO `type of card` VALUES (1,'VISA'),(2,'MASTER CRAD'),(3,'JCB'),(4,'AMERICAN EXPRESS'),(5,'UNIONPAY');
-/*!40000 ALTER TABLE `type of card` ENABLE KEYS */;
+LOCK TABLES `supporting` WRITE;
+/*!40000 ALTER TABLE `supporting` DISABLE KEYS */;
+INSERT INTO `supporting` VALUES (10002,2,1),(10000,3,3),(10001,3,3),(10000,2,4),(10003,1,4),(10003,2,4);
+/*!40000 ALTER TABLE `supporting` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-19 17:12:05
+-- Dump completed on 2017-11-19 18:01:26

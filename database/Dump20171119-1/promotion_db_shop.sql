@@ -16,27 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `bank`
+-- Table structure for table `shop`
 --
 
-DROP TABLE IF EXISTS `bank`;
+DROP TABLE IF EXISTS `shop`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `bank` (
-  `BANK_ID` int(5) NOT NULL,
-  `BANK_NAME` varchar(45) NOT NULL,
-  PRIMARY KEY (`BANK_ID`)
+CREATE TABLE `shop` (
+  `SHOP_ID` int(5) NOT NULL,
+  `SHOP_NAME` varchar(45) NOT NULL,
+  `SHOP_OPENDATE` char(3) NOT NULL,
+  `SHOP_OPENTIME` char(5) NOT NULL,
+  `SHOP_CLOSETIME` char(5) NOT NULL,
+  `USER_ID` int(5) NOT NULL,
+  PRIMARY KEY (`SHOP_ID`),
+  KEY `USER_ID_idx` (`USER_ID`),
+  CONSTRAINT `OWNER_ID` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`USER_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `bank`
+-- Dumping data for table `shop`
 --
 
-LOCK TABLES `bank` WRITE;
-/*!40000 ALTER TABLE `bank` DISABLE KEYS */;
-INSERT INTO `bank` VALUES (1,'BANKKOK BANK'),(2,'KASIKORN BANK'),(3,'KTB BANK'),(4,'SCB BANK'),(5,'TMB BANK'),(6,'KRUNGSRI BANK'),(7,'GOVERNMENT SAVING BANK');
-/*!40000 ALTER TABLE `bank` ENABLE KEYS */;
+LOCK TABLES `shop` WRITE;
+/*!40000 ALTER TABLE `shop` DISABLE KEYS */;
+INSERT INTO `shop` VALUES (10000,'JSteak','MON','10:00','20:00',10004),(10001,'Mr.Joe','WEN','13:00','18:00',10002),(10002,'Kitty Cat Café','FRI','9:00','14:00',10000),(10003,'Smokin Pug American BBQ','TU','15:00','22:00',10005);
+/*!40000 ALTER TABLE `shop` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-19 17:12:05
+-- Dump completed on 2017-11-19 18:01:26
