@@ -1,0 +1,21 @@
+#buttonCard{
+
+}
+#inputtextCard{
+  width: 80%;
+}
+#creditCard{
+  width: 12%;
+}
+#expiry{
+  width: 10%;
+}
+#expiry-month{
+  width: 20%;
+}
+#inputtextCardCVV{
+    width: 11%;
+}
+#buttonSave{
+  width: 20%;
+}
