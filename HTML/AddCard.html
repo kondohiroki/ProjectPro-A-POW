@@ -10,9 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
-  <link rel="stylesheet" href="../CSS/HomeStyle.css">
+  <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
   <link rel="stylesheet" href="../CSS/StyleAddCard.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   <script>
     function search(){
       alert("search");
@@ -47,23 +47,34 @@
 </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3" id="sidePanLeft">
+        <div class="col-lg-2" id="sidePanLeft">
           </div>
-        <div class="col-lg-6" id="centerPan">
-            <div class="card" style="width:600px">
-              <div class="card-body">
-                <center><h3>Bank Cards</h3></center>
-                <br>
-                <div class="panel panel-primary">
-                  <div class="panel-heading">VISA   [default]</div>
-                  <div class="panel-body">xxxx-xxxx-xxxx-xx36</div>
-                </div>
-                <br>
-                  <button type="button" class="btn btn-outline-light" id="buttonCard">+</button>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>
-              </div>
+        <div class="col-lg-8" id="centerPan">
+          <div class="row">
+            <div class="col-sm-12" id="AddCardHead">
+              <center><h4>Bank Cards</h4></center>
             </div>
           </div>
-        <div class="col-lg-3" id="sidePanRight" >
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card" id="CardPan">
+                            <p>Phanurut Kondo&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;VISA</p>
+                            <p>xxxx-xxxx-xxxx-x832</p>
+                            <p>02/20</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="AddCard2.html"><button type="button" class="btn btn-outline-light" id="buttonCard">+</button></a>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2" id="sidePanRight" >
           </div>
       </div>
 </body>
