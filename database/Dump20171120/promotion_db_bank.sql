@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `category`
+-- Table structure for table `bank`
 --
 
-DROP TABLE IF EXISTS `category`;
+DROP TABLE IF EXISTS `bank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `category` (
-  `C_ID` int(5) NOT NULL,
-  `C_NAME` varchar(45) NOT NULL,
-  PRIMARY KEY (`C_ID`)
+CREATE TABLE `bank` (
+  `BANK_ID` int(5) NOT NULL,
+  `BANK_NAME` varchar(45) NOT NULL,
+  PRIMARY KEY (`BANK_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `category`
+-- Dumping data for table `bank`
 --
 
-LOCK TABLES `category` WRITE;
-/*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (1,'FOOD'),(2,'DESSERT'),(3,'ENTERTAINMENT'),(4,'LIFESTYLE'),(5,'TRAVEL'),(6,'OTHER');
-/*!40000 ALTER TABLE `category` ENABLE KEYS */;
+LOCK TABLES `bank` WRITE;
+/*!40000 ALTER TABLE `bank` DISABLE KEYS */;
+INSERT INTO `bank` VALUES (1,'BANKKOK BANK'),(2,'KASIKORN BANK'),(3,'KTB BANK'),(4,'SCB BANK'),(5,'TMB BANK'),(6,'KRUNGSRI BANK'),(7,'GOVERNMENT SAVING BANK');
+/*!40000 ALTER TABLE `bank` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-19 18:01:26
+-- Dump completed on 2017-11-20 13:48:45

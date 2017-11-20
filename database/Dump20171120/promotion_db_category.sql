@@ -16,37 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `card`
+-- Table structure for table `category`
 --
 
-DROP TABLE IF EXISTS `card`;
+DROP TABLE IF EXISTS `category`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `card` (
-  `CARD_NO` varchar(19) NOT NULL,
-  `NAMEONCARD` varchar(45) NOT NULL,
-  `EXP` char(5) NOT NULL,
-  `USER_ID` int(5) NOT NULL,
-  `TYPE_ID` int(2) NOT NULL,
-  `BANK_ID` int(5) NOT NULL,
-  PRIMARY KEY (`CARD_NO`),
-  KEY `USER_ID_idx` (`USER_ID`),
-  KEY `BANK_ID_idx` (`BANK_ID`),
-  KEY `TYPE_ID_idx` (`TYPE_ID`),
-  CONSTRAINT `BANK_ID` FOREIGN KEY (`BANK_ID`) REFERENCES `bank` (`BANK_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `TYPE_ID` FOREIGN KEY (`TYPE_ID`) REFERENCES `type of card` (`TYPE_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `USER_ID` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`USER_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CREATE TABLE `category` (
+  `C_ID` int(5) NOT NULL,
+  `C_NAME` varchar(45) NOT NULL,
+  PRIMARY KEY (`C_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `card`
+-- Dumping data for table `category`
 --
 
-LOCK TABLES `card` WRITE;
-/*!40000 ALTER TABLE `card` DISABLE KEYS */;
-INSERT INTO `card` VALUES ('3428 3589 1234 1234','John Smith','15/61',10003,4,1),('3528 3589 1234 1234','John Doe','4/61',10001,3,3),('4234 1234 1234 1234','Wilman Kala','2/61',10000,1,1),('5128 3589 1234 1234','Alfreds Futterkiste','4/61',10005,2,5),('5528 3589 1234 1234','John Smith','10/61',10003,2,4),('6228 3589 1234 1234','Alfreds Futterkiste','3/61',10005,5,5);
-/*!40000 ALTER TABLE `card` ENABLE KEYS */;
+LOCK TABLES `category` WRITE;
+/*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` VALUES (1,'FOOD'),(2,'DESSERT'),(3,'ENTERTAINMENT'),(4,'LIFESTYLE'),(5,'TRAVEL'),(6,'OTHER');
+/*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -58,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-19 18:01:26
+-- Dump completed on 2017-11-20 13:48:44
