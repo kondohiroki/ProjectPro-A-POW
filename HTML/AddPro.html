@@ -9,9 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
-  <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
-  <link rel="stylesheet" href="../CSS/HomeStyle.css">
-  <link rel="stylesheet" href="../CSS/AddPro.css">
+  <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
+  <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
+  <link rel="stylesheet" href="../CSS/AddProStyle.css">
   <script>
     function search(){
       alert("search");
@@ -48,124 +48,47 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
-        <div class="card card-container" id="leftSearchPan">
-          <form class="form-search-submit" onsubmit="return search()">
-            <div class="row">
-              <div id="custom-search-input">
-                <!--<div class="input-group col-md-12" id="font-text-search">
-                  <input type="text" class=" search-query form-control" placeholder="Search"/>
-                </div>-->
-                <input type="search" id="font-text-search" class="form-control" placeholder="Search">
-              </div>
-              <div class="input group col-md-12">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox">Search By Your Profile
-                  </label>
-                </div>
-                <hr/>
-              </div>
-              <div class="input group col-md-12">
-                  <div class="col-sm-12" id="catPan"><h6>CATEGORY</h6></div>
-                  <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Food
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Dessert
-                          </label>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Travel
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Discount
-                          </label>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button>
-                  </div>
-                </div>
-	          </div>
-         </form>
-         </div>
+  
       </div>
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">
-                <h1>Add PROMOTION</h1>
-                <form><br>
-  Promotion Name&emsp;<br><br><input type="text" class ="form-control" name="Promotionname" maxlength="2" id="Promotext" width="2%">
-<br><br>
+            <center><h4>ADD PROMOTION</h4></center>
+                <form action="" class="Add-Pro-Form" onsubmit=""><br>
+  Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" maxlength="2" id="Promotext" width="2%" required>
+<br>
 
-Category&emsp;<select>
+Category:&emsp;<select>
   <option value="Food">Food</option>
   <option value="Dessert">Dessert</option>
   <option value="Travel">Travel</option>
   <option value="Discount">Discount</option>
-</select><br><br>Describe : <br>
+</select><br><br>Description: <br>
 <textarea class ="form-control" cols="40" rows="5" name="Describe">
 </textarea><br>
 <div class="col-sm-6">
-Start &emsp;<form action="/action_page.php">
-  <input type="datetime-local" class ="form-control" name="Startdate"><br>
-End  &emsp;<form action="/action_page.php">
-    <input type="datetime-local" class ="form-control" name="Enddate">
-</form>
+Start: &emsp;
+  <input type="date" class ="form-control" name="Startdate" required><br>
+End:  &emsp;
+    <input type="date" class ="form-control" name="Enddate" required>
+
 </div>
-<br><br> Card Support<br>
+<br> Card Support: <br>
 <div = "row">
 <action="/action_page.php" method="get">
  <input type="checkbox" name="Cardtype" value="VISA">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="Cardtype" value="American Express">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="Cardtype" value="JCB" >&nbsp;JCB&emsp;&emsp;<br>
  <input type="checkbox" name="Cardtype" value="Master Card" >&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="Cardtype" value="UnionPay">UnionPay
 </div>
 <br>
-<div class="col-sm-6">
-&emsp;<button type="button" class="btn btn-primary btn-lg">Submit</button>
+<div class="col-sm-12">
+<center><button type="submit" class="btn">Submit</button></center>
 </div>
+</form>
 </div>
 
           </div>
 
       <div class="col-lg-3" id="sidePanRight" >
-        <div class="container">
-          <div class="card card-container">
-            <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin">
-              <span id="reauth-email" class="reauth-email"></span>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              <div id="remember" class="checkbox">
-                  <label>
-                      <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-              </div>
-              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button>
-            </form><!-- /form -->
-            <a href="#" class="forgot-password">
-              <u>Forgot the password?</u>
-            </a>
-            <a href="#" class="forgot-password">
-              <u>Register</u>
-            </a>
-          </div><!-- /card-container -->
-        </div><!-- /container-->
+        
       </div>
       <div class="container">
 
