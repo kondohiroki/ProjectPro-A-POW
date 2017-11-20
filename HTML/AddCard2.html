@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Add Card</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
   <link rel="stylesheet" href="../CSS/StyleAddCard.css">
+  <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
   <script>
     function search(){
       alert("search");
@@ -46,33 +47,54 @@
 </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3" id="sidePanLeft">
-          </div>
-        <div class="col-lg-6" id="centerPan">
+        <div class="col-lg-2" id="sidePanLeft">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="EditProfile.html"><button class="btn" id="editButt">Edit Profile</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="ChangePasswordPage.html"><button class="btn" id="editButtFollow">Change Password</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="SubPro.html"><button class="btn" id="editButtFollow">My Subscribe</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="MyCard.html"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8" id="centerPan">
             <div class="card" style="width:600px">
               <div class="card-body">
                 <center><h4>Credit / Debit Card</h4></center>
                 <br>
                   <!--<button type="button" class="btn btn-outline-light" id="buttonCard">+</button>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>-->
+                  <form action="" onsubmit="">
                         <h8>Name on Card :</h8><br>
-                          <input type="text" class="form-control" id="inputtextCard" placeholder="Phanurut" />
+                          <input type="text" class="form-control" id="inputtextCard" placeholder="Phanurut" required/>
                           <br>
                       <h8>Credit Card Number:</h8><br>
                       <div class="row">
-                        &emsp;<input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx"/>
+                        &emsp;<input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx"/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx"/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx"/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
                       </div>
                         <br>
-                        <h8>Credit Card Number:</h8>
+                        <h8>EXP:</h8>
                         <br>
                         <div class="col-sm-12">
                           <div class="row">
-                              <select class="form-control " name="expiry-month" id="expiry-month">
+                              <select class="form-control " name="expiry-month" id="expiry-month" required>
                                 <option>M</option>
                                 <option value="01">01</option>
                                 <option value="02">02</option>
@@ -88,7 +110,7 @@
                                 <option value="12">12</option>
                               </select>
                               &emsp;
-                              <select class="form-control" name="expiry-year" id="expiry-month" >
+                              <select class="form-control" name="expiry-year" id="expiry-month" required>
                                 <option>Y</option>
                                 <option value="13">18</option>
                                 <option value="14">19</option>
@@ -106,11 +128,12 @@
                           </div>
                         </div>
                         <br>
-                        <center><button type="button" class="btn btn-primary" id="buttonSave">Save</button></center>
+                        <center><button type="submit" class="btn btn-primary" id="buttonSave">Save</button></center>
+                      </form>
               </div>
             </div>
           </div>
-        <div class="col-lg-3" id="sidePanRight" >
+        <div class="col-lg-2" id="sidePanRight" >
           </div>
       </div>
 </body>
