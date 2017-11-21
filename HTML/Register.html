@@ -49,7 +49,7 @@
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardReg">
                     <h4>Register</h4>
-                    <form class="Register-form" onsubmit="return A()">
+                    <form class="Register-form" onsubmit="return A()" method="POST">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -60,10 +60,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Name" required/>
+                                <input type="text" class="form-control" id="inputtext" placeholder="Name" required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Surname" required/>
+                                <input type="text" class="form-control" id="inputtext" placeholder="Surname" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -76,10 +76,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" id="inputtext" placeholder="Email" required/>
+                                <input type="email" class="form-control" id="inputtext" placeholder="Email" required/><!-- Email -->
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Tel." required/>
+                                <input type="text" class="form-control" id="inputtext" placeholder="Tel." required/><!-- Tel. -->
                             </div>
                         </div>
                         <div class="row">
@@ -89,7 +89,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputpassword" placeholder="Password" required/>
+                                <input type="password" class="form-control" id="inputpassword" placeholder="Password" required/><!-- password -->
                             </div>
                         </div>
                         <div class="row">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputpassword" placeholder="Re-type Password" required/>
+                                <input type="password" class="form-control" id="inputpassword" placeholder="Re-type Password" required/><!-- Re-Pass -->
                             </div>
                         </div>
                         <div class="row">
@@ -109,16 +109,16 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-4">
-                                <input type="date" class="form-control" id="inputdate" required/>
+                                <input type="date" class="form-control" id="inputdate" required/><!-- DOB -->
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row"><!-- Gender Check -->
                                 <label style="margin-left: 3%;"><input type="radio" name="gender" value="male" checked> Male<br></label>
                                 <label style="margin-left: 3%;"><input type="radio" name="gender" value="female"> Female<br></label>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="form-control" type="submit" id="applybutton">Apply</button>
+                                <button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
                             </div>
                         </div>
                     </form>

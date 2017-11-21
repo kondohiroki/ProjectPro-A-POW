@@ -55,10 +55,10 @@
                 <div class="card-body">
                   <center><h2>Shop Register</h2></center>
                   <br>
-                  <form onsubmit="return search()">
+                  <form onsubmit="return search()" method="POST">
                     <div class="form-group">
                       <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop Name" placeholder="Name" required>
+                      <input type="text" class="form-control" id="Shop Name" placeholder="Name" required><!-- Shop Name -->
                     </div>
 
 
@@ -75,7 +75,7 @@
                                     </div>
                                   </div>
                                   <div class="row">
-                                    <div class="col-sm-10">
+                                    <div class="col-sm-10"><!-- Tel. Add -->
                                       <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Tel." data-items="8"/>
                                     </div>
                                     <div class="col-sm-2">
@@ -97,21 +97,21 @@
                  <div class="row">
                    <div class="col-sm-3" id="columnCalendar1">
                      <label>Open date:</label><br>
-                     <input class="form-control" type="date" name="OpenDate" >
+                     <input class="form-control" type="date" name="OpenDate" ><!-- Open date -->
                    </div>
 
                    <div class="col-sm-3" id="columnCalendar2">
                      <label>Close date:</label><br>
-                      <input class="form-control" type="date" name="CloseDate" >
+                      <input class="form-control" type="date" name="CloseDate" ><!-- Close date -->
                    </div>
 
                    <div class="col-sm-3" id="columnCalendar3">
                      <label>Open Time:</label><br>
-                     <input class="form-control" type="time" name="OpenTime" value="01:00" id="opent">
+                     <input class="form-control" type="time" name="OpenTime" value="01:00" id="opent"><!-- Open time -->
                    </div>
                    <div class="col-sm-3" id="columnCalendar3">
                       <label>Close Time:</label><br>
-                      <input class="form-control" type="time" name="CloseTime" value="01:00" id="closet">
+                      <input class="form-control" type="time" name="CloseTime" value="01:00" id="closet"><!-- Close time -->
                     </div>
                  </div>
                </div>
@@ -125,7 +125,7 @@
                             <div class="input-group">
                               <!--<span class="input-group-btn">
                               </span>-->
-                              <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/>
+                              <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/><!-- Image add -->
                               <button id="clear" class="btn btn-default">Clear</button>
                             </div>
                             <br>
@@ -134,7 +134,7 @@
                           </div>
                         </div>
                       </div>
-                    <center><button type="submit" class="btn btn-primary" id="sizeButtonOfSaveRegister">Save</button></center>
+                    <center><button type="submit" class="btn btn-primary" id="sizeButtonOfSaveRegister">Save</button></center><!-- Save btn -->
                   </form>
                 </div>
               </div>

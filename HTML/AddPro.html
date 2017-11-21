@@ -53,33 +53,33 @@
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">
             <center><h4>ADD PROMOTION</h4></center>
-                <form action="" class="Add-Pro-Form" onsubmit=""><br>
-  Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" maxlength="2" id="Promotext" width="2%" required>
+                <form action="" class="Add-Pro-Form" onsubmit="" method="POST"><br>
+  Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" maxlength="2" id="Promotext" width="2%" required><!-- Promotion Name -->
 <br>
 
-Category:&emsp;<select>
+Category:&emsp;<select> <!-- Category Selecter -->
   <option value="Food">Food</option>
   <option value="Dessert">Dessert</option>
   <option value="Travel">Travel</option>
   <option value="Discount">Discount</option>
-</select><br><br>Description: <br>
-<textarea class ="form-control" cols="40" rows="5" name="Describe">
+</select><br><br>Description: <br><!-- Description -->
+<textarea class ="form-control" cols="40" rows="5" name="Describe"> 
 </textarea><br>
 <div class="col-sm-6">
-Start: &emsp;
+Start: &emsp; <!-- Start date -->
   <input type="date" class ="form-control" name="Startdate" required><br>
-End:  &emsp;
+End:  &emsp; <!-- End date -->
     <input type="date" class ="form-control" name="Enddate" required>
 
 </div>
-<br> Card Support: <br>
+<br> Card Support: <br><!-- Card Check -->
 <div = "row">
 <action="/action_page.php" method="get">
  <input type="checkbox" name="Cardtype" value="VISA">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="Cardtype" value="American Express">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="Cardtype" value="JCB" >&nbsp;JCB&emsp;&emsp;<br>
  <input type="checkbox" name="Cardtype" value="Master Card" >&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="Cardtype" value="UnionPay">UnionPay
 </div>
 <br>
-<div class="col-sm-12">
+<div class="col-sm-12"><!-- Submit Button -->
 <center><button type="submit" class="btn">Submit</button></center>
 </div>
 </form>

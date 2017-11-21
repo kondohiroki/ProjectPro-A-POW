@@ -48,24 +48,24 @@
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
         <div class="card card-container" id="leftSearchPan">
-          <form class="form-search-submit" onsubmit="return search()">
+          <form class="form-search-submit" onsubmit="return search()" method="POST">
             <div class="row">
               <div id="custom-search-input">
                 <!--<div class="input-group col-md-12" id="font-text-search">
                   <input type="text" class=" search-query form-control" placeholder="Search"/>
                 </div>-->
-                <input type="search" id="font-text-search" class="form-control" placeholder="Search">
+                <input type="search" id="font-text-search" class="form-control" placeholder="Search"><!-- Search Text -->
               </div>
               <div class="input group col-md-12">
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox">Search By Your Profile
+                    <input class="form-check-input" type="checkbox">Search By Your Profile<!-- Check if Search by Card -->
                   </label>
                 </div>
                 <hr/>
               </div>
               <div class="input group col-md-12">
-                  <div class="col-sm-12" id="catPan"><h6>CATEGORY</h6></div>
+                  <div class="col-sm-12" id="catPan"><h6>CATEGORY</h6></div><!-- Category Check -->
                   <div class="row">
                       <div class="col-sm-6">
                         <div class="form-check">
@@ -99,7 +99,7 @@
                       </div>
                   </div>
                   <div class="col-sm-12">
-                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button>
+                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button><!-- Submit btn -->
                   </div>
                 </div>
 	          </div>
@@ -190,16 +190,16 @@
         <div class="container">
           <div class="card card-container">
             <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin">
+            <form class="form-signin" method="POST">
               <span id="reauth-email" class="reauth-email"></span>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required ><!-- Email text -->
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
               <div id="remember" class="checkbox">
                   <label>
-                      <input type="checkbox" value="remember-me"> Remember me
+                      <input type="checkbox" value="remember-me"> Remember me<!-- Remember Check -->
                   </label>
               </div>
-              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button>
+              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button><!-- Submit btn -->
             </form><!-- /form -->
             <!--<a href="#" class="forgot-password">
               <u>Forgot the password?</u>

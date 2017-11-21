@@ -75,26 +75,26 @@
                 <center><h4>Credit / Debit Card</h4></center>
                 <br>
                   <!--<button type="button" class="btn btn-outline-light" id="buttonCard">+</button>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>-->
-                  <form action="" onsubmit="">
+                  <form action="" onsubmit="" method="POST">
                         <h8>Name on Card :</h8><br>
-                          <input type="text" class="form-control" id="inputtextCard" placeholder="Phanurut" required/>
+                          <input type="text" class="form-control" id="inputtextCard" placeholder="Phanurut" required/><!-- Name on Card -->
                           <br>
                       <h8>Credit Card Number:</h8><br>
                       <div class="row">
-                        &emsp;<input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
+                        &emsp;<input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 1-4 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 5-8 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 9-12 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/>
+                        <input class="form-control" type="text" name="creditCard" id="creditCard" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 13-16 -->
                       </div>
                         <br>
                         <h8>EXP:</h8>
                         <br>
                         <div class="col-sm-12">
                           <div class="row">
-                              <select class="form-control " name="expiry-month" id="expiry-month" required>
+                              <select class="form-control " name="expiry-month" id="expiry-month" required><!-- month Expire -->
                                 <option>M</option>
                                 <option value="01">01</option>
                                 <option value="02">02</option>
@@ -110,7 +110,7 @@
                                 <option value="12">12</option>
                               </select>
                               &emsp;
-                              <select class="form-control" name="expiry-year" id="expiry-month" required>
+                              <select class="form-control" name="expiry-year" id="expiry-month" required><!-- Year Expire -->
                                 <option>Y</option>
                                 <option value="13">18</option>
                                 <option value="14">19</option>
@@ -128,7 +128,7 @@
                           </div>
                         </div>
                         <br>
-                        <center><button type="submit" class="btn btn-primary" id="buttonSave">Save</button></center>
+                        <center><button type="submit" class="btn btn-primary" id="buttonSave">Save</button></center><!-- Save Button -->
                       </form>
               </div>
             </div>
