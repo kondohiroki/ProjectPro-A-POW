@@ -21,7 +21,10 @@
 .Edit-Profile-Form{
     margin-top: 3%;
 }
-.Edit-Profile-Form #inputtext,
+.Edit-Profile-Form #inputFname,
+.Edit-Profile-Form #inputLname,
+.Edit-Profile-Form #inputEmail,
+.Edit-Profile-Form #inputTel,
 .Edit-Profile-Form #inputdate{
     width: inherit;
     direction: ltr;
