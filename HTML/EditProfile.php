@@ -12,7 +12,16 @@
     <link rel="stylesheet" href="../CSS/EditProfileStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
     <script>
-        
+    /*
+id="inputFname"
+id="inputLname"
+id="inputEmail"
+id="inputTel"
+id="inputdate"
+id="gender"
+id="applybutton"
+    */
+
     </script>
 </head>
 <body>
@@ -112,7 +121,7 @@
                         </div>
                         <div class="row"><!-- Gender Select -->
                             <label style="margin-left: 3%;"><input type="radio" name="gender" value="male" checked id="gender"> Male<br></label>
-                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="female"> Female<br></label>
+                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="female" > Female<br></label>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
@@ -123,7 +132,7 @@
                 </div>
             </div>
             <div class="col-lg-2" id="sidePanRight">
-                
+
             </div>
         </div>
     </div>
