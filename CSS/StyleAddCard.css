@@ -4,13 +4,17 @@
 #inputtextCard{
   width: 80%;
 }
-#creditCard{
+#creditCard-1,
+#creditCard-2,
+#creditCard-3,
+#creditCard-4{
   width: 15%;
 }
 #expiry{
   width: 10%;
 }
-#expiry-month{
+#expiry-month,
+#expiry-year{
   width: 20%;
 }
 #inputtextCardCVV{
@@ -35,4 +39,7 @@
   background-color: #00254d;
   cursor: pointer;
   color: white;
+}
+.form-control:focus{
+  cursor: default;
 }
