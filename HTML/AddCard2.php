@@ -14,10 +14,6 @@
   <link rel="stylesheet" href="../CSS/StyleAddCard.css">
   <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
   /*
-    id="editButt"
-    id="editButtFollow"
-    id="editButtFollow"
-    id="editButtFollow"
     id="inputtextCard"
     id="creditCard-1"
     id="creditCard-2"
