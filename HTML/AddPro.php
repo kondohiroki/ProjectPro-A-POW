@@ -17,6 +17,19 @@
       alert("search");
     }
   </script>
+  <!--
+  id="PromoNametext"
+  id="Category"
+  id="Description"
+  id="startdate"
+  id="enddate"
+  id="visa"
+  id="american"
+  id="jcb"
+  id="mastercard"
+  id="union"
+  id="submitAddpro"
+  -->
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
@@ -48,7 +61,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
-  
+
       </div>
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">
@@ -63,7 +76,7 @@ Category:&emsp;<select id="Category"> <!-- Category Selecter -->
   <option value="Travel">Travel</option>
   <option value="Discount">Discount</option>
 </select><br><br>Description: <br><!-- Description -->
-<textarea class ="form-control" cols="40" rows="5" name="Describe" id="Description"> 
+<textarea class ="form-control" cols="40" rows="5" name="Describe" id="Description">
 </textarea><br>
 <div class="col-sm-6">
 Start: &emsp; <!-- Start date -->
@@ -88,7 +101,7 @@ End:  &emsp; <!-- End date -->
           </div>
 
       <div class="col-lg-3" id="sidePanRight" >
-        
+
       </div>
       <div class="container">
 
