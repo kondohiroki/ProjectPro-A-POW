@@ -10,9 +10,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
     <link rel="stylesheet" href="../CSS/RegisterStyle.css">
-    <script>
-        function A(){
-            alert("Registered");
+    <script type="text/javascript">
+        function countDown(secs,elem){
+          var element = document.getElementById(elem);
+          element.innerHTML = "Plese wait for"+secs"" ;
+          if(secs < 1){
+            clearTimeout(timer);
+            location.href="Home.php"
+          }
+          secs--;
+          var timer = setTimeout('countDown('+secs+',"'+elem+'")',30);
         }
     </script>
 </head>
@@ -44,7 +51,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2" id="sidePanLeft">
-                        
+
             </div>
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardReg">
@@ -60,10 +67,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Name" required/><!-- Name text -->
+                                <input type="text" class="form-control" id="inputFname" placeholder="Name" required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Surname" required/><!-- Surname text -->
+                                <input type="text" class="form-control" id="inputLname" placeholder="Surname" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -76,10 +83,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" id="inputtext" placeholder="Email" required/><!-- Email -->
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required/><!-- Email -->
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputtext" placeholder="Tel." required/><!-- Tel. -->
+                                <input type="text" class="form-control" id="inputTel" placeholder="Tel." required/><!-- Tel. -->
                             </div>
                         </div>
                         <div class="row">
@@ -89,7 +96,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputpassword" placeholder="Password" required/><!-- password -->
+                                <input type="password" class="form-control" id="inputpass" placeholder="Password" required/><!-- password -->
                             </div>
                         </div>
                         <div class="row">
@@ -99,7 +106,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputpassword" placeholder="Re-type Password" required/><!-- Re-Pass -->
+                                <input type="password" class="form-control" id="Reinputpass" placeholder="Re-type Password" required/><!-- Re-Pass -->
                             </div>
                         </div>
                         <div class="row">
@@ -122,11 +129,11 @@
                             </div>
                         </div>
                     </form>
-                </div>    
+                </div>
             </div>
             <div class="col-lg-2" id="sidePanRight">
-                
+
             </div>
         </div>
-    </div> 
+    </div>
 </body>
