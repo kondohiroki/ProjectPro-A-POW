@@ -59,7 +59,7 @@
               <div class="input group col-md-12">
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox">Search By Your Profile<!-- Check if Search by Card -->
+                    <input class="form-check-input" type="checkbox" id="checksearchbycard" >Search By Your Profile<!-- Check if Search by Card -->
                   </label>
                 </div>
                 <hr/>
@@ -70,14 +70,14 @@
                       <div class="col-sm-6">
                         <div class="form-check">
                           <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Food
+                            <input class="form-check-input" type="checkbox" id="food">Food
                           </label>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-check">
                           <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Dessert
+                            <input class="form-check-input" type="checkbox" id="dessert">Dessert
                           </label>
                         </div>
                       </div>
@@ -86,20 +86,20 @@
                       <div class="col-sm-6">
                         <div class="form-check">
                           <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Travel
+                            <input class="form-check-input" type="checkbox" id="travel">Travel
                           </label>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-check">
                           <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">Discount
+                            <input class="form-check-input" type="checkbox" id="discount">Discount
                           </label>
                         </div>
                       </div>
                   </div>
                   <div class="col-sm-12">
-                    <button class="btn btn-lg btn-block btn-signin" type="submit">Search</button><!-- Submit btn -->
+                    <button class="btn btn-lg btn-block btn-signin" type="submit" id="searchbutton">Search</button><!-- Submit btn -->
                   </div>
                 </div>
 	          </div>
@@ -196,10 +196,10 @@
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
               <div id="remember" class="checkbox">
                   <label>
-                      <input type="checkbox" value="remember-me"> Remember me<!-- Remember Check -->
+                      <input type="checkbox" value="remember-me" id="remember"> Remember me<!-- Remember Check -->
                   </label>
               </div>
-              <button class="btn btn-lg btn-block btn-signin" type="submit">Sign in</button><!-- Submit btn -->
+              <button class="btn btn-lg btn-block btn-signin" type="submit" id="signin">Sign in</button><!-- Submit btn -->
             </form><!-- /form -->
             <!--<a href="#" class="forgot-password">
               <u>Forgot the password?</u>
