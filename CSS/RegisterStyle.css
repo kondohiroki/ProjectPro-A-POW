@@ -22,8 +22,12 @@
 .Register-form{
     margin-top: 3%;
 }
-.Register-form #inputtext,
-.Register-form #inputpassword,
+.Register-form #inputLname,
+.Register-form #inputFname,
+.Register-form #inputEmail,
+.Register-form #inputTel,
+.Register-form #inputpass,
+.Register-form #Reinputpass,
 .Register-form #inputdate{
     width: inherit;
     direction: ltr;
@@ -49,7 +53,7 @@
     box-sizing: border-box;
     width: 220px;
 }
-#applybutton{
+#applybuttonReg{
     margin-top: 5%;
     margin-left: 36%;
     position: relative;
