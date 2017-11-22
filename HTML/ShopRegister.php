@@ -16,12 +16,12 @@
   id="field1"
   id="b1"
   id="opendate"
-id="closedate"
-id="opent"
-id="closet"
-id="clear"
-id='img-upload'
-id="sizeButtonOfSaveRegister"
+  id="closedate"
+  id="opent"
+  id="closet"
+  id="clear"
+  id='img-upload'
+  id="sizeButtonOfSaveRegister"
 
 
 
