@@ -58,14 +58,14 @@
                   <form onsubmit="return search()" method="POST">
                     <div class="form-group">
                       <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop Name" placeholder="Name" required><!-- Shop Name -->
+                      <input type="text" class="form-control" id="Shop-Name" placeholder="Name" required><!-- Shop Name -->
                     </div>
 
 
                     <!--AddPhoneNumber-->
                     <div class="container">
 	                     <div class="row">
-		                      <input type="hidden" name="count" value="1" />
+		                      <input type="hidden" name="count" value="1" id="phone"/>
                             <div class="control-group" id="fields">
                               <label class="control-label" for="field1">Shop Tel. Number :</label>
                               <div class="controls" id="profs">
@@ -97,12 +97,12 @@
                  <div class="row">
                    <div class="col-sm-3" id="columnCalendar1">
                      <label>Open date:</label><br>
-                     <input class="form-control" type="date" name="OpenDate" ><!-- Open date -->
+                     <input class="form-control" type="date" name="OpenDate" id="opendate"><!-- Open date -->
                    </div>
 
                    <div class="col-sm-3" id="columnCalendar2">
                      <label>Close date:</label><br>
-                      <input class="form-control" type="date" name="CloseDate" ><!-- Close date -->
+                      <input class="form-control" type="date" name="CloseDate" id="closedate" ><!-- Close date -->
                    </div>
 
                    <div class="col-sm-3" id="columnCalendar3">
