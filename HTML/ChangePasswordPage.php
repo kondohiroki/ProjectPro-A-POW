@@ -11,6 +11,12 @@
       <link rel="stylesheet" href="../CSS/MainStyle2.css">
       <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
       <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
+      /*
+id="Oldpass"
+id="Newpass"
+id="Renewpass"
+id="ButtonSaveChangePassword"
+      */
       <script>
         function search(){
           alert("search");
@@ -110,7 +116,7 @@
 
                                   </div>
                                   </div>
-                                
+
                                 <br>
                                 <center><button type="submit" class="btn" id="ButtonSaveChangePassword">Save</button></center><!-- Submit btn -->
                               </form>
