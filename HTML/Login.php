@@ -58,10 +58,10 @@
                             <center><input type="password" id="inputPassword" class="form-control" placeholder="Password" style="width: 60%;" required></center><!-- Pass -->
                             <div id="remember" class="checkbox">
                                 <center><label>
-                                    <input type="checkbox" value="remember-me"> Remember me<!-- Remember Check -->
+                                    <input type="checkbox" value="remember-me" id="rememberme"> Remember me<!-- Remember Check -->
                                 </label></center>
                             </div>
-                            <center><button class="btn btn-lg btn-block btn-signin" style="width: 30%;" type="submit">Sign in</button></center><!-- submit btn -->
+                            <center><button class="btn btn-lg btn-block btn-signin" style="width: 30%;" type="submit" id="signin">Sign in</button></center><!-- submit btn -->
                         </form><!-- /form -->
                       <!--<a href="#" class="forgot-password">
                         <u>Forgot the password?</u>
