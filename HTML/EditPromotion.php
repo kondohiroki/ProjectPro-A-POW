@@ -57,29 +57,29 @@
                     Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" placeholder="KFC" maxlength="2" id="Promotext" width="2%" required>
                   <br>
 
-                  Category:&emsp;<select>
+                  Category:&emsp;<select id="Category">
                     <option value="Food">Food</option>
                     <option value="Dessert">Dessert</option>
                     <option value="Travel">Travel</option>
                     <option value="Discount">Discount</option>
                   </select><br><br>Description: <br>
-                  <textarea class ="form-control"  cols="40" rows="5" name="Describe">11 พ.ย. - 3 ธ.ค. 2560 ไปช็อปช่วยชาติ เพลินๆ ก็เดินมาแวะที่ KFC ได้น้า อร่อยกับ 60 เมนูหลากหลาย แล้วยังขอใบกำกับภาษีเต็มรูปแบบ ไปใช้ลดหย่อนภาษีได้ด้วย!...
+                  <textarea id="Description" class ="form-control"  cols="40" rows="5" name="Describe">11 พ.ย. - 3 ธ.ค. 2560 ไปช็อปช่วยชาติ เพลินๆ ก็เดินมาแวะที่ KFC ได้น้า อร่อยกับ 60 เมนูหลากหลาย แล้วยังขอใบกำกับภาษีเต็มรูปแบบ ไปใช้ลดหย่อนภาษีได้ด้วย!...
                   </textarea><br>
                   <div class="col-sm-6">
                       Start: &emsp;
-                      <input type="date" class ="form-control" name="Startdate" value="2017-11-11"  required><br>
+                      <input type="date" class ="form-control" name="Startdate" value="2017-11-11" id="startdate" required><br>
                       End:  &emsp;
-                      <input type="date" class ="form-control" name="Enddate" value="2017-12-03" required>
+                      <input type="date" class ="form-control" name="Enddate" value="2017-12-03" id="enddate" required>
                   </div>
                   <br> Card Support: <br>
                   <div = "row">
                       <action="/action_page.php" method="get">
-                      <input type="checkbox" name="Cardtype" value="VISA" checked>&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="Cardtype" value="American Express" checked>&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="Cardtype" value="JCB" >&nbsp;JCB&emsp;&emsp;<br>
-                      <input type="checkbox" name="Cardtype" value="Master Card" checked>&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="Cardtype" value="UnionPay">UnionPay
+                      <input type="checkbox" name="Cardtype" value="VISA" id="visa" checked>&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="Cardtype" value="American Express" id="american" checked>&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="Cardtype" value="JCB" id="jcb">&nbsp;JCB&emsp;&emsp;<br>
+                      <input type="checkbox" name="Cardtype" value="Master Card" id="mastercard" checked>&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="Cardtype" value="UnionPay" id="union">UnionPay
                   </div>
                   <br>
                   <div class="col-sm-12">
-                    <center><button type="submit" class="btn">Apply</button></center>
+                    <center><button type="submit" class="btn" id="submitbtn">Apply</button></center>
                   </div>
                 </form>
               </div>
