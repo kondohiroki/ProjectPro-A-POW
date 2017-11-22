@@ -16,6 +16,12 @@
             alert("Registered");
         }
     </script>
+    <!--
+    id="inputEmail"
+    id="inputPassword"
+    id="rememberme"
+    id="signin"
+    -->
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
@@ -73,7 +79,7 @@
                 </div><!-- /container-->
             </div>
             <div class="col-lg-2" id="sidePanRight">
-                
+
             </div>
         </div>
     </div>
