@@ -1,0 +1,52 @@
+#sidePanRight{
+    background-color: white;
+}
+#sidePanLeft{
+    margin-top: 2%;
+    background-color: white;
+    text-align: center;
+}
+#centerPan{
+    background-color: white;
+}
+#headSub{
+    text-align: center;
+    margin-top: 5%;
+}
+#nevbar{
+  background: blue ;
+  margin-top: -2%
+}
+.card{
+    text-align: left;
+}
+/*.card-container.card{
+    padding-bottom: -5%;
+}*/
+.card button{
+    align-self: center;
+}
+.card-text{
+    font-size: 0.8em;
+}
+#textincard{
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+}
+.btn.btn-outline-primary{
+    border-color:#007BFF;
+    background-color: #1a75ff;
+    color: white;
+    width:350%;/*210px*/
+    margin-left: 5%;/*30px,-130%*/
+    margin-bottom: -4%;
+}
+.btn.btn-outline-primary:hover{
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+.card-img-top{
+    width: auto;
+    max-height: 250px;
+}
