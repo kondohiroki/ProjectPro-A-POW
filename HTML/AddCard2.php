@@ -13,6 +13,20 @@
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
   <link rel="stylesheet" href="../CSS/StyleAddCard.css">
   <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
+  /*
+    id="editButt"
+    id="editButtFollow"
+    id="editButtFollow"
+    id="editButtFollow"
+    id="inputtextCard"
+    id="creditCard-1"
+    id="creditCard-2"
+    id="creditCard-3"
+    id="creditCard-4"
+    id="expiry-month"
+    id="expiry-year"
+    id="buttonSave"
+  */
   <script>
     function search(){
       alert("search");
