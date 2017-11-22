@@ -12,6 +12,19 @@
   <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
   <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
   <link rel="stylesheet" href="../CSS/StyleEditPromotion.css">
+  /*
+  id="Promotext"
+  id="Category"
+  id="Description"
+  id="startdate"
+  id="enddate"
+  id="visa"
+  id="american"
+  id="mastercard"
+  id="jcb"
+  id="union"
+  id="submitbtn"
+  */
   <script>
     function search(){
       alert("search");
