@@ -11,6 +11,19 @@
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
+  /*
+id="font-text-search"
+id="checksearchbycard"
+id="food"
+id="dessert"
+id="travel"
+id="discount"
+id="searchbutton"
+id="inputEmail"
+id="inputPassword"
+id="remember"
+id="signin"
+  */
   <script>
     function search(){
       alert("search");
