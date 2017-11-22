@@ -11,6 +11,21 @@
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <link rel="stylesheet" href="../CSS/styleOfShopRegister.css">
   <script>
+  /*
+  id="Shop-Name"
+  id="field1"
+  id="b1"
+  id="opendate"
+id="closedate"
+id="opent"
+id="closet"
+id="clear"
+id='img-upload'
+id="sizeButtonOfSaveRegister"
+
+
+
+  */
       function search(){
         alert("search");
       }
