@@ -84,7 +84,7 @@
 
                                         <div class="col-sm-4"><p><font size = "3">Old Password:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="password_show" type="password" class="form-control " placeholder="Enter password"><!-- Old Pass -->
+                                          <input  id="Oldpass" type="password" class="form-control " placeholder="Enter password"><!-- Old Pass -->
                                             <span style="width:10%" id="password_show_button" class="input-group-addon">
                                               <!--icon-->
                                             </span>
@@ -96,7 +96,7 @@
 
                                         <div class="col-sm-4"><p><font size = "3">New Password:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="password_show" type="password" class="form-control " placeholder="Enter password"><!-- New Pass -->
+                                          <input  id="Newpass" type="password" class="form-control " placeholder="Enter password"><!-- New Pass -->
                                         </div>
                                     </div>
                                   </div>
@@ -105,7 +105,7 @@
 
                                         <div class="col-sm-4"><p><font size = "3">New Password again:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="password_show" type="password" class="form-control " placeholder="Enter password"><!-- Re-New Pass -->
+                                          <input  id="Renewpass" type="password" class="form-control " placeholder="Enter password"><!-- Re-New Pass -->
                                         </div>
 
                                   </div>
