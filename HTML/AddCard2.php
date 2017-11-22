@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
   <link rel="stylesheet" href="../CSS/StyleAddCard.css">
   <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
-  /*
+  <!--
     id="inputtextCard"
     id="creditCard-1"
     id="creditCard-2"
@@ -22,7 +22,7 @@
     id="expiry-month"
     id="expiry-year"
     id="buttonSave"
-  */
+  -->
   <script>
     function search(){
       alert("search");
