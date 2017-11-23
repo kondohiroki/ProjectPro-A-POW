@@ -34,17 +34,16 @@
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
   <ul class="navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link" href="Home.html">Home</a>
+      <a class="nav-link" href="Home.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Login.html">Login</a>
+      <a class="nav-link" href="Login.php">Login</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Register.html">Register</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="SubPro.html">Your Profile</a>
-    </li>
+      <a class="nav-link" href="Register.php">Register</a>
+    </li><!--<li class="nav-item">
+    <a class="nav-link" href="SubPro.php">Your Profile</a>
+  </li>-->
   </ul>
 </nav>
     <div class="container-fluid">
@@ -52,22 +51,22 @@
         <div class="col-lg-2" id="sidePanLeft">
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="EditProfile.html"><button class="btn" id="editButt">Edit Profile</button></a>
+                    <a href="EditProfile.php"><button class="btn" id="editButt">Edit Profile</button></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="ChangePasswordPage.html"><button class="btn" id="editButtFollow">Change Password</button></a>
+                    <a href="ChangePasswordPage.php"><button class="btn" id="editButtFollow">Change Password</button></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="SubPro.html"><button class="btn" id="editButtFollow">My Subscribe</button></a>
+                    <a href="SubPro.php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="MyCard.html"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>
+                    <a href="MyCard.php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>
                 </div>
             </div>
         </div>
@@ -90,7 +89,7 @@
                           </div>
                         </div>
                       </div>
-                      <a href="AddCard2.html"><button type="button" class="btn btn-outline-light" id="buttonCard">+</button></a>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>
+                      <a href="AddCard2.php"><button type="button" class="btn btn-outline-light" id="buttonCard">+</button></a>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>
                     </div>
                 </div>
             </div>

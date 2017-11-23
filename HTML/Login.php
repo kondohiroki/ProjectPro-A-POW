@@ -35,17 +35,16 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="Home.html">Home</a>
+                <a class="nav-link" href="Home.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Login.html">Login</a>
+                <a class="nav-link" href="Login.php">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Register.html">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="SubPro.html">Your Profile</a>
-            </li>
+                <a class="nav-link" href="Register.php">Register</a>
+            </li><!--<li class="nav-item">
+            <a class="nav-link" href="SubPro.php">Your Profile</a>
+          </li>-->
         </ul>
     </nav>
     <div class="container-fluid">
@@ -72,7 +71,7 @@
                       <!--<a href="#" class="forgot-password">
                         <u>Forgot the password?</u>
                       </a>-->
-                      <center><a href="Register.html" class="forgot-password">
+                      <center><a href="Register.php" class="forgot-password">
                         <u>Register</u>
                       </a></center>
                     </div><!-- /card-container -->

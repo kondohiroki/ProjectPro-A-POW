@@ -13,7 +13,7 @@
     <script type="text/javascript">
         function countDown(secs,elem){
           var element = document.getElementById(elem);
-          element.innerHTML = "Plese wait for"+secs"" ;
+          element.innerhtml = "Plese wait for"+secs"" ;
           if(secs < 1){
             clearTimeout(timer);
             location.href="Home.php"
@@ -35,17 +35,16 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="Home.html">Home</a>
+                <a class="nav-link" href="Home.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Login.html">Login</a>
+                <a class="nav-link" href="Login.php">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Register.html">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="SubPro.html">Your Profile</a>
-            </li>
+                <a class="nav-link" href="Register.php">Register</a>
+            </li><!--<li class="nav-item">
+            <a class="nav-link" href="SubPro.php">Your Profile</a>
+          </li>-->
         </ul>
     </nav>
     <div class="container-fluid">
