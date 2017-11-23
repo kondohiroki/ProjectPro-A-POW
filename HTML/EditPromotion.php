@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Add Promotion</title>
   <meta charset="utf-8">

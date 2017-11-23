@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shop Register</title>
+  <title>Shop Edit</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -83,7 +83,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="ShopRegister.php"><button class="btn" id="editButtFollow" style="background-color: #00254d">Register your Shop</button></a>
+                    <a href="ShopRegister.php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Shop</button></a>
                 </div>
             </div>
         </div>
@@ -93,12 +93,12 @@
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <center><h4>Shop Register</h4></center>
+                  <center><h4>Shop Edit</h4></center>
                   <br>
                   <form onsubmit="return search()" method="POST">
                     <div class="form-group">
                       <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop-Name" placeholder="Name" required><!-- Shop Name -->
+                      <input type="text" class="form-control" id="Shop-Name" placeholder="Phanurut" ><!-- Shop Name -->
                     </div>
 
 
@@ -116,7 +116,7 @@
                                   </div>
                                   <div class="row">
                                     <div class="col-sm-10"><!-- Tel. Add -->
-                                      <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Tel." data-items="8"/>
+                                      <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="0631022255" data-items="8"/>
                                     </div>
                                     <div class="col-sm-2">
                                       <button style="margin-left: -50%;" id="b1" class="btn add" type="button">+</button>
@@ -132,34 +132,35 @@
                         </div>
 
                  <!--calendar -->
-                 <label>Calendar:</label>
-                 <div class="container">
-                 <div class="row">
-                 <div class="col-sm-12" id="columnCalendar1">
+                <label>Calendar:</label>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-12" id="columnCalendar1">
                         <label>Open date:</label><br>
                         <div class="row">
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Sunday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Monday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Tuesday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Wednesday</label>
+                            <input class="" type="checkbox" value="sun" id="sunday" style="width:5%;"><label for="sunday">Sunday</label>
+                            <input class="" type="checkbox" value="mon" id="monday" style="width:5%;" checked><label for="monday">Monday</label>
+                            <input class="" type="checkbox" value="tue" id="tuesday" style="width:5%;" checked><label for="tuesday">Tuesday</label>
+                            <input class="" type="checkbox" value="wed" id="wednesday" style="width:5%;" checked><label for="wednesday">Wednesday</label>
                         </div>
                         <div class="row">
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Thursday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Friday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Saturday</label>
+                            <input class="" type="checkbox" value="thu" id="thursday" style="width:5%;" checked><label for="thursday">Thursday</label>
+                            <input class="" type="checkbox" value="fri" id="friday" style="width:5%;" checked><label for="friday">Friday</label>
+                            <input class="" type="checkbox" value="sat" id="saturday" style="width:5%;" checked><label for="saturday">Saturday</label>
                         </div>
                    </div>
-                 </div>
-                 <div class="row">
-                   <div class="col-sm-3" id="columnCalendar3">
-                     <label>Open Time:</label><br>
-                     <input class="form-control" type="time" name="OpenTime" value="01:00" id="opent"><!-- Open time -->
                    </div>
-                   <div class="col-sm-3" id="columnCalendar3">
-                      <label>Close Time:</label><br>
-                      <input class="form-control" type="time" name="CloseTime" value="01:00" id="closet"><!-- Close time -->
-                    </div>
-                 </div>
+                   <div class="row">
+                        <div class="col-sm-3" id="columnCalendar3">
+                            <label>Open Time:</label><br>
+                            <input class="form-control" type="time" name="OpenTime" value="11:00" id="opent"><!-- Open time -->
+                        </div>
+                        <div class="col-sm-3" id="columnCalendar3">
+                            <label>Close Time:</label><br>
+                            <input class="form-control" type="time" name="CloseTime" value="23:00" id="closet"><!-- Close time -->
+                        </div>
+                   </div>
+                   
                </div>
                  <br>
                  <br>
@@ -169,8 +170,8 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <div class="input-group">
-                              <!--<span class="input-group-btn">
-                              </span>-->
+                              <!--<label class="input-group-btn">
+                              </label>-->
                               <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/><!-- Image add -->
                               <button id="clear" class="btn btn-default">Clear</button>
                             </div>

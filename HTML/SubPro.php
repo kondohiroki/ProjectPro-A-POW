@@ -64,6 +64,11 @@
                         <a href="MyCard.php"><button class="btn" id="editButtFollow">My Card</button></a>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="ShopRegister.php"><button class="btn" id="editButtFollow">Register your Shop</button></a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-8" id="centerPan">
                 <div class="row">
@@ -82,7 +87,7 @@
                                     <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
                                 </div>-->
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
                             </div>
                         </div>
                     </div>
@@ -96,7 +101,7 @@
                                     <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
                                 </div> -->
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
                             </div>
                         </div>
                     </div>
@@ -108,7 +113,7 @@
                             <div class="card-body">
                                 <h6 class="card-title">ใช่กว่านี้ไม่มีอีกแล้ว กับชุดไก่ใช่เลย ไก่ทอด 5 ชิ้น, นักเก็ตส์ 4 ชิ้น และเป๊ปซี่ 2 แก้ว เพียง 199 บาท (วันนี้ - 11 ธ.ค. 2560)</h6>
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
                             </div>
                         </div>
                     </div>

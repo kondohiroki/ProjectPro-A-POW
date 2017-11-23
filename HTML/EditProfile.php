@@ -71,6 +71,11 @@ id="applybutton"
                         <a href="MyCard.php"><button class="btn" id="editButtFollow">My Card</button></a>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="ShopRegister.php"><button class="btn" id="editButtFollow">Register My Shop</button></a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardEdit">

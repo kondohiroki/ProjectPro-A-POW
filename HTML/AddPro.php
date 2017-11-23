@@ -81,7 +81,7 @@ Category:&emsp;<select id="Category"> <!-- Category Selecter -->
 Start: &emsp; <!-- Start date -->
   <input type="date" class ="form-control" name="Startdate" id="startdate" required><br>
 End:  &emsp; <!-- End date -->
-    <input type="date" class ="form-control" name="Enddate" id="enddate" required>
+  <input type="date" class ="form-control" name="Enddate" id="enddate" required>
 
 </div>
 <br> Card Support: <br><!-- Card Check -->
