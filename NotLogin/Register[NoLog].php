@@ -93,14 +93,14 @@
     </div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Home[NoLog].php">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Login[NoLog].php">Login</a>
+            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="Home.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Login.php">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Register.php">Register</a>
+                <a class="nav-link" href="Register[NoLog].php">Register</a>
             </li><!--<li class="nav-item">
             <a class="nav-link" href="SubPro.php">Your Profile</a>
           </li>-->

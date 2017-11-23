@@ -27,17 +27,14 @@
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
 <ul class="navbar-nav">
-  <li class="nav-item active">
-    <a class="nav-link" href="#">Home</a>
+  <li class="nav-item">
+    <a class="nav-link" href="Home[NoLog].php">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="Register[NoLog].php">Register</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
+    <a class="nav-link" href="Login[NoLog].php">Login</a>
   </li>
 </ul>
 </nav>
