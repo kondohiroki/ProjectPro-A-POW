@@ -39,8 +39,8 @@
       var c ='';
       $('#applybutton').click(function(){
         if($('#inputFname').val()!='' && $('#inputLname').val()!='' && $('#inputEmail').val()!=''
-        && $('#inputTel').val()!='' && $('#inputpass').val()!='' && $('#Reinputpass').val()!=''
-        && $('#inputdate').val()!='' && $('#sex').val()!=''){
+        && $('#inputpass').val()!='' && $('#Reinputpass').val()!=''&& $('#inputdate').val()!=''
+        && $('#sex').val()!=''){
           $('passfalse').css('display','block');
           $.post('check.php',{
             mail : $('#inputEmail').val()
@@ -53,9 +53,8 @@
               name:$('#inputFname').val(),
               surname:$('#inputLname').val(),
               mail:$('#inputEmail').val(),
-              tel:$('#inputTel').val(),
               pass:$('#inputpass').val(),
-              date:$('#inputdate').val(),
+              birthday:$('#inputdate').val(),
               sex:$('#sex').val()
             },
             function(data){
@@ -135,16 +134,10 @@
                             <div class="col-sm-6">
                                 <h8>Email :</h8>
                             </div>
-                            <div class="col-sm-4">
-                                <h8>Tel :</h8>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email" required/><!-- Email -->
-                            </div>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputTel" placeholder="Tel." required/><!-- Tel. -->
                             </div>
                         </div>
                         <div class="row">
@@ -168,22 +161,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <h8>Date of birth :</h8>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <input type="date" class="form-control" id="inputdate" required/><!-- DOB -->
-                            </div>
-                        </div>
-                        <div class="row"><!-- Gender Check -->
-                                <label style="margin-left: 3%;"><input type="radio" name="gender" value="male" checked> Male<br></label>
-                                <label style="margin-left: 3%;"><input type="radio" name="gender" value="female"> Female<br></label>
-                        </div>
-                        <div class="row">
                             <div class="col-sm-12">
-                                <button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
+                                <br><button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
                             </div>
                         </div>
                     </form>
