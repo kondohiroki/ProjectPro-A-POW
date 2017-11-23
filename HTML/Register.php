@@ -13,14 +13,73 @@
     <script type="text/javascript">
         function countDown(secs,elem){
           var element = document.getElementById(elem);
-          element.innerhtml = "Plese wait for"+secs"" ;
+          element.innerHTML = "Plese wait for"+secs"" ;
           if(secs < 1){
             clearTimeout(timer);
             location.href="Home.php"
           }
           secs--;
-          var timer = setTimeout('countDown('+secs+',"'+elem+'")',30);
+          var timer = setTimeout('countDown('+secs+',"'+elem+'")',3);
         }
+    </script>
+
+  <!--
+      id="inputFname"
+      id="inputLname"
+      id="inputEmail"
+      id="inputTel"
+      id="inputpass"
+      id="Reinputpass"
+      id="inputdate"
+      id="sex"
+      id="applybutton"
+
+    -->
+    <script type="text/javascript">
+      var c ='';
+      $('#applybutton').click(function(){
+        if($('#inputFname').val()!='' && $('#inputLname').val()!='' && $('#inputEmail').val()!=''
+        && $('#inputTel').val()!='' && $('#inputpass').val()!='' && $('#Reinputpass').val()!=''
+        && $('#inputdate').val()!='' && $('#sex').val()!=''){
+          $('passfalse').css('display','block');
+          $.post('check.php',{
+            mail : $('#inputEmail').val()
+          },
+          function(data){
+            if(data==1) c='1';
+            else c='2';
+            if(c=='1'){
+              $.post('checkid.php',{
+              name:$('#inputFname').val(),
+              surname:$('#inputLname').val(),
+              mail:$('#inputEmail').val(),
+              tel:$('#inputTel').val(),
+              pass:$('#inputpass').val(),
+              date:$('#inputdate').val(),
+              sex:$('#sex').val()
+            },
+            function(data){
+              if (data != "2") {
+                  sweetAlert("Complete"," ","success");
+                  countDown(90,"status");
+              }
+              else {
+                $('#emailmiss').html('*');
+                sweetAlert("email was already used!"," ","error");
+              }
+            });
+          } else {
+            $('#emailmiss').html('*');
+            sweetAlert("email incorrect"," ","error");
+          }
+          if($('#inputpass').val()!=$('#Reinputpass').val()){
+            $('#passmiss').html('*');
+            $('#confirmpassmiss').html('*');
+            sweetAlert("password doesn't match!", " ", "error");
+          }
+          });
+        }
+      });
     </script>
 </head>
 <body>
