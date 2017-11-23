@@ -127,8 +127,8 @@ id="signin"
                   <div class="card-body">
                       <h4 class="card-title">โอ้ย...ดีต่อใจ งานเซลล์รองเท้าผ้าใบ จัดอีกแล้ว!!! SAM’S SPORTS X ADIDAS BIG SALE Adidas ลดสูงสุด 90% (วันนี้ - 4 ธ.ค. 2560)</h4>
                         <!--<p class="card-text">Some example text.</p>-->
-                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                        <a href="#"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
+                        <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
                 </div>
               </div>
               </div>
@@ -141,8 +141,8 @@ id="signin"
                       <div class="card-body">
                           <h4 class="card-title">ใช่กว่านี้ไม่มีอีกแล้ว กับชุดไก่ใช่เลย ไก่ทอด 5 ชิ้น, นักเก็ตส์ 4 ชิ้น และเป๊ปซี่ 2 แก้ว เพียง 199 บาท (วันนี้ - 11 ธ.ค. 2560)</h4>
                             <!--<p class="card-text">Some example text.</p>-->
-                            <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                            <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                            <a href="#"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
+                            <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
                     </div>
                   </div>
                   </div>
@@ -154,8 +154,8 @@ id="signin"
                           <div class="card-body">
                               <h4 class="card-title">โปรโมชั่นเครื่องดื่ม Au Bon Pain สมาชิกรับสิทธิ์ ซื้อเครื่องดื่ม 1 แถม 1 ฟรี!!!! (วันนี้ - 30 ก.ย. 2560)</h4>
                                 <!--<p class="card-text">Some example text.</p>-->
-                                <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                                <a href="#"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
                         </div>
                       </div>
                       </div>
@@ -167,8 +167,8 @@ id="signin"
                               <div class="card-body">
                                   <h4 class="card-title">Snack time ตามใจ you แค่ชุดละ 59 บาท พลาดแล้วจะเสียใจนะคร้าบบบ (วันนี้ - ยังไม่มีกำหนด)</h4>
                                     <!--<p class="card-text">Some example text.</p>-->
-                                    <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                    <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                                    <a href="#"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
+                                    <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
                             </div>
                           </div>
                           </div>
@@ -181,8 +181,8 @@ id="signin"
                                       <h4 class="card-title">HEEROKI NAHEE ใจเธอ ไม่ว่า แต่เธอไม่ใจ กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ อิอิ ใจเทอ</h4>
                                         <!--<p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ</p>
                                         <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>-->
-                                        <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                        <button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button>
+                                        <a href="#"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
+                                        <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
                                 </div>
                               </div>
                               </div>
