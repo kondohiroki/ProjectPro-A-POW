@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Datail</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -161,21 +161,19 @@ id="signin"
         <div class="col-lg-3" id="sidePanRight">
             <div class="container">
               <div class="card card-container">
-                <p id="profile-name" class="profile-name-card"></p>
+                <p id="profile-name" class="profile-name-card">Phanurut</p>
                 <form class="form-signin">
-                  <span id="reauth-email" class="reauth-email"></span>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <div id="remember" class="checkbox">
+                  <p>Phanurut007@hotmail.com</p>
+                  <!--<div id="remember" class="checkbox">
                       <label>
                           <input type="checkbox" value="remember-me"> Remember me
                       </label>
                   </div>
                   <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
-                </form><!-- /form -->
-                <a href="#" class="forgot-password">
+                </form><! /form -->
+                <!--<a href="#" class="forgot-password">
                   Forgot the password?
-                </a>
+                </a>-->
               </div><!-- /card-container -->
             </div><!-- /container-->
           </div>

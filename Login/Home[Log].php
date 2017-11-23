@@ -196,24 +196,22 @@ id="signin"
       <div class="col-lg-3" id="sidePanRight" >
         <div class="container">
           <div class="card card-container">
-            <p id="profile-name" class="profile-name-card"></p>
+            <p id="profile-name" class="profile-name-card">Phanurut</p>
             <form class="form-signin" method="POST">
-              <span id="reauth-email" class="reauth-email"></span>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required ><!-- Email text -->
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
-              <div id="remember" class="checkbox">
+              <p>Phanurut007@hotmail.com</p>
+              <!--<div id="remember" class="checkbox">
                   <label>
-                      <input type="checkbox" value="remember-me" id="remember"> Remember me<!-- Remember Check -->
-                  </label>
-              </div>
-              <button class="btn btn-lg btn-block btn-signin" type="submit" id="signin">Sign in</button><!-- Submit btn -->
+                      <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
+                  <!--</label>-->
+              <!--</div>-->
+              <a href=""><button class="btn btn-lg btn-block btn-signin" type="buttton" id="signout">Sign out</button></a><!-- Submit btn -->
             </form><!-- /form -->
             <!--<a href="#" class="forgot-password">
               <u>Forgot the password?</u>
             </a>-->
-            <a href="Register.php" class="forgot-password">
-              <u>Register</u>
-            </a>
+            <!--<a href="Register.php" class="forgot-password">
+              <!<u>Register</u>-->
+            <!--</a>-->
           </div><!-- /card-container -->
         </div><!-- /container-->
       </div>
