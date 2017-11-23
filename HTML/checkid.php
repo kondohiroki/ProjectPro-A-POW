@@ -23,4 +23,5 @@
     echo "2";
   }
   mysqli_close($conn);
+  //กาก
 ?>
