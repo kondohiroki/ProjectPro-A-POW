@@ -11,21 +11,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
     <link rel="stylesheet" href="../CSS/RegisterStyle.css">
-    <script type="text/javascript">
-        function countDown(secs,elem){
-          var element = document.getElementById(elem);
-          element.innerHTML = "Plese wait for"+secs"" ;
-          if(secs < 1){
-            clearTimeout(timer);
-            location.href="Home.php"
-          }
-          secs--;
-          var timer = setTimeout('countDown('+secs+',"'+elem+'")',3);
-        }
-    </script>
-
   <!--
-  กาก
       id="inputFname"
       id="inputLname"
       id="inputEmail"
@@ -37,53 +23,32 @@
       id="applybutton"
 
     -->
-    <script type="text/javascript">
-      var c ='';
+    <!--<script type="text/javascript">
+    $(document).ready(function(){
       $('#applybutton').click(function(){
-        if($('#inputFname').val()!='' && $('#inputLname').val()!='' && $('#inputEmail').val()!=''
-        && $('#inputpass').val()!='' && $('#Reinputpass').val()!=''&& $('#inputdate').val()!=''
-        && $('#sex').val()!=''){
-          $('passfalse').css('display','block');
-          $.post('check.php',{
-            mail : $('#inputEmail').val()
-          },
-          function(data){
-            if(data==1) c='1';
-            else c='2';
-            if(c=='1'){
-              $.post('checkid.php',{
-              name:$('#inputFname').val(),
-              surname:$('#inputLname').val(),
-              mail:$('#inputEmail').val(),
-              pass:$('#inputpass').val(),
-              birthday:$('#inputdate').val(),
-              sex:$('#sex').val()
-            },
-            function(data){
-              if (data != "2") {
-                  sweetAlert("Complete"," ","success");
-                  countDown(90,"status");
-              }
-              else {
-                $('#emailmiss').html('*');
-                sweetAlert("email was already used!"," ","error");
-              }
-            });
-          } else {
+          $.post('insertid.php',{
+          name:$('#inputFname').val()],
+          surname:$('#inputLname').val()],
+          mail:$('#inputEmail').val(),
+          pass:$('#inputpass').val()
+
+        },
+        function(data){
+          if (data != "2") {
+              alert("Registeration Complete"," ","success");
+              countDown(90,"status");
+          }
+          else {
             $('#emailmiss').html('*');
-            sweetAlert("email incorrect"," ","error");
+            sweetAlert("email was already used!"," ","error");
           }
-          if($('#inputpass').val()!=$('#Reinputpass').val()){
-            $('#passmiss').html('*');
-            $('#confirmpassmiss').html('*');
-            sweetAlert("password doesn't match!", " ", "error");
-          }
-          });
-        }
+        });
       });
-    </script>
+    });
+  </script>-->
 </head>
 <body>
+
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
         <div class="container" id="jumboHead">
             <div id="textinjumbo">
@@ -115,7 +80,7 @@
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardReg">
                     <h4>Register</h4>
-                    <form class="Register-form" onsubmit="return A()" method="POST">
+                    <form class="Register-form" onsubmit="" method="post" action="insertid[NoLog].php">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -126,10 +91,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputFname" placeholder="Name" required/><!-- Name text -->
+                                <input type="text" class="form-control" name='name' id='inputFname' placeholder="Name"  required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputLname" placeholder="Surname" required/><!-- Surname text -->
+                                <input type="text" class="form-control" name='surname' id="inputLname" placeholder="Surname" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -139,7 +104,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required/><!-- Email -->
+                                <input type="email" class="form-control" name='mail'id="inputEmail" placeholder="Email" required/><!-- Email -->
                             </div>
                         </div>
                         <div class="row">
@@ -149,7 +114,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="inputpass" placeholder="Password" required/><!-- password -->
+                                <input type="password" class="form-control" name='pass' id="inputpass" placeholder="Password"  required/><!-- password -->
                             </div>
                         </div>
                         <div class="row">
@@ -159,8 +124,18 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" id="Reinputpass" placeholder="Re-type Password" required/><!-- Re-Pass -->
+                                <input type="password" class="form-control" name='repass' id="Reinputpass" placeholder="Re-type Password" required/><!-- Re-Pass -->
                             </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <input type="checkbox" class="form-control" name='notification'id="noti"  style="margin-left:-45%;margin-top:2%"/>
+
+                          </div>
+                          <div class="col-sm-5">
+                            <p style="margin-left:-100%">email notification</p>
+                          </div>
+
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
