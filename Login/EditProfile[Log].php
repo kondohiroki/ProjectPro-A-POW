@@ -72,6 +72,11 @@ id="applybutton"
                         <a href="ShopRegister[Log].php"><button class="btn" id="editButtFollow">Register My Shop</button></a>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="logout.php"><button class="btn" id="editButtFollow">Logout</button></a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardEdit">
