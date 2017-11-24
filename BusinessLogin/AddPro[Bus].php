@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
   <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
+  <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
   <link rel="stylesheet" href="../CSS/AddProStyle.css">
   <script>
     function search(){
@@ -43,15 +44,12 @@
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
   <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="Home.php">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Login.php">Login</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Register.php">Register</a>
-    </li><!--<li class="nav-item">
+  <li class="nav-item">
+  <a class="nav-link" href="Home[Bus].php">Home</a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+</li><!--<li class="nav-item">
     <a class="nav-link" href="SubPro.php">Your Profile</a>
   </li>-->
   </ul>
@@ -60,7 +58,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
-
+      <div class="row">
+      <div class="col-sm-12"> 
+          <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:50%;">Promotion List</button></a></center>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-12">
+          <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:50%;">Edit Shop</button></a></center>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-12">
+          <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 50%; background-color:#00254D;">Add Promotion</button></a></center>
+      </div>
+  </div>
       </div>
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">

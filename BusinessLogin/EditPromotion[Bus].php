@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Promotion</title>
+  <title>Edit Promotion</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -12,6 +12,7 @@
   <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
   <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
   <link rel="stylesheet" href="../CSS/StyleEditPromotion.css">
+  <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
   <!--
   id="Promotext"
   id="Category"
@@ -43,24 +44,32 @@
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
   <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="Home.php">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Login.php">Login</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Register.php">Register</a>
-    </li><!--<li class="nav-item">
-    <a class="nav-link" href="SubPro.php">Your Profile</a>
-  </li>-->
-  </ul>
+  <li class="nav-item">
+  <a class="nav-link" href="Home[Bus].php">Home</a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+</li>
 </nav>
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
-
+                <div class="row">
+                    <div class="col-sm-12"> 
+                        <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:50%;">Add Promotion</button></a></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:50%;">Edit Shop</button></a></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 50%;">Add Promotion</button></a></center>
+                    </div>
+                </div>
       </div>
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">

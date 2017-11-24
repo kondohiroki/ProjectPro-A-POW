@@ -45,47 +45,32 @@
   </div>
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
   <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="Home.php">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Login.php">Login</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Register.php">Register</a>
-    </li><!--<li class="nav-item">
-    <a class="nav-link" href="SubPro.php">Your Profile</a>
-  </li>-->
+  <li class="nav-item">
+  <a class="nav-link" href="Home[Bus].php">Home</a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+</li>
   </ul>
 </nav>
 <div class="container-fluid">
   <div class="row">
         <div class="col-lg-2" id="sidePanLeft">
         <div class="row">
-                <div class="col-sm-12">
-                    <a href="EditProfile.php"><button class="btn" id="editButt">Edit Profile</button></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="ChangePasswordPage.php"><button class="btn" id="editButtFollow">Change Password</button></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="SubPro.php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="MyCard.php"><button class="btn" id="editButtFollow">My Card</button></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="ShopRegister.php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Shop</button></a>
-                </div>
-            </div>
+        <div class="col-sm-12"> 
+            <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:80%;">Promotion List</button></a></center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:80%; background-color:#00254D;">Edit Shop</button></a></center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 80%;">Add Promotion</button></a></center>
+        </div>
+    </div>
         </div>
         <div class="col-lg-8" id="centerPan">
 
