@@ -115,83 +115,225 @@ id="signin"
          </div>
       </div>
       <div class="col-lg-6" id="centerPan">
-        <div class="row">
-            <div class="col-lg-12">
-              <div class="card" style="width:600px">
-                <img class="card-img-top" src="../IMG/20171106-152402.jpg"height="500px" alt="Card image">
-                  <div class="card-body">
-                      <h4 class="card-title">โอ้ย...ดีต่อใจ งานเซลล์รองเท้าผ้าใบ จัดอีกแล้ว!!! SAM’S SPORTS X ADIDAS BIG SALE Adidas ลดสูงสุด 90% (วันนี้ - 4 ธ.ค. 2560)</h4>
-                        <!--<p class="card-text">Some example text.</p>-->
-                        <a href="Detail[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
-                        <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
-                </div>
-              </div>
-              </div>
-            </div>
+      <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "1234";
+      $dbname = "promotiondb";
 
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="card" style="width:600px">
-                    <img class="card-img-top" src="../IMG/kfc.jpg"height="500px" alt="Card image">
-                      <div class="card-body">
-                          <h4 class="card-title">ใช่กว่านี้ไม่มีอีกแล้ว กับชุดไก่ใช่เลย ไก่ทอด 5 ชิ้น, นักเก็ตส์ 4 ชิ้น และเป๊ปซี่ 2 แก้ว เพียง 199 บาท (วันนี้ - 11 ธ.ค. 2560)</h4>
-                            <!--<p class="card-text">Some example text.</p>-->
-                            <a href="Detail[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
-                            <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                      <div class="card" style="width:600px">
-                        <img class="card-img-top" src="../IMG/CUP.jpg"height="500px" alt="Card image">
-                          <div class="card-body">
-                              <h4 class="card-title">โปรโมชั่นเครื่องดื่ม Au Bon Pain สมาชิกรับสิทธิ์ ซื้อเครื่องดื่ม 1 แถม 1 ฟรี!!!! (วันนี้ - 30 ก.ย. 2560)</h4>
-                                <!--<p class="card-text">Some example text.</p>-->
-                                <a href="Detail[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
-                                <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                          <div class="card" style="width:600px">
-                            <img class="card-img-top" src="../IMG/chesters.jpg"height="500px" alt="Card image">
-                              <div class="card-body">
-                                  <h4 class="card-title">Snack time ตามใจ you แค่ชุดละ 59 บาท พลาดแล้วจะเสียใจนะคร้าบบบ (วันนี้ - ยังไม่มีกำหนด)</h4>
-                                    <!--<p class="card-text">Some example text.</p>-->
-                                    <a href="Detail[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
-                                    <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
-                            </div>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                              <div class="card" style="width:600px">
-                                <img class="card-img-top" src="../IMG/29403.jpg"height="500px" alt="Card image">
-                                  <div class="card-body">
-                                      <h4 class="card-title">HEEROKI NAHEE ใจเธอ ไม่ว่า แต่เธอไม่ใจ กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ อิอิ ใจเทอ</h4>
-                                        <!--<p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ</p>
-                                        <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>-->
-                                        <a href="Detail[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>
-                                        <a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>
-                                </div>
-                              </div>
-                              </div>
-                            </div>
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-                            <div class="row" id="allpageItem">
-                                      <ul class="pagination">
-                                              <li class="page-item "><a class="page-link"id="pageItem" href="#">Previous</a></li>
-                                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                            </ul>
-                            </div>
+      if(!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+      }else echo "
+             <script type=\"text/javascript\">
+             swal('Connected');
+             </script>
+            ";
+      $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10004";
+      $proname = mysqli_query($conn, $sqlname);
+
+      $pro_name_array=mysqli_fetch_assoc($proname);
+      $pro_name=$pro_name_array['pro_name'];
+
+      $sqlimg = "SELECT pro_img FROM promotion WHERE pro_id=10004";
+      $proimg = mysqli_query($conn,$sqlimg);
+
+      $pro_img_array=mysqli_fetch_array($proimg);
+      $pro_img=$pro_img_array['pro_img'];
+
+      mysqli_close($conn);
+      
+      echo "<div class='row'>";
+          echo "<div class='col-lg-12'>";
+            echo "<div class='card' style='width:600px'>";
+              echo "<img class='card-img-top' src='data:image/jpeg;base64,".base64_encode($pro_img)."'/>";
+              echo "<div class='card-body'>";
+                echo "<a href='Pro10004[Bus].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                echo "<a href='Pro10004[Bus].php'><button type='button' class='btn btn-outline-primary' id='buttProLeft'>Details</button></a>";
+                echo "<a href='#'><button type='button' class='btn btn-outline-danger' id='buttProRight'>Subscribe</button></a>";
+              echo "</div>";
+            echo "</div>";
+          echo "</div>";
+      echo "</div>";
+    ?>
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "1234";
+      $dbname = "promotiondb";
+
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+      if(!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+      }else echo "
+             <script type=\"text/javascript\">
+             swal('Connected');
+             </script>
+            ";
+      $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10005";
+      $proname = mysqli_query($conn, $sqlname);
+
+      $pro_name_array=mysqli_fetch_assoc($proname);
+      $pro_name=$pro_name_array['pro_name'];
+
+      $sqlimg = "SELECT pro_img FROM promotion WHERE pro_id=10005";
+      $proimg = mysqli_query($conn,$sqlimg);
+
+      $pro_img_array=mysqli_fetch_array($proimg);
+      $pro_img=$pro_img_array['pro_img'];
+
+      mysqli_close($conn);
+
+      echo '<div class="row">';
+          echo '<div class="col-lg-12">';
+            echo '<div class="card" style="width:600px">';
+              echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
+              echo '<div class="card-body">';
+                echo "<a href='Pro10005[Bus].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                echo '<a href="Pro10005[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>';
+                echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
+              echo '</div>';
+            echo '</div>';
+          echo '</div>';
+      echo '</div>';
+    ?>
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "1234";
+      $dbname = "promotiondb";
+
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+      if(!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+      }else echo "
+             <script type=\"text/javascript\">
+             swal('Connected');
+             </script>
+            ";
+      $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10006";
+      $proname = mysqli_query($conn, $sqlname);
+
+      $pro_name_array=mysqli_fetch_assoc($proname);
+      $pro_name=$pro_name_array['pro_name'];
+
+      $sqlimg = "SELECT pro_img FROM promotion WHERE pro_id=10006";
+      $proimg = mysqli_query($conn,$sqlimg);
+
+      $pro_img_array=mysqli_fetch_array($proimg);
+      $pro_img=$pro_img_array['pro_img'];
+
+      mysqli_close($conn);
+
+      echo '<div class="row">';
+          echo '<div class="col-lg-12">';
+            echo '<div class="card" style="width:600px">';
+              echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
+              echo '<div class="card-body">';
+                echo "<a href='Pro10006[Bus].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                echo '<a href="Pro10006[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>';
+                echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
+              echo '</div>';
+            echo '</div>';
+          echo '</div>';
+      echo '</div>';
+    ?>
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "1234";
+      $dbname = "promotiondb";
+
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+      if(!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+      }else echo "
+             <script type=\"text/javascript\">
+             swal('Connected');
+             </script>
+            ";
+      $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10007";
+      $proname = mysqli_query($conn, $sqlname);
+
+      $pro_name_array=mysqli_fetch_assoc($proname);
+      $pro_name=$pro_name_array['pro_name'];
+
+      $sqlimg = "SELECT pro_img FROM promotion WHERE pro_id=10007";
+      $proimg = mysqli_query($conn,$sqlimg);
+
+      $pro_img_array=mysqli_fetch_array($proimg);
+      $pro_img=$pro_img_array['pro_img'];
+
+      mysqli_close($conn);
+
+      echo '<div class="row">';
+          echo '<div class="col-lg-12">';
+            echo '<div class="card" style="width:600px">';
+              echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
+              echo '<div class="card-body">';
+                echo "<a href='Pro10007[Bus].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                echo '<a href="Pro10007[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>';
+                echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
+              echo '</div>';
+            echo '</div>';
+          echo '</div>';
+      echo '</div>';
+    ?>
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "1234";
+      $dbname = "promotiondb";
+
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+      if(!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+      }else echo "
+             <script type=\"text/javascript\">
+             swal('Connected');
+             </script>
+            ";
+      $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10003";
+      $proname = mysqli_query($conn, $sqlname);
+
+      $pro_name_array=mysqli_fetch_assoc($proname);
+      $pro_name=$pro_name_array['pro_name'];
+
+      $sqlimg = "SELECT pro_img FROM promotion WHERE pro_id=10003";
+      $proimg = mysqli_query($conn,$sqlimg);
+
+      $pro_img_array=mysqli_fetch_array($proimg);
+      $pro_img=$pro_img_array['pro_img'];
+
+      mysqli_close($conn);
+
+      echo '<div class="row">';
+          echo '<div class="col-lg-12">';
+            echo '<div class="card" style="width:600px">';
+              echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
+              echo '<div class="card-body">';
+                echo "<a href='Pro10003[Bus].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                echo '<a href="Pro10003[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>';
+                echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
+              echo '</div>';
+            echo '</div>';
+          echo '</div>';
+      echo '</div>';
+    ?>
+      <!--<div class="row" id="allpageItem">
+        <ul class="pagination">
+          <li class="page-item "><a class="page-link"id="pageItem" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>-->
          </div>
 
       <div class="col-lg-3" id="sidePanRight" >
