@@ -18,35 +18,30 @@ id="Newpass"
 id="Renewpass"
 id="ButtonSaveChangePassword"
 -->
-      <script>
-        function search(){
-          alert("search");
-        }
-        </script>
         <link rel="stylesheet" href="../CSS/ChangePasswordPageStyle.css">
         <script src="../JS/ChangePasswordPageScript.js"></script>
 
     </head>
-                <body>
-                  <div class="jumbotron jumbotron-fluid" id="headerJumbo">
-                    <div class="container" id="jumboHead">
-                      <div id="textinjumbo">
-                        <h4>PRO-A-POW</h4>
-                        <p><font size = "1">PROMOTION FOR YOU</font></p>
-                      </div>
-                    </div>
-                  </div>
-                  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="Home[Log].php">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="MyCard[Log].php">Profile</a>
-                    </li>
-                  </ul>
-                </nav>
-              </body>
+    <body>
+      <div class="jumbotron jumbotron-fluid" id="headerJumbo">
+        <div class="container" id="jumboHead">
+          <div id="textinjumbo">
+            <h4>PRO-A-POW</h4>
+            <p><font size = "1">PROMOTION FOR YOU</font></p>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Home[Log].php">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="MyCard[Log].php">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </body>
 <div class="container-fluid">
                 <center><div class="row" id="MiddleChangePass" >
                         <div class="col-lg-2" id="sidePanLeft">
@@ -85,13 +80,13 @@ id="ButtonSaveChangePassword"
                                 <center><h4>Change Password</h4></center>
                                 <br>
                                 <br>
-                                <form action="" method="PUT">
+                                <form action="changepass[Log].php" method="POST">
                                   <div class="form-group">
                                     <div class="row">
 
                                         <div class="col-sm-4"><p><font size = "3">Old Password:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="Oldpass" type="password" class="form-control " placeholder="Enter password"><!-- Old Pass -->
+                                          <input  id="Oldpass" name='oldpass' type="password" class="form-control " placeholder="Enter password"><!-- Old Pass -->
                                             <span style="width:10%" id="password_show_button" class="input-group-addon">
                                               <!--icon-->
                                             </span>
@@ -103,7 +98,7 @@ id="ButtonSaveChangePassword"
 
                                         <div class="col-sm-4"><p><font size = "3">New Password:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="Newpass" type="password" class="form-control " placeholder="Enter password"><!-- New Pass -->
+                                          <input  id="Newpass" name='newpass' type="password" class="form-control " placeholder="Enter password"><!-- New Pass -->
                                         </div>
                                     </div>
                                   </div>
@@ -112,7 +107,7 @@ id="ButtonSaveChangePassword"
 
                                         <div class="col-sm-4"><p><font size = "3">New Password again:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
-                                          <input  id="Renewpass" type="password" class="form-control " placeholder="Enter password"><!-- Re-New Pass -->
+                                          <input  id="Renewpass" name='renewpass' type="password" class="form-control " placeholder="Enter password"><!-- Re-New Pass -->
                                         </div>
 
                                   </div>
