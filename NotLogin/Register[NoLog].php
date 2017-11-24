@@ -11,43 +11,9 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
     <link rel="stylesheet" href="../CSS/RegisterStyle.css">
-  <!--
-      id="inputFname"
-      id="inputLname"
-      id="inputEmail"
-      id="inputTel"
-      id="inputpass"
-      id="Reinputpass"
-      id="inputdate"
-      id="sex"
-      id="applybutton"
-
-    -->
-    <!--<script type="text/javascript">
-    $(document).ready(function(){
-      $('#applybutton').click(function(){
-          $.post('insertid.php',{
-          name:$('#inputFname').val()],
-          surname:$('#inputLname').val()],
-          mail:$('#inputEmail').val(),
-          pass:$('#inputpass').val()
-
-        },
-        function(data){
-          if (data != "2") {
-              alert("Registeration Complete"," ","success");
-              countDown(90,"status");
-          }
-          else {
-            $('#emailmiss').html('*');
-            sweetAlert("email was already used!"," ","error");
-          }
-        });
-      });
-    });
-  </script>-->
 </head>
 <body>
+
 
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
         <div class="container" id="jumboHead">
@@ -80,7 +46,7 @@
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardReg">
                     <h4>Register</h4>
-                    <form class="Register-form" onsubmit="" method="post" action="insertid[NoLog].php">
+                    <form class="Register-form" id="form"  method="post" action="insertid[NoLog].php">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -91,10 +57,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name='name' id='inputFname' placeholder="Name"  required/><!-- Name text -->
+                                <input type="text" class="form-control" name='name' id='name' placeholder="Name"  required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name='surname' id="inputLname" placeholder="Surname" required/><!-- Surname text -->
+                                <input type="text" class="form-control" name='surname' id="surname" placeholder="Surname" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -104,17 +70,17 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" name='mail'id="inputEmail" placeholder="Email" required/><!-- Email -->
+                                <input type="email" class="form-control" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <h8>Pass :</h8>
+                                <h8>Pass : </h8><h8 style="color:red;">*not more than five character</h8>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" name='pass' id="inputpass" placeholder="Password"  required/><!-- password -->
+                                <input type="password" class="form-control" maxlength="20" name='pass' id="pass" placeholder="Password"  required/><!-- password -->
                             </div>
                         </div>
                         <div class="row">
@@ -124,12 +90,12 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" name='repass' id="Reinputpass" placeholder="Re-type Password" required/><!-- Re-Pass -->
+                                <input type="password" class="form-control" name='repass' id="repass" placeholder="Re-type Password" required/><!-- Re-Pass -->
                             </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-5">
-                            <input type="checkbox" class="" name='notification'id="noti" style="margin-left:2%;margin-top:2%;"/>
+                            <input type="checkbox" class="" name='notification'id="notification" style="margin-left:2%;margin-top:2%;"/>
 
                           </div>
                           <div class="col-sm-5">
@@ -139,7 +105,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <br><button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
+                                <br><button class="form-control" type="submit" id="submit">Apply</button><!-- Submit btn -->
                             </div>
                         </div>
                     </form>
@@ -150,4 +116,5 @@
             </div>
         </div>
     </div>
+
 </body>
