@@ -58,16 +58,16 @@
                     <div class="card card-container" style="width: 600px;">
                         <center><h4>Login</h4></center>
                         <p id="profile-name" class="profile-name-card"></p>
-                        <form class="form-signin" method="POST">
+                        <form class="form-signin" method="POST" action="checkLogin.php">
                             <span id="reauth-email" class="reauth-email"></span>
-                            <center><input type="email" id="inputEmail" class="form-control" placeholder="Email address" style="width: 60%;" required ></center><!-- Email Text -->
-                            <center><input type="password" id="inputPassword" class="form-control" placeholder="Password" style="width: 60%;" required></center><!-- Pass -->
+                            <center><input name="Username" type="text" id="inputEmail" class="form-control" placeholder="Email address" style="width: 60%;" required ></center><!-- Email Text -->
+                            <center><input name="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" style="width: 60%;" required></center><!-- Pass -->
                             <div id="remember" class="checkbox">
                                 <center><label>
                                     <input type="checkbox" value="remember-me" id="rememberme"> Remember me<!-- Remember Check -->
                                 </label></center>
                             </div>
-                            <center><button class="btn btn-lg btn-block btn-signin" style="width: 30%;" type="submit" id="signin">Sign in</button></center><!-- submit btn -->
+                            <center><button class="btn btn-lg btn-block btn-signin" style="width: 30%;" type="submit" id="signin" value="submit">Sign in</button></center><!-- submit btn -->
                         </form><!-- /form -->
                       <!--<a href="#" class="forgot-password">
                         <u>Forgot the password?</u>

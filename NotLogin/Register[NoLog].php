@@ -70,7 +70,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" maxlength="45" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
+                                <input type="text" class="form-control" maxlength="45" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
                             </div>
                         </div>
                         <div class="row">
