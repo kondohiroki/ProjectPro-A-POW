@@ -12,24 +12,8 @@
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
-  <!--
-id="font-text-search"
-id="checksearchbycard"
-id="food"
-id="dessert"
-id="travel"
-id="discount"
-id="searchbutton"
-id="inputEmail"
-id="inputPassword"
-id="remember"
-id="signin"
--->
-  <script>
-    function search(){
-      alert("search");
-    }
-  </script>
+
+
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
@@ -93,18 +77,14 @@ id="signin"
       <?php
       $servername = "localhost";
       $username = "root";
-      $password = "1234";
+      $password = "";
       $dbname = "promotiondb";
 
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
       if(!$conn){
         die("Connection failed: ".mysqli_connect_error());
-      }else echo "
-             <script type=\"text/javascript\">
-             swal('Connected');
-             </script>
-            ";
+      }
       $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10004";
       $proname = mysqli_query($conn, $sqlname);
 
@@ -142,11 +122,7 @@ id="signin"
 
       if(!$conn){
         die("Connection failed: ".mysqli_connect_error());
-      }else echo "
-             <script type=\"text/javascript\">
-             swal('Connected');
-             </script>
-            ";
+      }
       $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10005";
       $proname = mysqli_query($conn, $sqlname);
 
@@ -177,18 +153,14 @@ id="signin"
     <?php
       $servername = "localhost";
       $username = "root";
-      $password = "1234";
+      $password = "";
       $dbname = "promotiondb";
 
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
       if(!$conn){
         die("Connection failed: ".mysqli_connect_error());
-      }else echo "
-             <script type=\"text/javascript\">
-             swal('Connected');
-             </script>
-            ";
+      }
       $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10006";
       $proname = mysqli_query($conn, $sqlname);
 
@@ -219,18 +191,14 @@ id="signin"
     <?php
       $servername = "localhost";
       $username = "root";
-      $password = "1234";
+      $password = "";
       $dbname = "promotiondb";
 
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
       if(!$conn){
         die("Connection failed: ".mysqli_connect_error());
-      }else echo "
-             <script type=\"text/javascript\">
-             swal('Connected');
-             </script>
-            ";
+      }
       $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10007";
       $proname = mysqli_query($conn, $sqlname);
 
@@ -261,18 +229,14 @@ id="signin"
     <?php
       $servername = "localhost";
       $username = "root";
-      $password = "1234";
+      $password = "";
       $dbname = "promotiondb";
 
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
       if(!$conn){
         die("Connection failed: ".mysqli_connect_error());
-      }else echo "
-             <script type=\"text/javascript\">
-             swal('Connected');
-             </script>
-            ";
+      }
       $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10003";
       $proname = mysqli_query($conn, $sqlname);
 
