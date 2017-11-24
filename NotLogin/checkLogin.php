@@ -18,7 +18,10 @@
                       $row = mysqli_fetch_array($result);
 
                       $_SESSION["UserID"] = $row["user_id"];
+                      $_SESSION["Username"] = $row["user_fname"];
+                      $_SESSION["Usersurname"] = $row["user_lname"];
                       $_SESSION["UserMail"] =$row["user_email"];
+
                       //$_SESSION["User"] = $row["Firstname"]." ".$row["Lastname"];
                       //$_SESSION["Userlevel"] = $row["Userlevel"];
 
