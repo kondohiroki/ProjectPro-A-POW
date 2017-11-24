@@ -7,24 +7,27 @@
   $conn =mysqli_connect($servername,$username,$password,$dbname);
   if(!$conn){
    die("connextion failed".mysqli_connect_error());
-  }else{
-   echo"<script type = \"text/javascript\"> swal('Connected')</script>";
   }
-  $oldpass = $_post["oldpass"];
-  $newpass = $_post["newpass"];
-  $renewpass = $_post["renewpass"];
+  $uid = $_SESSION["UserID"];
+  $oldpass = $_POST['oldpass'];
+  $newpass = $_POST['newpass'];
+  $renewpass = $_POST['renewpass'];
 
-  $sql = " SELECT user_password FROM user WHERE user_email ='$_SESSION["UserID"]' ";
+  $sql = " SELECT * FROM user WHERE user_id ='$uid' ";
   $result = mysqli_query($conn, $sql);
-
-  if($result == $oldpass){
+  if(mysqli_num_rows($result)==1){
     if($newpass == $renewpass){
-      $sql = "UPDATE user SET user_password = $newpassword WHERE $_session["UserID"];";
+      $sql = "UPDATE user SET user_password = '$newpass'  WHERE user_id ='$uid'";
     }
   }
-  if (mysqli_query($conn,$result)) {
-    echo"<script type=\"text/javascript\">swal('Done');</script>";
+  if (mysqli_query($conn, $sql)) {
+       echo "<script type='text/javascript'>alert('Done');</script>";
+       Header("refresh: 0;EditProfile[Log].php");
   } else {
-    echo"<script type=\"text/javascript\">swal('Error');</script>";
+        echo "<script>";
+        echo "alert('Fail');";
+        echo "window.history.back()";
+        echo "</script>";
   }
+
 ?>

@@ -11,13 +11,6 @@
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <link rel="stylesheet" href="../CSS/MainStyle2.css">
       <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
-      <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
-      <!--
-id="Oldpass"
-id="Newpass"
-id="Renewpass"
-id="ButtonSaveChangePassword"
--->
         <link rel="stylesheet" href="../CSS/ChangePasswordPageStyle.css">
         <script src="../JS/ChangePasswordPageScript.js"></script>
 
