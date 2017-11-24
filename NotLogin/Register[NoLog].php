@@ -129,7 +129,7 @@
                         </div>
                         <div class="row">
                           <div class="col-sm-5">
-                            <input type="checkbox" class="form-control" name='notification'id="noti"  style="margin-left:-45%;margin-top:2%"/>
+                            <input type="checkbox" class="" name='notification'id="noti" style="margin-left:2%;margin-top:2%;"/>
 
                           </div>
                           <div class="col-sm-5">
