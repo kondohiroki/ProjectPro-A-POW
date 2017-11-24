@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Home</title>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -124,18 +124,16 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+        mysqli_query($conn, "SET NAMES UTF8");
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
-        }else echo "
-               <script type=\"text/javascript\">
-               swal('Connected');
-               </script>
-              ";
+        }
+
         $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10004";
         $proname = mysqli_query($conn, $sqlname);
 
@@ -149,7 +147,7 @@ id="signin"
         $pro_img=$pro_img_array['pro_img'];
 
         mysqli_close($conn);
-        
+
         echo "<div class='row'>";
             echo "<div class='col-lg-12'>";
               echo "<div class='card' style='width:600px'>";
@@ -166,10 +164,11 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+        mysqli_query($conn, "SET NAMES UTF8");
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
@@ -208,10 +207,11 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+        mysqli_query($conn, "SET NAMES UTF8");
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
@@ -250,10 +250,11 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+        mysqli_query($conn, "SET NAMES UTF8");
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
@@ -292,10 +293,11 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
+        mysqli_query($conn, "SET NAMES UTF8");
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
@@ -346,10 +348,10 @@ id="signin"
         <div class="container">
           <div class="card card-container">
             <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin" method="POST">
+            <form class="form-signin" action="checkLogin.php" method="POST">
               <span id="reauth-email" class="reauth-email"></span>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required ><!-- Email text -->
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
+              <input type="text" name="Username" id="inputEmail" class="form-control" placeholder="Email address" required ><!-- Email text -->
+              <input type="password" name="Password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
               <div id="remember" class="checkbox">
                   <label>
                       <input type="checkbox" value="remember-me" id="remember"> Remember me<!-- Remember Check -->

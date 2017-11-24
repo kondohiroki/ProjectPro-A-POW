@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-lg-2" id="sidePanLeft">
             <div class="row">
-            <div class="col-sm-12"> 
+            <div class="col-sm-12">
                 <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:80%; background-color:#00254D;">Promotion List</button></a></center>
             </div>
         </div>
@@ -57,6 +57,11 @@
         <div class="row">
             <div class="col-sm-12">
                 <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 80%;">Add Promotion</button></a></center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <center><a href="logout.php"><button class="btn" id="editButtFollow" style="width: 80%;">Logout</button></a></center>
             </div>
         </div>
             </div>
