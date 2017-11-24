@@ -65,47 +65,21 @@ id="signin"
               <input type="search" id="font-text-search" class="form-control" placeholder="Search"><!-- Search Text -->
             </div>
             <div class="input group col-md-12">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" id="checksearchbycard" >Search By Your Profile<!-- Check if Search by Card -->
-                </label>
-              </div>
+
               <hr/>
             </div>
             <div class="input group col-md-12">
                 <div class="col-sm-12" id="catPan"><h6>CATEGORY</h6></div><!-- Category Check -->
-                <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="food">Food
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="dessert">Dessert
-                        </label>
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="travel">Travel
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="discount">Discount
-                        </label>
-                      </div>
-                    </div>
-                </div>
+                <div class="col-sm-9">
+              <select id="dropboxC" name="dropboxcate" class="form-control">
+                <option value="ALL">All</option>
+                <option value="Food">Food</option>
+                <option value="Travell">Travel</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Dicount">Dicount</option>
+                <option value=">Mycard">Mycard</option>
+              </select><br>
+              </div>
                 <div class="col-sm-12">
                   <button class="btn btn-lg btn-block btn-signin" type="submit" id="searchbutton">Search</button><!-- Submit btn -->
                 </div>
