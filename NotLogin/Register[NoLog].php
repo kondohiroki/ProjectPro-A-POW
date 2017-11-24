@@ -57,10 +57,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name='name' id='name' placeholder="Name"  required/><!-- Name text -->
+                                <input type="text" class="form-control" maxlength="45" name='name' id='name' placeholder="Name"  required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name='surname' id="surname" placeholder="Surname" required/><!-- Surname text -->
+                                <input type="text" class="form-control" maxlength="45" name='surname' id="surname" placeholder="Surname" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -70,12 +70,12 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
+                                <input type="email" class="form-control" maxlength="45" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <h8>Pass : </h8><h8 style="color:red;">*not more than five character</h8>
+                                <h8>Pass : </h8><small style="color:red;">*Not more than twenty!</small>
                             </div>
                         </div>
                         <div class="row">

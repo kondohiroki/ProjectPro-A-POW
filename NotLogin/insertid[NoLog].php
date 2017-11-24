@@ -44,10 +44,10 @@
             <div class="col-lg-2" id="sidePanLeft">
             </div>
             <div class="col-lg-8" id="centerPan">
-              <center> <a href="Login[NoLog].php">Go to Login page!!!</a> </center>
+              <center><h4 style="color:green;"> Register Successfully </h4>
+              <a href="Login[NoLog].php">Go to Login page!!!</a> </center>
             </div>
             <div class="col-lg-2" id="sidePanRight">
-
             </div>
         </div>
     </div>
@@ -90,12 +90,9 @@
       }
     }
     mysqli_close($conn);
-    /*
-    <script type=\"text/javascript\">
-    swal('New record created successfully');
-    </script>
-    */
+
 
     ?>
 
 </body>
+</html>
