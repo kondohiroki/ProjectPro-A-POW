@@ -12,18 +12,6 @@
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
     <link rel="stylesheet" href="../CSS/EditProfileStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
-    <script>
-    /*
-id="inputFname"
-id="inputLname"
-id="inputEmail"
-id="inputTel"
-id="inputdate"
-id="gender"
-id="applybutton"
-    */
-
-    </script>
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
@@ -81,7 +69,7 @@ id="applybutton"
             <div class="col-lg-8" id="centerPan">
                 <div class="card card-container" id="cardEdit">
                     <h4>Edit Profile</h4>
-                    <form action="" class="Edit-Profile-Form" onsubmit="" method="PUT">
+                    <form action="checkEditprofile.php" class="Edit-Profile-Form"  method="POST">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -92,45 +80,34 @@ id="applybutton"
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputFname" placeholder="Phanurut"/><!-- Name -->
+                                <input type="text" class="form-control" name="name" id="inputFname" placeholder="Phanurut"/><!-- Name -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputLname" placeholder="Kondo"/><!-- Surname -->
+                                <input type="text" class="form-control" name="surname" id="inputLname" placeholder="Kondo"/><!-- Surname -->
                             </div>
                         </div>
                         <div class="row">
                                 <div class="col-sm-6">
                                     <h8>Email :</h8>
                                 </div>
-                                <div class="col-sm-4">
-                                    <h8>Tel :</h8>
-                                </div>
+
                             </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail" placeholder="Hiroki007@yahoo.com"/><!-- Email -->
+                                <input type="text" class="form-control" name="mail" id="inputEmail" placeholder="Hiroki007@yahoo.com"/><!-- Email -->
                             </div>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputTel" placeholder="0805555555"><!-- Tel. -->
-                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <h8>Date of birth :</h8>
-                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <input type="date" class="form-control" id="inputdate"/><!-- DOB -->
-                            </div>
+
                         </div>
-                        <div class="row"><!-- Gender Select -->
-                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="male" checked id="gender"> Male<br></label>
-                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="female" > Female<br></label>
-                        </div>
+
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
+                                <button class="form-control" type="submit" name="submit" id="submit">Apply</button><!-- Submit btn -->
                             </div>
                         </div>
                     </form>

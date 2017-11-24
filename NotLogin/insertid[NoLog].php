@@ -21,15 +21,9 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result)==0) {
   $sql = "INSERT INTO user (user_id,user_fname,user_lname,user_email,user_password) VALUES ('' , '$name', '$surname' , '$mail ' , ' $pass ')";
   if (mysqli_query($conn, $sql)) {
-      Header("Location: Home[NoLog].php");
-       echo "<script type=\"text/javascript\">
-       swal(
-            'Register Successfully!',
-            'You clicked the button!',
-            'success'
-            )
-       </script>";
-       Header("Location: Home[NoLog].php");
+    echo "<script type='text/javascript'>alert('Edit Successfully');</script>";
+    Header("refresh: 0;Home[NoLog].php");
+      
   } else {
         echo "<script>";
         echo "swal('Fail');";
