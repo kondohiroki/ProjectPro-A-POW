@@ -48,7 +48,7 @@
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="Home[Log].php">Home</a>
-    </li> 
+    </li>
     <li class="nav-item active">
       <a class="nav-link" href="MyCard[Log].php">Profile</a>
     </li>
@@ -91,10 +91,10 @@
                 <div class="card-body">
                   <center><h4>Shop Register</h4></center>
                   <br>
-                  <form onsubmit="return search()" method="POST">
+                  <form onsubmit="" action="insertShop.php" method="POST">
                     <div class="form-group">
                       <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop-Name" placeholder="Name" required><!-- Shop Name -->
+                      <input name="Shopname" type="text" class="form-control" id="Shop-Name" placeholder="Name" required><!-- Shop Name -->
                     </div>
 
 
@@ -112,7 +112,7 @@
                                   </div>
                                   <div class="row">
                                     <div class="col-sm-10"><!-- Tel. Add -->
-                                      <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Tel." data-items="8"/>
+                                      <input autocomplete="off" class="form-control" id="field1" name="Tel" type="text" placeholder="Tel." data-items="8"/>
                                     </div>
                                     <div class="col-sm-2">
                                       <button style="margin-left: -50%;" id="b1" class="btn add" type="button">+</button>
@@ -134,15 +134,15 @@
                  <div class="col-sm-12" id="columnCalendar1">
                         <label>Open date:</label><br>
                         <div class="row">
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Sunday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Monday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Tuesday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Wednesday</label>
+                            <input class="" name="day[]" type="checkbox" value="U" id="sunday" style="width:5%;"><label for="sunday">Sunday</label>
+                            <input class="" name="day[]" type="checkbox" value="M" id="sunday" style="width:5%;"><label for="sunday">Monday</label>
+                            <input class="" name="day[]" type="checkbox" value="T" id="sunday" style="width:5%;"><label for="sunday">Tuesday</label>
+                            <input class="" name="day[]" type="checkbox" value="W" id="sunday" style="width:5%;"><label for="sunday">Wednesday</label>
                         </div>
                         <div class="row">
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Thursday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Friday</label>
-                            <input class="" type="checkbox" value="sunday" id="sunday" style="width:5%;"><label for="sunday">Saturday</label>
+                            <input class="" name="day[]" type="checkbox" value="H" id="sunday" style="width:5%;"><label for="sunday">Thursday</label>
+                            <input class="" name="day[]" type="checkbox" value="F" id="sunday" style="width:5%;"><label for="sunday">Friday</label>
+                            <input class="" name="day[]" type="checkbox" value="S" id="sunday" style="width:5%;"><label for="sunday">Saturday</label>
                         </div>
                    </div>
                  </div>
