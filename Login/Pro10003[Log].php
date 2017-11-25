@@ -143,8 +143,9 @@ id="signin"
         <div class="container">
         <div class="card card-container">
           <p id="profile-name" class="profile-name-card">Phanurut</p>
-          <form class="form-signin">
+          <!--<form class="form-signin" action="">-->
             <p>Phanurut007@hotmail.com</p>
+            <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="buttton" id="signout">Sign out</button></a><!-- Submit btn -->
             <!--<div id="remember" class="checkbox">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me
@@ -155,6 +156,7 @@ id="signin"
           <!--<a href="#" class="forgot-password">
             Forgot the password?
           </a>-->
+          </form>
         </div><!-- /card-container -->
       </div><!-- /container-->
     </div>
