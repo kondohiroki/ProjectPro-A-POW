@@ -78,17 +78,17 @@
       <div class="col-lg-6" id="centerPan">
           <div class="card card-container">
             <center><h4>ADD PROMOTION</h4></center>
-                <form action="" class="Add-Pro-Form" onsubmit="" method="POST"><br>
-  Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" maxlength="2" id="PromoNametext" width="2%" required><!-- Promotion Name -->
+                <form action="check_addpro.php" class="Add-Pro-Form" onsubmit="" method="POST"><br>
+  Promotion Name:&emsp;<br><input type="text" class ="form-control" name="Promotionname" maxlength="2" name="proname" id="PromoNametext" width="2%" required><!-- Promotion Name -->
 <br>
 
-Category:&emsp;<select id="Category"> <!-- Category Selecter -->
-  <option value="Food">Food</option>
-  <option value="Dessert">Dessert</option>
-  <option value="Travel">Travel</option>
-  <option value="Discount">Discount</option>
+Category:&emsp;<select id="Category" name="category"> <!-- Category Selecter -->
+  <option value=1>FOOD</option>
+  <option value=2>DESSERT</option>
+  <option value=5>TRAVEL</option>
+  <option value=6>DISCOUNT</option>
 </select><br><br>Description: <br><!-- Description -->
-<textarea class ="form-control" cols="40" rows="5" name="Describe" id="Description">
+<textarea class ="form-control" cols="40" rows="5" name="Descrip" id="Description"required>
 </textarea><br>
 <div class="col-sm-6">
 Start: &emsp; <!-- Start date -->
@@ -97,18 +97,10 @@ End:  &emsp; <!-- End date -->
   <input type="date" class ="form-control" name="Enddate" id="enddate" required>
 
 </div>
-
-<form action="myform.cgi">
-  <br>&emsp;<input type="file" name="fileupload" value="fileupload" id="fileupload">
-   <label for="fileupload"></label>
-   </form>
-
-
 <br> Card Support: <br><!-- Card Check -->
 <div = "row">
-<action="/action_page.php" method="get">
- <input type="checkbox" name="Cardtype" value="VISA" id="visa">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="Cardtype" value="American Express" id="american">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="Cardtype" value="JCB" id="jcb" >&nbsp;JCB&emsp;&emsp;<br>
- <input type="checkbox" name="Cardtype" value="Master Card" id="mastercard" >&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="Cardtype" value="UnionPay" id="union">UnionPay
+ <input type="checkbox" name="visa" value="VISA" id="visa">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="american" value="AMERICAN EXPRESS" id="american">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="jcb" value="JCB" id="jcb" >&nbsp;JCB&emsp;&emsp;<br>
+ <input type="checkbox" name="mastercard" value="MASTER CARD" id="mastercard" >&nbsp;Master Card&emsp;&emsp;<input type="checkbox" name="union" value="UNIONPAY" id="union">UnionPay
 </div>
 <br>
 <div class="col-sm-12"><!-- Submit Button -->
