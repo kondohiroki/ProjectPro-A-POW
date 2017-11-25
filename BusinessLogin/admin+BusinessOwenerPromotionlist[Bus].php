@@ -14,13 +14,10 @@
     <link rel="stylesheet" href="../CSS/SubProStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
     <link rel="stylesheet" href="../CSS/admin+BusinessOwenerPromotionliststyle.css">
-    <script>
-        function search(){
-            alert("search");
-        }
-    </script>
+
 </head>
 <body>
+
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
         <div class="container">
             <div for="" id="textinjumbo">
@@ -41,6 +38,7 @@
   </li>-->
     </ul>
   </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2" id="sidePanLeft">
@@ -71,42 +69,55 @@
                         <h4>Admin+BusinessOwnerPromotionlist</h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card card-container">
-                            <img class="card-img-top" src="../IMG/29403.jpg" alt="Heeroki">
-                            <div class="card-body">
-                                <h6 class="card-title">HEEROKI NAHEE ใจเธอ ไม่ว่า แต่เธอไม่ใจ กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ อิอิ ใจเทอ</h6>
-                                <!--<div id="textincard">
-                                    <p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
-                                    <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
-                                </div>-->
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                    <a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card card-container">
-                            <img class="card-img-top" src="../IMG/chesters.jpg" alt="Chester Grill">
-                            <div class="card-body">
-                                <h6 class="card-title">Snack time ตามใจ you แค่ชุดละ 59 บาท พลาดแล้วจะเสียใจนะคร้าบบบ (วันนี้ - ยังไม่มีกำหนด)</h6>
-                                <!--<div id="textincard">
-                                    <p class="card-text">แฮปปี้กับโปรดี๊ย์ดี...!!!  ไก่คริสปี้บราวน์ ทอดกรอบ</p>
-                                    <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
-                                </div> -->
-                                        <div class="row">
-                                        <div class="col-sm-4">
-                                    <a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "promotiondb";
+                // Create connection
+                $conn = mysqli_connect($servername, $username, $password, $dbname);
+                mysqli_query($conn, "SET NAMES UTF8");
+                // Check connection
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+
+                $sql = " SELECT * FROM `promotion` ";
+                $result = mysqli_query($conn,$sql);
+                $row= mysqli_fetch_array($result);
+                if(mysqli_num_rows($result) > 0){
+                  while($row = mysqli_fetch_assoc($result)){
+                    $pro_img =$row['pro_img'];
+                    $pro_name=$row['pro_name'];
+                    echo'<div class="row">';
+                        echo'<div class="col-lg-6">';
+                            echo'<div class="card card-container">';
+                                echo'<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
+                                echo'<div class="card-body">';
+                                    echo'<h6 class="card-title">'.$pro_name.'</h6>';
+                                    echo'<!--<div id="textincard">';
+                                        echo'<p class="card-text">ใจเธอ ไม่ว่า แต่เธอไม่ใจ กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>';
+                                        echo'<p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>';
+                                    echo'</div>-->';
+                                    echo'<div class="row">';
+                                        echo'<div class="col-sm-4">';
+                                        echo'<a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a>';
+                                    echo'</div>';
+                                    echo'</div>';
+                                echo'</div>';
+                            echo'</div>';
+                        echo'</div>';
+                    echo'</div>';
+
+                  }
+                }else{
+
+                }
+
+
+
+                 ?>
+
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="card card-container">
@@ -124,7 +135,6 @@
                 </div>
             </div>
             <div class="col-lg-2" id="sidePanRight">
-
             </div>
         </div>
     </div>
