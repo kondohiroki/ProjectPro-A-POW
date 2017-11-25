@@ -158,24 +158,6 @@
                  </div>
                </div>
                  <br>
-                 <br>
-
-                      <label>Upload Image:</label>
-                      <div class="container">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <div class="input-group">
-                              <!--<span class="input-group-btn">
-                              </span>-->
-                              <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/><!-- Image add -->
-                              <button id="clear" class="btn btn-default">Clear</button>
-                            </div>
-                            <br>
-                            <img id='img-upload'/>
-
-                          </div>
-                        </div>
-                      </div>
                     <center><button type="submit" class="btn btn-primary" id="sizeButtonOfSaveRegister">Save</button></center><!-- Save btn -->
                   </form>
                 </div>
