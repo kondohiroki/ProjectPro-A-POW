@@ -280,15 +280,15 @@
         <div class="container">
           <div class="card card-container">
             <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
-            <form class="form-signin" method="POST">
+            <!--<form class="form-signin" method="POST">-->
               <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
               <!--<div id="remember" class="checkbox">
                   <label>
                       <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
                   <!--</label>-->
               <!--</div>-->
-              <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="buttton" id="signout">Sign out</button></a><!-- Submit btn -->
-            </form><!-- /form -->
+              <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="submit" id="signout">Sign out</button></a><!-- Submit btn -->
+            <!--</form>--><!-- /form -->
             <!--<a href="#" class="forgot-password">
               <u>Forgot the password?</u>
             </a>-->
