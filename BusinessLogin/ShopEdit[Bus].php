@@ -58,7 +58,7 @@
   <div class="row">
         <div class="col-lg-2" id="sidePanLeft">
         <div class="row">
-        <div class="col-sm-12"> 
+        <div class="col-sm-12">
             <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:80%;">Promotion List</button></a></center>
         </div>
     </div>
@@ -74,99 +74,169 @@
     </div>
         </div>
         <div class="col-lg-8" id="centerPan">
+          <?php
+            session_start();
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "promotiondb";
 
-          <!--<h2>Shop Register</h2>-->
-            <div class="container">
-              <div class="card">
-                <div class="card-body">
-                  <center><h4>Shop Edit</h4></center>
-                  <br>
-                  <form onsubmit="return search()" method="POST">
-                    <div class="form-group">
-                      <label for="test">Shop Name:</label>
-                      <input type="text" class="form-control" id="Shop-Name" placeholder="Phanurut" ><!-- Shop Name -->
-                    </div>
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
 
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
 
-                    <!--AddPhoneNumber-->
-                    <div class="container">
-	                     <div class="row">
-		                      <input type="hidden" name="count" value="1" id="phone"/>
-                            <div class="control-group" id="fields">
-                              <label class="control-label" for="field1">Shop Tel. Number :</label>
-                              <div class="controls" id="profs">
-                                <div class="input-append">
-                                  <div class="row-fluid">
-                                    <div id="container">
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm-10"><!-- Tel. Add -->
-                                      <input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="0631022255" data-items="8"/>
-                                    </div>
-                                    <div class="col-sm-2">
-                                      <button style="margin-left: -50%;" id="b1" class="btn add" type="button">+</button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <small>Press + to add another Tel. number :)</small>
-                                <br>
-                                <br>
-                              </div>
-                            </div>
-	                        </div>
-                        </div>
+            $userid=$_SESSION['UserID'];
+            //echo $userid;
+            $sqlshopname="SELECT shop_name FROM shop WHERE user_id='$userid'";
+            $shopname = mysqli_query($conn, $sqlshopname);
 
-                 <!--calendar -->
-                <label>Calendar:</label>
-                <div class="container">
-                    <div class="row">
-                    <div class="col-sm-12" id="columnCalendar1">
-                        <label>Open date:</label><br>
-                        <div class="row">
-                            <input class="" type="checkbox" value="sun" id="sunday" style="width:5%;"><label for="sunday">Sunday</label>
-                            <input class="" type="checkbox" value="mon" id="monday" style="width:5%;" checked><label for="monday">Monday</label>
-                            <input class="" type="checkbox" value="tue" id="tuesday" style="width:5%;" checked><label for="tuesday">Tuesday</label>
-                            <input class="" type="checkbox" value="wed" id="wednesday" style="width:5%;" checked><label for="wednesday">Wednesday</label>
-                        </div>
-                        <div class="row">
-                            <input class="" type="checkbox" value="thu" id="thursday" style="width:5%;" checked><label for="thursday">Thursday</label>
-                            <input class="" type="checkbox" value="fri" id="friday" style="width:5%;" checked><label for="friday">Friday</label>
-                            <input class="" type="checkbox" value="sat" id="saturday" style="width:5%;" checked><label for="saturday">Saturday</label>
-                        </div>
-                   </div>
-                   </div>
-                   <div class="row">
-                        <div class="col-sm-3" id="columnCalendar3">
-                            <label>Open Time:</label><br>
-                            <input class="form-control" type="time" name="OpenTime" value="11:00" id="opent"><!-- Open time -->
-                        </div>
-                        <div class="col-sm-3" id="columnCalendar3">
-                            <label>Close Time:</label><br>
-                            <input class="form-control" type="time" name="CloseTime" value="23:00" id="closet"><!-- Close time -->
-                        </div>
-                   </div>
-                   
-               </div>
+            $shop_name_array=mysqli_fetch_array($shopname);
+            $shop_name=$shop_name_array['shop_name'];
+
+          echo '<!--<h2>Shop Register</h2>-->';
+            echo '<div class="container">';
+              echo '<div class="card">';
+                echo '<div class="card-body">';
+                  echo '<center><h4>Shop Edit</h4></center>';
+                  echo '<br>';
+                  echo '<form onsubmit="" action="editShop.php" method="POST">';
+                    echo '<div class="form-group">';
+                      echo '<label for="test">Shop Name:</label>';
+                      echo '<input type="text" class="form-control" id="Shop-Name" name ="Shopname" value="'.$shop_name.'" ><!-- Shop Name -->';
+                    echo '</div>';
+                    $sqlshopid="SELECT shop_id FROM shop WHERE user_id='$userid'";
+                    $shopid=mysqli_query($conn, $sqlshopid);
+                    $shop_id_array=mysqli_fetch_array($shopid);
+                    $shop_id=$shop_id_array['shop_id'];
+
+                    $sqlshoptel="SELECT shop_tel FROM shoptelphone WHERE shop_id='$shop_id'";
+                    $shoptel=mysqli_query($conn, $sqlshoptel);
+
+                    $shop_tel_array=mysqli_fetch_array($shoptel);
+                    $shop_tel=$shop_tel_array['shop_tel'];
+
+                    echo '<!--AddPhoneNumber-->';
+                    echo '<div class="container">';
+	                     echo '<div class="row">';
+		                      echo '<input type="hidden" name="count" value="1" id="phone"/>';
+                            echo '<div class="control-group" id="fields">';
+                              echo '<label class="control-label" for="field1">Shop Tel. Number :</label>';
+                              echo '<div class="controls" id="profs">';
+                                echo '<div class="input-append">';
+                                  echo '<div class="row-fluid">';
+                                    echo '<div id="container">';
+                                    echo '</div>';
+                                  echo '</div>';
+                                  echo '<div class="row">';
+                                    echo '<div class="col-sm-10"><!-- Tel. Add -->';
+                                      echo '<input autocomplete="off" class="form-control" id="field1" name="Tel" type="text" value="'.$shop_tel.'" data-items="8"/>';
+                                    echo '</div>';
+                                    echo '<div class="col-sm-2">';
+                                      echo '<button style="margin-left: -50%;" id="b1" class="btn add" type="button">+</button>';
+                                    echo '</div>';
+                                  echo '</div>';
+                                echo '</div>';
+                                echo '<small>Press + to add another Tel. number :)</small>';
+                                echo '<br>';
+                                echo '<br>';
+                              echo '</div>';
+                            echo '</div>';
+	                        echo '</div>';
+                        echo '</div>';
+
+                        $sqlshopopendate="SELECT shop_opendate FROM shop WHERE user_id='$userid'";
+                        $shopopendate=mysqli_query($conn, $sqlshopopendate);
+                        $shop_opendate_array=mysqli_fetch_array($shopopendate);
+                        $shop_opendate=$shop_opendate_array['shop_opendate'];
+
+                        $date = str_split($shop_opendate,1);
+                        /*for($i=0;$i<strlen($shop_opendate);$i++){
+                          echo $date[$i]." ";
+                        }*/
+                        $sunday="/";$monday="/";$tuesday="/";$wednesday="/";$thursday="/";$friday="/";$saturday="/";
+                        for($j=0;$j<sizeof($date);$j++){
+                          if($date[$j]=="U"){
+                            $sunday="Checked";
+                          }else if($date[$j]=="M"){
+                            $monday="Checked";
+                          }else if($date[$j]=="T"){
+                            $tuesday="Checked";
+                          }else if($date[$j]=="W"){
+                            $wednesday="Checked";
+                          }else if($date[$j]=="H"){
+                            $thursday="Checked";
+                          }else if($date[$j]=="F"){
+                            $friday="Checked";
+                          }else if($date[$j]=="S"){
+                            $saturday="Checked";
+                          }
+                        }
+
+                 echo '<!--calendar -->';
+                echo '<label>Calendar:</label>';
+                echo '<div class="container">';
+                    echo '<div class="row">';
+                    echo '<div class="col-sm-12" id="columnCalendar1">';
+                        echo '<label>Open date:</label><br>';
+                        echo '<div class="row">';
+                            echo '<input class="" name="day[]" type="checkbox" value="U" id="sunday" style="width:5%;'.$sunday.'"><label for="sunday">Sunday</label>';
+                            echo '<input class="" name="day[]" type="checkbox" value="M" id="monday" style="width:5%;" '.$monday.'><label for="monday">Monday</label>';
+                            echo '<input class="" name="day[]" type="checkbox" value="T" id="tuesday" style="width:5%;" '.$tuesday.'><label for="tuesday">Tuesday</label>';
+                            echo '<input class="" name="day[]" type="checkbox" value="W" id="wednesday" style="width:5%;" '.$wednesday.'><label for="wednesday">Wednesday</label>';
+                        echo '</div>';
+                        echo '<div class="row">';
+                            echo '<input class="" name="day[]" type="checkbox" value="H" id="thursday" style="width:5%;" '.$thursday.'><label for="thursday">Thursday</label>';
+                            echo '<input class="" name="day[]" type="checkbox" value="F" id="friday" style="width:5%;" '.$friday.'><label for="friday">Friday</label>';
+                            echo '<input class="" name="day[]" type="checkbox" value="S" id="saturday" style="width:5%;" '.$saturday.'><label for="saturday">Saturday</label>';
+                        echo '</div>';
+                   echo '</div>';
+
+                   $sqlshopopentime="SELECT shop_opentime FROM shop WHERE user_id='$userid'";
+                   $shopopentime=mysqli_query($conn, $sqlshopopentime);
+                   $shop_opentime_array=mysqli_fetch_array($shopopentime);
+                   $shop_opentime=$shop_opentime_array['shop_opentime'];
+
+                   $sqlshopclosetime="SELECT shop_closetime FROM shop WHERE user_id='$userid'";
+                   $shopclosetime=mysqli_query($conn, $sqlshopclosetime);
+                   $shop_closetime_array=mysqli_fetch_array($shopclosetime);
+                   $shop_closetime=$shop_closetime_array['shop_closetime'];
+
+                   echo '</div>';
+                   echo '<div class="row">;';
+                        echo '<div class="col-sm-3" id="columnCalendar3">';
+                            echo '<label>Open Time:</label><br>';
+                            echo '<input class="form-control" type="time" name="OpenTime" value="'.$shop_opentime.'" id="opent"><!-- Open time -->';
+                        echo '</div>';
+                        echo '<div class="col-sm-3" id="columnCalendar3">';
+                            echo '<label>Close Time:</label><br>';
+                            echo '<input class="form-control" type="time" name="CloseTime" value="'.$shop_closetime.'" id="closet"><!-- Close time -->';
+                        echo '</div>';
+                   echo '</div>';
+
+               echo '</div>';
+               mysqli_close($conn);
+               ?>
                  <br>
                  <br>
 
-                      <label>Upload Image:</label>
+                      <!--<label>Upload Image:</label>
                       <div class="container">
                         <div class="col-md-6">
                           <div class="form-group">
                             <div class="input-group">
-                              <!--<label class="input-group-btn">
+                              <!<label class="input-group-btn">
                               </label>-->
-                              <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/><!-- Image add -->
-                              <button id="clear" class="btn btn-default">Clear</button>
+                              <!--<input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp"/>--><!-- Image add -->
+                              <!--<button id="clear" class="btn btn-default">Clear</button>
                             </div>
                             <br>
                             <img id='img-upload'/>
 
                           </div>
                         </div>
-                      </div>
+                      </div>-->
                     <center><button type="submit" class="btn btn-primary" id="sizeButtonOfSaveRegister">Save</button></center><!-- Save btn -->
                   </form>
                 </div>
