@@ -60,7 +60,7 @@
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
       <div class="row">
-      <div class="col-sm-12"> 
+      <div class="col-sm-12">
           <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:50%;">Promotion List</button></a></center>
       </div>
   </div>
@@ -97,6 +97,13 @@ End:  &emsp; <!-- End date -->
   <input type="date" class ="form-control" name="Enddate" id="enddate" required>
 
 </div>
+
+<form action="myform.cgi">
+  <br>&emsp;<input type="file" name="fileupload" value="fileupload" id="fileupload">
+   <label for="fileupload"></label>
+   </form>
+
+
 <br> Card Support: <br><!-- Card Check -->
 <div = "row">
 <action="/action_page.php" method="get">
