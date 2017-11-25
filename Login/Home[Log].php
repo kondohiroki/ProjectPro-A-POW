@@ -41,13 +41,13 @@
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
         <div class="card card-container" id="leftSearchPan">
-          <form class="form-search-submit" onsubmit="return search()" method="POST">
+          <form class="form-search-submit" onsubmit="" method="POST" action="search.php">
             <div class="row">
               <div id="custom-search-input">
                 <!--<div class="input-group col-md-12" id="font-text-search">
                   <input type="text" class=" search-query form-control" placeholder="Search"/>
                 </div>-->
-                <input type="search" id="font-text-search" class="form-control" placeholder="Search"><!-- Search Text -->
+                <input type="search" id="font-text-search" class="form-control" placeholder="Search" name="txtKeyword"><!-- Search Text -->
               </div>
 
               <div class="input group col-md-12">
@@ -94,14 +94,19 @@
           while($row = mysqli_fetch_assoc($result)){
             $pro_img =$row['pro_img'];
             $pro_name=$row['pro_name'];
+            $pro_des=$row['description'];
+            $pro_id=$row['pro_id'];
             echo '<div class="row">';
                 echo '<div class="col-lg-12">';
                   echo '<div class="card" style="width:600px">';
                     echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
                     echo '<div class="card-body">';
-                      echo "<a href='Pro10006[Log].php'><h4 class='card-title'>".$pro_name."</h4></a>";
-                      echo '<a href="Pro10006[Log].php"><button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button></a>';
+                      echo "<a href='Pro10006[NoLog].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                      echo '<button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#'.$pro_id.'" id="buttProLeft">Details</button>';
                       echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
+                      echo '<div id="'.$pro_id.'" class="collapse">';
+                      echo '<p>'.$pro_des.'<p>';
+                      echo '</div>';
                     echo '</div>';
                   echo '</div>';
                 echo '</div>';
