@@ -93,7 +93,7 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
