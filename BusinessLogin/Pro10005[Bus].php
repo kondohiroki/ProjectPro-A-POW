@@ -65,7 +65,8 @@ id="signin"
               <input type="search" id="font-text-search" class="form-control" placeholder="Search"><!-- Search Text -->
             </div>
             <div class="input group col-md-12">
-            </div>
+              <div class="form-check">
+              </div>
               <hr/>
             </div>
             <div class="input group col-md-12">
@@ -92,18 +93,14 @@ id="signin"
       <?php
         $servername = "localhost";
         $username = "root";
-        $password = "1234";
+        $password = "";
         $dbname = "promotiondb";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
         if(!$conn){
           die("Connection failed: ".mysqli_connect_error());
-        }else echo "
-               <script type=\"text/javascript\">
-               swal('Connected');
-               </script>
-              ";
+        }
         $sqlname = "SELECT pro_name FROM promotion WHERE pro_id=10005";
         $proname = mysqli_query($conn, $sqlname);
 
@@ -142,8 +139,9 @@ id="signin"
         <div class="container">
         <div class="card card-container">
           <p id="profile-name" class="profile-name-card">Phanurut</p>
-          <form class="form-signin">
+          <!--<form class="form-signin" action="">-->
             <p>Phanurut007@hotmail.com</p>
+            <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="buttton" id="signout">Sign out</button></a><!-- Submit btn -->
             <!--<div id="remember" class="checkbox">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me
