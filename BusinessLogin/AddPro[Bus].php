@@ -95,8 +95,13 @@ Start: &emsp; <!-- Start date -->
   <input type="date" class ="form-control" name="Startdate" id="startdate" required><br>
 End:  &emsp; <!-- End date -->
   <input type="date" class ="form-control" name="Enddate" id="enddate" required>
-
 </div>
+
+<form action="myform.cgi">
+  <br>&emsp;<input type="file" name="fileupload" value="fileupload" id="fileupload">
+   <label for="fileupload"></label>
+   </form>
+   
 <br> Card Support: <br><!-- Card Check -->
 <div = "row">
  <input type="checkbox" name="visa" value="VISA" id="visa">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="american" value="AMERICAN EXPRESS" id="american">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="jcb" value="JCB" id="jcb" >&nbsp;JCB&emsp;&emsp;<br>
