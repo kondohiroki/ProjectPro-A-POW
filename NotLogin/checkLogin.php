@@ -21,17 +21,22 @@
                       $_SESSION["Username"] = $row["user_fname"];
                       $_SESSION["Usersurname"] = $row["user_lname"];
                       $_SESSION["UserMail"] =$row["user_email"];
+                      $uid = $_SESSION["UserID"];
 
                       //$_SESSION["User"] = $row["Firstname"]." ".$row["Lastname"];
                       //$_SESSION["Userlevel"] = $row["Userlevel"];
+                      $sql = " SELECT * FROM shop WHERE user_id ='$uid' ";
+                      $result = mysqli_query($conn, $sql);
 
                       if($Username=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
 
                         Header("Location: ../BusinessLogin/admin+BusinessOwenerPromotionlist[Bus].php");
 
-                      }else{
+                      }else if(mysqli_num_rows($result)>0){
+                        Header("Location: ../BusinessLogin/Home[Bus].php");
+                      } else{
 
-                        Header("Location: ../Login/EditProfile[Log].php");
+                        Header("Location: ../Login/Home[Log].php");
 
                       }
 
