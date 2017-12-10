@@ -86,19 +86,19 @@
                 <center><h4>Credit / Debit Card</h4></center>
                 <br>
                   <!--<button type="button" class="btn btn-outline-light" id="buttonCard">+</button>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>-->
-                  <form action="" onsubmit="" method="POST">
+                  <form action="check_addcard.php" onsubmit="" method="POST">
                         <h8>Name on Card :</h8><br>
-                          <input type="text" class="form-control" id="inputtextCard" placeholder="Phanurut" required/><!-- Name on Card -->
+                          <input type="text" class="form-control" name="card_name" id="inputtextCard" placeholder="name" required/><!-- Name on Card -->
                           <br>
                       <h8>Credit Card Number:</h8><br>
                       <div class="row">
-                        &emsp;<input class="form-control" type="text" name="creditCard" id="creditCard-1" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 1-4 -->
+                        &emsp;<input class="form-control" type="text" name="creditCard1" id="creditCard-1" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 1-4 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard-2" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 5-8 -->
+                        <input class="form-control" type="text" name="creditCard2" id="creditCard-2" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 5-8 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard-3" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 9-12 -->
+                        <input class="form-control" type="text" name="creditCard3" id="creditCard-3" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 9-12 -->
                         &nbsp;-&nbsp;
-                        <input class="form-control" type="text" name="creditCard" id="creditCard-4" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 13-16 -->
+                        <input class="form-control" type="text" name="creditCard4" id="creditCard-4" maxlength="4" placeholder="xxxx" required/><!-- Credit Card Number 13-16 -->
                       </div>
                         <br>
                         <h8>EXP:</h8>
