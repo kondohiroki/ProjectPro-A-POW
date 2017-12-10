@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Add Card</title>
+  <?php session_start(); ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -31,6 +32,14 @@
   </script>
 </head>
 <body>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="Home[Bus].php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+    </li>
+ </ul>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
     <div class="container" id="jumboHead">
       <div id="textinjumbo">
@@ -40,49 +49,36 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="Home[Bus].php">Home</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="MyCard[Bus].php">Profile</a>
-    </li>
-    <!--<li class="nav-item">
-      <a class="nav-link" href="SubPro.php">Your Profile</a>
-    </li>-->
-  </ul>
-</nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-2" id="sidePanLeft">
+        <div class="col-lg-3" id="sidePanLeft">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10">
                     <a href="EditProfile[Bus].php"><button class="btn" id="editButt">Edit Profile</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10">
                     <a href="ChangePasswordPage[Bus].php"><button class="btn" id="editButtFollow">Change Password</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10">
                     <a href="SubPro[Bus].php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10">
                     <a href="MyCard[Bus].php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10">
                     <a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButtFollow">My Shop</button></a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-8" id="centerPan">
+        <div class="col-lg-6" id="centerPan">
             <div class="card" style="width:600px">
               <div class="card-body">
                 <center><h4>Credit / Debit Card</h4></center>
@@ -146,7 +142,27 @@
               </div>
             </div>
           </div>
-        <div class="col-lg-2" id="sidePanRight" >
+          <div class="col-lg-3" id="sidePanRight" >
+            <div class="container">
+              <div class="card card-container">
+                <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
+                <!--<form class="form-signin" method="POST">-->
+                  <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
+                  <!--<div id="remember" class="checkbox">
+                      <label>
+                          <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
+                      <!--</label>-->
+                  <!--</div>-->
+                  <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="submit" id="signout">Sign out</button></a><!-- Submit btn -->
+                <!--</form>--><!-- /form -->
+                <!--<a href="#" class="forgot-password">
+                  <u>Forgot the password?</u>
+                </a>-->
+                <!--<a href="Register.php" class="forgot-password">
+                  <!<u>Register</u>-->
+                <!--</a>-->
+              </div><!-- /card-container -->
+            </div><!-- /container-->
           </div>
       </div>
 </body>

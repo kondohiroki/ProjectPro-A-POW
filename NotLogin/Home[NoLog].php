@@ -16,6 +16,16 @@
 
 </head>
 <body>
+
+  <ul class="nav justify-content-end">
+
+    <li class="nav-item">
+      <a class="nav-link" href="Home[NoLog].php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Login[NoLog].php">Sign In</a>
+    </li>
+  </ul>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
     <div class="container" id="jumboHead">
       <div id="textinjumbo">
@@ -25,7 +35,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
+  <!--<nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
   <ul class="navbar-nav">
     <li class="nav-item active">
       <a class="nav-link" href="Home[NoLog].php">Home</a>
@@ -39,8 +49,8 @@
     <!--<li class="nav-item">
       <a class="nav-link" href="SubPro.php">Your Profile</a>
     </li>-->
-  </ul>
-</nav>
+  <!--</ul>
+</nav>-->
 
   <div class="container-fluid">
     <div class="row">
@@ -116,7 +126,7 @@
                     echo '</div>';
                   echo '</div>';
               echo '</div>';
-            
+
             }
           }else{
 

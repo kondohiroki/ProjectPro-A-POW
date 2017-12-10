@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Add Promotion</title>
+  <?php session_start(); ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -34,6 +35,14 @@
   -->
 </head>
 <body>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="Home[Bus].php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+    </li>
+ </ul>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
     <div class="container" id="jumboHead">
       <div id="textinjumbo">
@@ -42,19 +51,6 @@
       </div>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-  <ul class="navbar-nav">
-  <li class="nav-item">
-  <a class="nav-link" href="Home[Bus].php">Home</a>
-</li>
-<li class="nav-item active">
-  <a class="nav-link" href="MyCard[Bus].php">Profile</a>
-</li><!--<li class="nav-item">
-    <a class="nav-link" href="SubPro.php">Your Profile</a>
-  </li>-->
-  </ul>
-</nav>
 
   <div class="container-fluid">
     <div class="row">
@@ -101,7 +97,7 @@ End:  &emsp; <!-- End date -->
   <br>&emsp;<input type="file" name="fileupload" value="fileupload" id="fileupload">
    <label for="fileupload"></label>
    </form>
-   
+
 <br> Card Support: <br><!-- Card Check -->
 <div = "row">
  <input type="checkbox" name="visa" value="VISA" id="visa">&nbsp;VISA&emsp;&emsp;<input type="checkbox" name="american" value="AMERICAN EXPRESS" id="american">&nbsp;American Express&emsp;&emsp;<input type="checkbox" name="jcb" value="JCB" id="jcb" >&nbsp;JCB&emsp;&emsp;<br>
@@ -116,9 +112,28 @@ End:  &emsp; <!-- End date -->
 
           </div>
 
-      <div class="col-lg-3" id="sidePanRight" >
-
-      </div>
+          <div class="col-lg-3" id="sidePanRight" >
+            <div class="container">
+              <div class="card card-container">
+                <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
+                <!--<form class="form-signin" method="POST">-->
+                  <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
+                  <!--<div id="remember" class="checkbox">
+                      <label>
+                          <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
+                      <!--</label>-->
+                  <!--</div>-->
+                  <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="submit" id="signout">Sign out</button></a><!-- Submit btn -->
+                <!--</form>--><!-- /form -->
+                <!--<a href="#" class="forgot-password">
+                  <u>Forgot the password?</u>
+                </a>-->
+                <!--<a href="Register.php" class="forgot-password">
+                  <!<u>Register</u>-->
+                <!--</a>-->
+              </div><!-- /card-container -->
+            </div><!-- /container-->
+          </div>
       <div class="container">
 
       </div>

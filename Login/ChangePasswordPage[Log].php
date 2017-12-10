@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <?php session_start(); ?>
       <title>Change Password</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +17,16 @@
 
     </head>
     <body>
+
+     <ul class="nav justify-content-end">
+       <li class="nav-item">
+         <a class="nav-link" href="Home[Log].php">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="MyCard[Log].php">Profile</a>
+       </li>
+    </ul>
+
       <div class="jumbotron jumbotron-fluid" id="headerJumbo">
         <div class="container" id="jumboHead">
           <div id="textinjumbo">
@@ -24,20 +35,11 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="Home[Log].php">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="MyCard[Log].php">Profile</a>
-          </li>
-        </ul>
-      </nav>
+
     </body>
 <div class="container-fluid">
                 <center><div class="row" id="MiddleChangePass" >
-                        <div class="col-lg-2" id="sidePanLeft">
+                        <div class="col-lg-3" id="sidePanLeft">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <a href="EditProfile[Log].php"><button class="btn" id="editButt">Edit Profile</button></a>
@@ -66,7 +68,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-8" id="centerPan">
+                        <div class="col-lg-6" id="centerPan">
                           <div class="container">
                             <div class="card">
                               <div class="card-body">
@@ -114,7 +116,27 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-2" id="sidePanRight" >
+                        <div class="col-lg-3" id="sidePanRight" >
+                          <div class="container">
+                            <div class="card card-container">
+                              <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
+                              <!--<form class="form-signin" method="POST">-->
+                                <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
+                                <!--<div id="remember" class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
+                                    <!--</label>-->
+                                <!--</div>-->
+                                <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="submit" id="signout">Sign out</button></a><!-- Submit btn -->
+                              <!--</form>--><!-- /form -->
+                              <!--<a href="#" class="forgot-password">
+                                <u>Forgot the password?</u>
+                              </a>-->
+                              <!--<a href="Register.php" class="forgot-password">
+                                <!<u>Register</u>-->
+                              <!--</a>-->
+                            </div><!-- /card-container -->
+                          </div><!-- /container-->
                         </div>
                   </div></center>
 </div>

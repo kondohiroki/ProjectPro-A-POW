@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php session_start(); ?>
     <title>Subscribed Promotion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +20,14 @@
     </script>
 </head>
 <body>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="Home[Log].php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="MyCard[Log].php">Profile</a>
+    </li>
+ </ul>
     <div class="jumbotron jumbotron-fluid" id="headerJumbo">
         <div class="container">
             <div for="" id="textinjumbo">
@@ -27,19 +36,10 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="Home[Log].php">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="MyCard[Log].php">Profile</a>
-            </li>
-        </ul>
-    </nav>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2" id="sidePanLeft">
+            <div class="col-lg-3" id="sidePanLeft">
                 <div class="row">
                     <div class="col-sm-12">
                         <a href="EditProfile[Log].php"><button class="btn" id="editButt">Edit Profile</button></a>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8" id="centerPan">
+            <div class="col-lg-6" id="centerPan">
                 <div class="row">
                     <div class="col-sm-12" id="headSub">
                         <h4>Subscribed Promotion</h4>
@@ -83,7 +83,7 @@
                                     <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
                                 </div>-->
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                                     <p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>
                                 </div> -->
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>
                             </div>
                         </div>
                     </div>
@@ -109,14 +109,33 @@
                             <div class="card-body">
                                 <h6 class="card-title">ใช่กว่านี้ไม่มีอีกแล้ว กับชุดไก่ใช่เลย ไก่ทอด 5 ชิ้น, นักเก็ตส์ 4 ชิ้น และเป๊ปซี่ 2 แก้ว เพียง 199 บาท (วันนี้ - 11 ธ.ค. 2560)</h6>
                                 <button type="button" class="btn btn-outline-primary" id="buttProLeft">Details</button>
-                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>   
+                                <button type="button" class="btn btn-outline-danger" id="buttProRight">Unsubscribe</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2" id="sidePanRight">
-
+            <div class="col-lg-3" id="sidePanRight" >
+              <div class="container">
+                <div class="card card-container">
+                  <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
+                  <!--<form class="form-signin" method="POST">-->
+                    <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
+                    <!--<div id="remember" class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me" id="remember"> Remember me Remember Check -->
+                        <!--</label>-->
+                    <!--</div>-->
+                    <a href="logout.php"><button class="btn btn-lg btn-block btn-signin" type="buttton" id="signout">Sign out</button></a><!-- Submit btn -->
+                  <!--</form>--><!-- /form -->
+                  <!--<a href="#" class="forgot-password">
+                    <u>Forgot the password?</u>
+                  </a>-->
+                  <!--<a href="Register.php" class="forgot-password">
+                    <!<u>Register</u>-->
+                  <!--</a>-->
+                </div><!-- /card-container -->
+              </div><!-- /container-->
             </div>
         </div>
     </div>
