@@ -9,7 +9,7 @@
 .form-control:focus{
     cursor: default;
 }
-.Add-Pro-Form button:hover{
+.card button:hover{
     background-color: #00254d;
     cursor: pointer;
 }

@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
+    <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
     <link rel="stylesheet" href="../CSS/EditProfileStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
     <script>

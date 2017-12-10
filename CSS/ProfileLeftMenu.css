@@ -1,16 +1,16 @@
 #editButt{
-    margin-top: 50%;
+    margin-top: 15%;
     position: relative;
     align-self: center;
     border-width: 1px;
     border-color: #007BFF;
-    width: 85%; 
+    width: 60%; 
 }
 #editButtFollow{
     margin-top: 7%;
     border-width: 1px;
     border-color: #007BFF; 
-    width: 85%; 
+    width: 60%; 
 }
 #sidePanLeft button:hover{
     color: #ffffff;
@@ -19,4 +19,5 @@
 }
 #sidePanLeft{
     margin-top: 0%;
+    text-align: center;
 }

@@ -43,3 +43,6 @@
 .form-control:focus{
   cursor: default;
 }
+#sidePanLeft{ 
+  margin-top: 0%;
+}

@@ -75,12 +75,12 @@
         <div class="col-lg-6" id="centerPan">
           <div class="row">
             <div class="col-sm-12" id="AddCardHead">
-              <center><h4>My Card(s)</h4></center>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
-                <div class="card">
+                <div class="card" style="margin-top: -1%;">
+                <center><h4>My Card(s)</h4></center>
                     <div class="card-body">
                       <div class="row">
                         <div class="col-sm-10">

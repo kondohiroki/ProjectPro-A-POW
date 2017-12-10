@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Promotion List</title>
+    <?php session_start(); ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -11,9 +12,10 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
+    <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
     <link rel="stylesheet" href="../CSS/SubProStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
-    <link rel="stylesheet" href="../CSS/admin+BusinessOwenerPromotionliststyle.css">
+    <link rel="stylesheet" href="../CSS/ProList.css">
 
 </head>
 <body>
@@ -37,7 +39,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2" id="sidePanLeft">
+            <div class="col-lg-3" id="sidePanLeft">
             <div class="row">
             <div class="col-sm-12">
                 <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:80%; background-color:#00254D;">Promotion List</button></a></center>
@@ -59,7 +61,7 @@
             </div>
         </div>
             </div>
-            <div class="col-lg-8" id="centerPan">
+            <div class="col-lg-6" id="centerPan">
                 <div class="row">
                     <div class="col-sm-12" id="headSub">
                         <h4>Admin+BusinessOwnerPromotionlist</h4>
@@ -86,8 +88,8 @@
                     $pro_img =$row['pro_img'];
                     $pro_name=$row['pro_name'];
                     echo'<div class="row">';
-                        echo'<div class="col-lg-6">';
-                            echo'<div class="card card-container">';
+                        echo'<div class="col-lg-12">';
+                            echo'<div class="card card-container" id="ProCard" style="width:600px">';
                                 echo'<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
                                 echo'<div class="card-body">';
                                     echo'<h6 class="card-title">'.$pro_name.'</h6>';
@@ -96,8 +98,8 @@
                                         echo'<p class="card-text">กินเค็มมากเป็นโรคไต แต่ใจเป็นของเธอ</p>';
                                     echo'</div>-->';
                                     echo'<div class="row">';
-                                        echo'<div class="col-sm-4">';
-                                        echo'<a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a>';
+                                        echo'<div class="col-sm-12">';
+                                        echo'<center><a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a></center>';
                                     echo'</div>';
                                     echo'</div>';
                                 echo'</div>';
@@ -110,26 +112,8 @@
 
                 }
 
-
-
                  ?>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card card-container">
-                            <img class="card-img-top" src="../IMG/kfc.jpg" alt="KFC">
-                            <div class="card-body">
-                                <h6 class="card-title">ใช่กว่านี้ไม่มีอีกแล้ว กับชุดไก่ใช่เลย ไก่ทอด 5 ชิ้น, นักเก็ตส์ 4 ชิ้น และเป๊ปซี่ 2 แก้ว เพียง 199 บาท (วันนี้ - 11 ธ.ค. 2560)</h6>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                    <a href="EditPromotion[Bus].php"><button type="button" class="btn btn-outline-primary" id="buttEdit">Edit</button></a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
             <div class="col-lg-3" id="sidePanRight" >
               <div class="container">
                 <div class="card card-container">
@@ -151,6 +135,8 @@
                   <!--</a>-->
                 </div><!-- /card-container -->
               </div><!-- /container-->
+            </div>
+
             </div>
         </div>
     </div>

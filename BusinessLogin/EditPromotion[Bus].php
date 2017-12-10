@@ -11,23 +11,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
-  <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
+  <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
   <!--<link rel="stylesheet" href="../CSS/HomeStyle.css">-->
   <link rel="stylesheet" href="../CSS/StyleEditPromotion.css">
   <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
-  <!--
-  id="Promotext"
-  id="Category"
-  id="Description"
-  id="startdate"
-  id="enddate"
-  id="visa"
-  id="american"
-  id="mastercard"
-  id="jcb"
-  id="union"
-  id="submitbtn"
--->
+  <link rel="stylesheet" href="../CSS/AddProStyle.css">
   <script>
     function search(){
       alert("search");

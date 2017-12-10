@@ -53,27 +53,27 @@
       <div class="row">
         <div class="col-lg-3" id="sidePanLeft">
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <a href="EditProfile[Bus].php"><button class="btn" id="editButt">Edit Profile</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <a href="ChangePasswordPage[Bus].php"><button class="btn" id="editButtFollow">Change Password</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <a href="SubPro[Bus].php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <a href="MyCard[Bus].php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButtFollow">My Shop</button></a>
                 </div>
             </div>

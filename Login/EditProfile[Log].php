@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="../CSS/MainStyle2.css">
+    <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
     <link rel="stylesheet" href="../CSS/EditProfileStyle.css">
     <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
 </head>
@@ -61,11 +62,6 @@
                         <a href="ShopRegister[Log].php"><button class="btn" id="editButtFollow">Register My Shop</button></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <a href="logout.php"><button class="btn" id="editButtFollow">Logout</button></a>
-                    </div>
-                </div>
             </div>
             <div class="col-lg-6" id="centerPan">
                 <div class="card card-container" id="cardEdit">
@@ -108,7 +104,7 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <button class="form-control" type="submit" name="submit" id="submit">Apply</button><!-- Submit btn -->
+                                <center><button class="form-control" type="submit" name="submit" id="submit" style="margin-top: 2%;">Apply</button></center><!-- Submit btn -->
                             </div>
                         </div>
                     </form>

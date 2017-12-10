@@ -11,20 +11,10 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <link rel="stylesheet" href="../CSS/MainStyle2.css">
+      <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
+      <link rel="stylesheet" href="../CSS/ChangePasswordPageStyle.css">
       <link rel="stylesheet" href="../CSS/ProfileLeftMenu.css">
       <!--<link rel="stylesheet" href="../CSS/SearchAndLogin.css">-->
-      <!--
-id="Oldpass"
-id="Newpass"
-id="Renewpass"
-id="ButtonSaveChangePassword"
--->
-      <script>
-        function search(){
-          alert("search");
-        }
-        </script>
-        <link rel="stylesheet" href="../CSS/ChangePasswordPageStyle.css">
         <script src="../JS/ChangePasswordPageScript.js"></script>
 
     </head>
@@ -50,7 +40,7 @@ id="ButtonSaveChangePassword"
               </body>
 <div class="container-fluid">
                 <center><div class="row" id="MiddleChangePass" >
-                        <div class="col-lg-2" id="sidePanLeft">
+                        <div class="col-lg-3" id="sidePanLeft">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <a href="EditProfile[Bus].php"><button class="btn" id="editButt">Edit Profile</button></a>
@@ -110,7 +100,7 @@ id="ButtonSaveChangePassword"
                                   <div class="form-group">
                                     <div class="row">
 
-                                        <div class="col-sm-4"><p><font size = "3">New Password again:</font></p></div>
+                                        <div class="col-sm-4"><p><font size = "3">Re-Password:</font></p></div>
                                         <div class="input-group" style="width: 50%;">
                                           <input  id="Renewpass" type="password" class="form-control " placeholder="Enter password"><!-- Re-New Pass -->
                                         </div>
@@ -128,7 +118,7 @@ id="ButtonSaveChangePassword"
 
                         <div class="col-lg-3" id="sidePanRight" >
                           <div class="container">
-                            <div class="card card-container">
+                            <div class="card card-container" style="text-align: left;">
                               <p id="profile-name" class="profile-name-card"><?php echo  $_SESSION["Username"]."  ".$_SESSION["Usersurname"];?></p>
                               <!--<form class="form-signin" method="POST">-->
                                 <p><?php echo "USER: ";echo $_SESSION["UserMail"]; ?></p>
