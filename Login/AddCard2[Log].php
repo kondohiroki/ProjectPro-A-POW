@@ -138,6 +138,22 @@
                               <!--&emsp;<input type="text" class="form-control" id="inputtextCardCVV" placeholder="CVV"/>-->
                           </div>
                         </div>
+                        <div style="margin-top: 7%;">
+                        <h8>BANK:</h8>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <select class="form-control" name="bank" id="bank" required>
+                              <option value="BANKKOK BANK">BANKKOK BANK</option>
+                              <option value="KASIKORN BANK">KASIKORN BANK</option>
+                              <option value="KTB BANK">KTB BANK</option>
+                              <option value="SCB BANK">SCB BANK</option>
+                              <option value="TMB BANK">TMB BANK</option>
+                              <option value="KRUNGSRI BANK">KRUNGSRI BANK</option>
+                              <option value="GOVERNMENT SAVING BANK">GOVERNMENT SAVING BANK</option>
+                            </select>
+                          </div>
+                        </div>
+                        </div>
                         <br>
                         <center><button type="submit" class="btn btn-primary" id="buttonSave">Save</button></center><!-- Save Button -->
                       </form>
