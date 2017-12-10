@@ -82,7 +82,8 @@
                 <div class="card" style="margin-top: -1%;">
                 <center><h4>My Card(s)</h4></center>
                     <div class="card-body">
-                      <div class="row">
+                      <?php include '../showcard.php'; ?>
+                      <!--<div class="row">
                         <div class="col-sm-10">
                           <div class="card" id="CardPan">
                             <p>Phanurut Kondo&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;VISA</p>
@@ -90,7 +91,7 @@
                             <p>02/20</p>
                           </div>
                         </div>
-                      </div>
+                      </div>-->
                       <a href="AddCard2[Bus].php"><button type="button" class="btn btn-outline-light" id="buttonCard">+</button></a>&ensp;&ensp;<small>Add New Credit Card/Debit Card</small>
                     </div>
                 </div>
