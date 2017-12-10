@@ -56,7 +56,7 @@ strcmp(substr($creditCard1, 0 , 2),"54")==0 || strcmp(substr($creditCard1, 0 , 2
 $sql = "INSERT INTO card (card_no,card_name,user_id,type_id,bank_id) VALUES ('$card_no' , '$card_name', '$user_id' ,'$type_card' ,1)";
   if (mysqli_query($conn, $sql)) {
         echo "<script type='text/javascript'>alert('Edit Successfully');</script>";
-        Header("refresh: 0;AddCard2[Log].php");
+        Header("refresh: 0;AddCard2[Bus].php");
    } else {
          echo "<script>";
          echo "alert('Fail');";
