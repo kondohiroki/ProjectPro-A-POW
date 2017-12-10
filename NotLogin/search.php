@@ -18,7 +18,7 @@
     $serverName = "localhost";
     $userName = "root";
     $userPassword = "";
-    $dbName = "promotiomdbv.3";
+    $dbName = "promotiondb";
 
     $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);
 
@@ -28,7 +28,7 @@
     ?>
     <table width="600" border="1">
     <tr>
-    <th width="91"> <div align="center">pro_id </div></th>
+    <!--<th width="91"> <div align="center">pro_id </div></th>-->
     <th width="98"> <div align="center">pro_name </div></th>
     <th width="198"> <div align="center">description </div></th>
     <th width="97"> <div align="center">pro_startdate </div></th>
@@ -40,7 +40,7 @@
     while($result=mysqli_fetch_array($query,MYSQLI_ASSOC)){
     ?>
       <tr>
-        <td><div align="center"><?php echo $result["pro_id"];?></div></td>
+        <!--<td><div align="center"><//?php echo $result["pro_id"];?></div></td>-->
         <td><?php echo $result["pro_name"];?></td>
         <td><?php echo $result["description"];?></td>
         <td><div align="center"><?php echo $result["pro_startdate"];?></div></td>

@@ -106,7 +106,7 @@
                     echo '<div class="card" style="width:600px">';
                       echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode($pro_img).'"/>';
                       echo '<div class="card-body">';
-                        echo "<a href='Pro10006[NoLog].php'><h4 class='card-title'>".$pro_name."</h4></a>";
+                        echo "<div data-toggle='collapse' data-target='#".$pro_id."'><h4 class='card-title'>".$pro_name."</h4></div>";
                         echo '<button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#'.$pro_id.'" id="buttProLeft">Details</button>';
                         echo '<a href="#"><button type="button" class="btn btn-outline-danger" id="buttProRight">Subscribe</button></a>';
                         echo '<div id="'.$pro_id.'" class="collapse">';
@@ -133,16 +133,16 @@
               <input type="text" name="Username" id="inputEmail" class="form-control" placeholder="Email address" required ><!-- Email text -->
               <input type="password" name="Password" id="inputPassword" class="form-control" placeholder="Password" required><!-- Pass -->
               <div id="remember" class="checkbox">
-                  <label>
+                  <!--<label>
                       <input type="checkbox" value="remember-me" id="remember"> Remember me<!-- Remember Check -->
-                  </label>
+                  <!--</label>-->
               </div>
               <button class="btn btn-lg btn-block btn-signin" type="submit" id="signin">Sign in</button><!-- Submit btn -->
             </form><!-- /form -->
             <!--<a href="#" class="forgot-password">
               <u>Forgot the password?</u>
             </a>-->
-            <a href="Register.php" class="forgot-password">
+            <a href="Register[NoLog].php" class="forgot-password">
               <u>Register</u>
             </a>
           </div><!-- /card-container -->

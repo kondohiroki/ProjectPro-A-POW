@@ -57,10 +57,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" maxlength="45" name='name' id='name' placeholder="Name"  required/><!-- Name text -->
+                                <input type="text" class="form-control" maxlength="45" name='name' id='name' placeholder="Name" style="width: 100%;" required/><!-- Name text -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" maxlength="45" name='surname' id="surname" placeholder="Surname" required/><!-- Surname text -->
+                                <input type="text" class="form-control" maxlength="45" name='surname' id="surname" placeholder="Surname" style="width: 100%;" required/><!-- Surname text -->
                             </div>
                         </div>
                         <div class="row">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" maxlength="45" name='mail'id="mail" placeholder="Email" required/><!-- Email -->
+                                <input type="text" class="form-control" maxlength="45" name='mail'id="mail" placeholder="Email" style="width: 100%;" required/><!-- Email -->
                             </div>
                         </div>
                         <div class="row">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" maxlength="20" name='pass' id="pass" placeholder="Password"  required/><!-- password -->
+                                <input type="password" class="form-control" maxlength="20" name='pass' id="pass" placeholder="Password" style="width: 100%;" required/><!-- password -->
                             </div>
                         </div>
                         <div class="row">
@@ -90,10 +90,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="password" class="form-control" name='repass' id="repass" placeholder="Re-type Password" required/><!-- Re-Pass -->
+                                <input type="password" class="form-control" name='repass' id="repass" placeholder="Re-type Password" style="width: 100%;" required/><!-- Re-Pass -->
                             </div>
                         </div>
-                        <div class="row">
+                        <!--<div class="row">
                           <div class="col-sm-5">
                             <input type="checkbox" class="" name='notification'id="notification" style="margin-left:2%;margin-top:2%;"/>
 
@@ -102,10 +102,10 @@
                             <p style="margin-left:-100%">email notification</p>
                           </div>
 
-                        </div>
+                        </div>-->
                         <div class="row">
                             <div class="col-sm-12">
-                                <br><button class="form-control" type="submit" id="submit">Apply</button><!-- Submit btn -->
+                                <center><br><button class="form-control" type="submit" id="submit">Apply</button></center><!-- Submit btn -->
                             </div>
                         </div>
                     </form>

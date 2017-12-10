@@ -62,17 +62,17 @@
                             <span id="reauth-email" class="reauth-email"></span>
                             <center><input name="Username" type="text" id="inputEmail" class="form-control" placeholder="Email address" style="width: 60%;" required ></center><!-- Email Text -->
                             <center><input name="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" style="width: 60%;" required></center><!-- Pass -->
-                            <div id="remember" class="checkbox">
+                            <!--<div id="remember" class="checkbox">
                                 <center><label>
                                     <input type="checkbox" value="remember-me" id="rememberme"> Remember me<!-- Remember Check -->
-                                </label></center>
-                            </div>
+                                <!--</label></center>
+                            </div>-->
                             <center><button class="btn btn-lg btn-block btn-signin" style="width: 30%;" type="submit" id="signin" value="submit">Sign in</button></center><!-- submit btn -->
                         </form><!-- /form -->
                       <!--<a href="#" class="forgot-password">
                         <u>Forgot the password?</u>
                       </a>-->
-                      <center><a href="Register.php" class="forgot-password">
+                      <center><a href="Register[NoLog].php" class="forgot-password">
                         <u>Register</u>
                       </a></center>
                     </div><!-- /card-container -->
