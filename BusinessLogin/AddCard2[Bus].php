@@ -121,17 +121,17 @@
                               &emsp;
                               <select class="form-control" name="expiry-year" id="expiry-year" required><!-- Year Expire -->
                                 <option>Y</option>
-                                <option value="13">18</option>
-                                <option value="14">19</option>
-                                <option value="15">20</option>
-                                <option value="16">21</option>
-                                <option value="17">22</option>
-                                <option value="18">23</option>
-                                <option value="19">24</option>
-                                <option value="20">25</option>
-                                <option value="21">26</option>
-                                <option value="22">27</option>
-                                <option value="23">28</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
                               </select>
                               <!--&emsp;<input type="text" class="form-control" id="inputtextCardCVV" placeholder="CVV"/>-->
                           </div>
@@ -141,13 +141,13 @@
                         <div class="row">
                           <div class="col-sm-6">
                             <select class="form-control" name="bank" id="bank" required>
-                              <option value="BANKKOK BANK">BANKKOK BANK</option>
-                              <option value="KASIKORN BANK">KASIKORN BANK</option>
-                              <option value="KTB BANK">KTB BANK</option>
-                              <option value="SCB BANK">SCB BANK</option>
-                              <option value="TMB BANK">TMB BANK</option>
-                              <option value="KRUNGSRI BANK">KRUNGSRI BANK</option>
-                              <option value="GOVERNMENT SAVING BANK">GOVERNMENT SAVING BANK</option>
+                              <option value="1">BANKKOK BANK</option>
+                              <option value="2">KASIKORN BANK</option>
+                              <option value="3">KTB BANK</option>
+                              <option value="4">SCB BANK</option>
+                              <option value="5">TMB BANK</option>
+                              <option value="6">KRUNGSRI BANK</option>
+                              <option value="7">GOVERNMENT SAVING BANK</option>
                             </select>
                           </div>
                         </div>

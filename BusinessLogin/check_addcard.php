@@ -18,7 +18,7 @@ $creditCard3 = $_POST['creditCard3'];
 $creditCard4 = $_POST['creditCard4'];
 $expiry_month = $_POST['expiry-month'];
 $expiry_year = $_POST['expiry-year'];
-//$bank_id = $_POST['bank'];
+$bank_id = $_POST['bank'];
 $card_no = $creditCard1." ".$creditCard2." ".$creditCard3." ".$creditCard4;
 $type_card = '1';
 echo $card_no."</br>";
@@ -53,7 +53,7 @@ strcmp(substr($creditCard1, 0 , 2),"54")==0 || strcmp(substr($creditCard1, 0 , 2
 
 //$sql = " SELECT * FROM card WHERE user_id ='$user_id' ";
 //$result = mysqli_query($conn, $sql);
-$sql = "INSERT INTO card (card_no,card_name,user_id,type_id,bank_id) VALUES ('$card_no' , '$card_name', '$user_id' ,'$type_card' ,1)";
+$sql = "INSERT INTO card (card_no,card_name,exp_m,exp_y,user_id,type_id,bank_id) VALUES ('$card_no' , '$card_name','$expiry_month ','$expiry_year', '$user_id' ,'$type_card' ,'$bank_id')";
   if (mysqli_query($conn, $sql)) {
         echo "<script type='text/javascript'>alert('Edit Successfully');</script>";
         Header("refresh: 0;AddCard2[Bus].php");
