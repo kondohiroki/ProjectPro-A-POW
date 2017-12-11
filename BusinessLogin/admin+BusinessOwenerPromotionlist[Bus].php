@@ -41,30 +41,35 @@
         <div class="row">
             <div class="col-lg-3" id="sidePanLeft">
             <div class="row">
+                <div class="col-sm-12">
+                    <center><a href="EditProfile[Bus].php"><button class="btn" id="editButt" style="width:60%;">Edit Profile</button></a></center>
+                </div>
+            </div>
+            <div class="row">
             <div class="col-sm-12">
-                <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:80%; background-color:#00254D;">Promotion List</button></a></center>
+                <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButtFollow" style="width:60%; background-color:#00254D;">Promotion List</button></a></center>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:80%;">Edit Shop</button></a></center>
+                <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:60%;">Edit Shop</button></a></center>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 80%;">Add Promotion</button></a></center>
+                <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 60%;">Add Promotion</button></a></center>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-sm-12">
-                <center><a href="logout.php"><button class="btn" id="editButtFollow" style="width: 80%;">Logout</button></a></center>
+                <center><a href="logout.php"><button class="btn" id="editButtFollow" style="width: 60%;">Logout</button></a></center>
             </div>
-        </div>
+        </div>-->
             </div>
             <div class="col-lg-6" id="centerPan">
                 <div class="row">
                     <div class="col-sm-12" id="headSub">
-                        <h4>Admin+BusinessOwnerPromotionlist</h4>
+                        <h4>Promotion List</h4>
                     </div>
                 </div>
                 <?php

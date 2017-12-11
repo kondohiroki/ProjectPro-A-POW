@@ -57,18 +57,23 @@
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
       <div class="row">
+        <div class="col-sm-12">
+          <center><a href="EditProfile[Bus].php"><button class="btn" id="editButt" style="width:60%;">Edit Profile</button></a></center>
+        </div>
+      </div>
+      <div class="row">
       <div class="col-sm-12">
-          <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:50%;">Promotion List</button></a></center>
+          <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButtFollow" style="width:60%;">Promotion List</button></a></center>
       </div>
   </div>
   <div class="row">
       <div class="col-sm-12">
-          <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:50%;">Edit Shop</button></a></center>
+          <center><a href="ShopEdit[Bus].php"><button class="btn" id="editButtFollow" style="width:60%;">Edit Shop</button></a></center>
       </div>
   </div>
   <div class="row">
       <div class="col-sm-12">
-          <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 50%; background-color:#00254D;">Add Promotion</button></a></center>
+          <center><a href="AddPro[Bus].php"><button class="btn" id="editButtFollow" style="width: 60%; background-color:#00254D;">Add Promotion</button></a></center>
       </div>
   </div>
       </div>

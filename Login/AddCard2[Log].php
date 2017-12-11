@@ -64,11 +64,11 @@
                     <a href="ChangePasswordPage[Log].php"><button class="btn" id="editButtFollow">Change Password</button></a>
                 </div>
             </div>
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-sm-12">
                     <a href="SubPro[Log].php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                 </div>
-            </div>
+            </div>-->
             <div class="row">
                 <div class="col-sm-12">
                     <a href="MyCard[Log].php"><button class="btn" id="editButtFollow" style="background-color: #00254d">My Card</button></a>

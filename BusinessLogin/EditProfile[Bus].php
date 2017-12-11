@@ -58,11 +58,11 @@ id="applybutton"
                         <a href="ChangePasswordPage[Bus].php"><button class="btn" id="editButtFollow">Change Password</button></a>
                     </div>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-sm-12">
                         <a href="SubPro[Bus].php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                     </div>
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col-sm-12">
                         <a href="MyCard[Bus].php"><button class="btn" id="editButtFollow">My Card</button></a>

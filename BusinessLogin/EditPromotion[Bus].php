@@ -45,9 +45,14 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
+      <div class="row">
+                    <div class="col-sm-12">
+                        <a href="EditProfile[Bus].php"><button class="btn" id="editButt" style="width:50%;">Edit Profile</button></a>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButt" style="width:50%;">Add Promotion</button></a></center>
+                        <center><a href="admin+BusinessOwenerPromotionlist[Bus].php"><button class="btn" id="editButtFollow" style="width:50%;">Add Promotion</button></a></center>
                     </div>
                 </div>
                 <div class="row">

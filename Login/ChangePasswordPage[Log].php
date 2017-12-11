@@ -51,11 +51,11 @@
                                     <a href="ChangePasswordPage[Log].php"><button class="btn" id="editButtFollow" style="background-color: #00254d">Change Password</button></a>
                                 </div>
                             </div>
-                            <div class="row">
+                            <!--<div class="row">
                                 <div class="col-sm-12">
                                     <a href="SubPro[Log].php"><button class="btn" id="editButtFollow">My Subscribe</button></a>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="row">
                                 <div class="col-sm-12">
                                     <a href="MyCard[Log].php"><button class="btn" id="editButtFollow">My Card</button></a>
@@ -63,8 +63,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <a href="ShopRegister[Log].php"><button class="btn" id="editButtFollow">Register My
-                                 Shop</button></a>
+                                <a href="ShopRegister[Log].php"><button class="btn" id="editButtFollow">Register My Shop</button></a>
                               </div>
                             </div>
                         </div>
