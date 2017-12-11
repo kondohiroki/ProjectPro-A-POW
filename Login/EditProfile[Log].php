@@ -66,7 +66,7 @@
             <div class="col-lg-6" id="centerPan">
                 <div class="card card-container" id="cardEdit">
                     <h4>Edit Profile</h4>
-                    <form action="checkEditprofile.php" class="Edit-Profile-Form"  method="POST">
+                    <form action="" class="Edit-Profile-Form" onsubmit="" method="PUT">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -77,10 +77,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name="name" id="inputFname" placeholder="Phanurut"/><!-- Name -->
+                                <input type="text" class="form-control" id="inputFname" placeholder="<?php echo $_SESSION["Username"]; ?>"/><!-- Name -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name="surname" id="inputLname" placeholder="Kondo"/><!-- Surname -->
+                                <input type="text" class="form-control" id="inputLname" placeholder="<?php echo $_SESSION["Usersurname"]; ?>"/><!-- Surname -->
                             </div>
                         </div>
                         <div class="row">
@@ -91,7 +91,7 @@
                             </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="mail" id="inputEmail" placeholder="Hiroki007@yahoo.com"/><!-- Email -->
+                                <input type="text" class="form-control" id="inputEmail" placeholder="<?php echo $_SESSION["UserMail"]; ?>"/><!-- Email -->
                             </div>
 
                         </div>
@@ -101,10 +101,12 @@
                         <div class="row">
 
                         </div>
+                        <div class="row"><!-- Gender Select -->
 
+                        </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <center><button class="form-control" type="submit" name="submit" id="submit" style="margin-top: 2%;">Apply</button></center><!-- Submit btn -->
+                                <button class="form-control" type="submit" id="applybutton">Apply</button><!-- Submit btn -->
                             </div>
                         </div>
                     </form>

@@ -88,41 +88,32 @@ id="applybutton"
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputFname" placeholder="Phanurut"/><!-- Name -->
+                                <input type="text" class="form-control" id="inputFname" placeholder="<?php echo $_SESSION["Username"]; ?>"/><!-- Name -->
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputLname" placeholder="Kondo"/><!-- Surname -->
+                                <input type="text" class="form-control" id="inputLname" placeholder="<?php echo $_SESSION["Usersurname"]; ?>"/><!-- Surname -->
                             </div>
                         </div>
                         <div class="row">
                                 <div class="col-sm-6">
                                     <h8>Email :</h8>
                                 </div>
-                                <div class="col-sm-4">
-                                    <h8>Tel :</h8>
-                                </div>
+
                             </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail" placeholder="Hiroki007@yahoo.com"/><!-- Email -->
+                                <input type="text" class="form-control" id="inputEmail" placeholder="<?php echo $_SESSION["UserMail"]; ?>"/><!-- Email -->
                             </div>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputTel" placeholder="0805555555"><!-- Tel. -->
-                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <h8>Date of birth :</h8>
-                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <input type="date" class="form-control" id="inputdate"/><!-- DOB -->
-                            </div>
+
                         </div>
                         <div class="row"><!-- Gender Select -->
-                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="male" checked id="gender"> Male<br></label>
-                            <label style="margin-left: 3%;"><input type="radio" name="gender" value="female" > Female<br></label>
+                            
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
