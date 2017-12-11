@@ -77,7 +77,7 @@ id="applybutton"
             <div class="col-lg-6" id="centerPan">
                 <div class="card card-container" id="cardEdit">
                     <h4>Edit Profile</h4>
-                    <form action="" class="Edit-Profile-Form" onsubmit="" method="PUT">
+                    <form action="" class="Edit-Profile-Form" onsubmit="" method="POST">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h8>Name :</h8>
@@ -113,7 +113,7 @@ id="applybutton"
 
                         </div>
                         <div class="row"><!-- Gender Select -->
-                            
+
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
