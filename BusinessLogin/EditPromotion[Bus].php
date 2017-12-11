@@ -23,6 +23,14 @@
   </script>
 </head>
 <body>
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="Home[Bus].php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="MyCard[Bus].php">Profile</a>
+    </li>
+ </ul>
   <div class="jumbotron jumbotron-fluid" id="headerJumbo">
     <div class="container" id="jumboHead">
       <div id="textinjumbo">
@@ -31,16 +39,6 @@
       </div>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark" id = "navbar">
-  <ul class="navbar-nav">
-  <li class="nav-item">
-  <a class="nav-link" href="Home[Bus].php">Home</a>
-</li>
-<li class="nav-item active">
-  <a class="nav-link" href="MyCard[Bus].php">Profile</a>
-</li>
-</nav>
 
   <div class="container-fluid">
     <div class="row">
