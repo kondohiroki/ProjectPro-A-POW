@@ -72,10 +72,10 @@
             </div>
         </div>
         <div class="col-lg-6" id="centerPan">
-          
+          <?php// include '../showcard.php'; ?>
           <div class="row">
             <div class="col-sm-12" id="AddCardHead">
-
+              
             </div>
           </div>
           <div class="row">

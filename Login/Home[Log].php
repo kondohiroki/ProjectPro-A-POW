@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="../CSS/MainStyle2.css">
   <link rel="stylesheet" href="../CSS/SearchAndLogin.css">
   <link rel="stylesheet" href="../CSS/HomeStyle.css">
@@ -39,14 +40,11 @@
     <div class="row">
       <div class="col-lg-3" id="sidePanLeft">
         <div class="card card-container" id="leftSearchPan">
-          <form class="form-search-submit" onsubmit="" method="POST" action="search.php">
+          <form class="form-search-submit" onsubmit="" method="" action="">
             <div class="row">
               <div id="custom-search-input">
-                <!--<div class="input-group col-md-12" id="font-text-search">
-                  <input type="text" class=" search-query form-control" placeholder="Search"/>
-                </div>-->
-                <input type="search" id="font-text-search" class="form-control" placeholder="Search" name="txtKeyword"><!-- Search Text -->
-              </div>
+                <input type="text" id="search_text" class="form-control" placeholder="search" name="search_text"><!-- Search Text -->
+               </div>
 
               <div class="input group col-md-12">
 
@@ -73,9 +71,7 @@
          </div>
       </div>
       <div class="col-lg-6" id="centerPan">
-        <?php
-          include '../showpro.php';
-        ?>
+          <div id="result"></div>
          </div>
 
       <div class="col-lg-3" id="sidePanRight" >
@@ -107,3 +103,4 @@
 
 </body>
 </html>
+<script src="../JS/searchscript.js"></script>
