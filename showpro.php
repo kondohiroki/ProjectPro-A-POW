@@ -1,8 +1,23 @@
 <?php
 include 'dbconnect.php';
 
-$sql = " SELECT * FROM `promotion` ";
-$result = mysqli_query($conn,$sql);
+if(isset($_POST["query"]))
+{
+ $search = mysqli_real_escape_string($conn, $_POST["query"]);
+ $query = "SELECT * FROM promotion WHERE pro_name LIKE '%".$search."%' OR description LIKE '%".$search."%'";
+}
+/*if(isset($_POST["search_text"]))
+{
+  //echo "This comes from formsubmitted";
+  $search = mysqli_real_escape_string($conn, $_POST["query"]);
+  $query = "SELECT * FROM promotion WHERE pro_name LIKE '%".$search."%' OR description LIKE '%".$search."%'";
+}*/
+else
+{
+ $query = "SELECT * FROM promotion ORDER BY pro_id";
+}
+
+$result = mysqli_query($conn,$query);
 
 if(mysqli_num_rows($result) > 0){
   while($row = mysqli_fetch_assoc($result)){
