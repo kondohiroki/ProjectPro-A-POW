@@ -84,8 +84,10 @@
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
                 }
+                $user_id=$_SESSION["UserID"];
+                $shop_id=$_SESSION["ShopID"];
 
-                $sql = " SELECT * FROM `promotion` ";
+                $sql = " SELECT * FROM promotion WHERE shop_id='".$shop_id."'";
                 $result = mysqli_query($conn,$sql);
                 $row= mysqli_fetch_array($result);
                 if(mysqli_num_rows($result) > 0){

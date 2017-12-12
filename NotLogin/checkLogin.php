@@ -8,12 +8,12 @@
                   $Password = $_REQUEST['Password'];
                   //echo $Password;
 				//query
-                  $sql="SELECT * FROM user Where user_email='".$Username."' and user_password='".$Password."' ";
+                  $sql="SELECT * FROM user WHERE user_email='".$Username."' and user_password='".$Password."' ";
 
                   $result = mysqli_query($conn,$sql);
-                  echo mysqli_num_rows($result);
+                  //echo mysqli_num_rows($result);
 
-                  if(mysqli_num_rows($result)==1){
+                  if(mysqli_num_rows($result)>=1){
 
                       $row = mysqli_fetch_array($result);
 
@@ -28,18 +28,31 @@
 
                       //$_SESSION["User"] = $row["Firstname"]." ".$row["Lastname"];
                       //$_SESSION["Userlevel"] = $row["Userlevel"];
-                      $sql = " SELECT * FROM shop WHERE user_id ='$uid' ";
-                      $result = mysqli_query($conn, $sql);
+                      $sql2 = " SELECT * FROM shop WHERE user_id ='".$uid."' ";
+                      $result = mysqli_query($conn, $sql2);
 
                       if($Username=="admin" && $Password=="1234"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
 
                         Header("Location: ../BusinessLogin/Home[Bus].php");
 
                       }else if(mysqli_num_rows($result)>0 && $Username=="$umail" && $Password=="$upass"){
+                        echo "<script>";
+                        echo "alert(\"Login สำเร็จ BUS CLASS\");";
+                        echo "</script>";
+                        $sql3="SELECT * FROM shop WHERE user_id='".$uid."'";
+                        $result3=mysqli_query($conn,$sql3);
+                        if(mysqli_num_rows($result3)>=1){
+                          //echo mysqli_num_rows($result3);
+                          $row3 = mysqli_fetch_array($result3);
+                          $_SESSION["ShopID"]=$row3["shop_id"];
+                          $shopid=$_SESSION["ShopID"];
+                        }
                         Header("Location: ../BusinessLogin/Home[Bus].php");
                       } else if($Username=="$umail" && $Password=="$upass"){
+                        echo "<script>";
+                        echo "alert(\"Login สำเร็จ LOG CLASS\");";
+                        echo "</script>";
                         Header("Location: ../Login/Home[Log].php");
-
                       }
 
                   }else{
